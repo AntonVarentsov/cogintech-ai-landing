@@ -1,0 +1,20 @@
+{
+  "version": "1.0.0",
+  "tags": {
+    "master": {
+      "name": "CognitechAI Astro Migration",
+      "description": "Полная миграция лендинговой страницы с React на Astro фреймворк",
+      "tasks": 11,
+      "estimatedHours": 130,
+      "priority": "high",
+      "sprint": "2025-08",
+      "assignee": "developer"
+    }
+  },
+  "project": {
+    "name": "CognitechAI Astro Migration",
+    "type": "web-migration",
+    "framework": "astro",
+    "status": "in-planning"
+  }
+}

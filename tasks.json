@@ -1,0 +1,72 @@
+{
+  "boardName": "CognitechAI - Astro Migration",
+  "lanes": [
+    {
+      "id": "todo",
+      "title": "To Do",
+      "cards": [
+        {
+          "id": "setup-astro",
+          "title": "🚀 Настройка Astro проекта",
+          "description": "Инициализация нового Astro проекта с необходимыми интеграциями",
+          "label": "critical",
+          "assignedTo": ["developer"],
+          "dueDate": "2025-08-11",
+          "tags": ["infrastructure", "setup"]
+        },
+        {
+          "id": "migrate-ui",
+          "title": "🎨 Миграция UI компонентов", 
+          "description": "Перевод React UI компонентов в Astro формат",
+          "label": "high",
+          "assignedTo": ["developer"],
+          "dueDate": "2025-08-18",
+          "tags": ["components", "ui"]
+        },
+        {
+          "id": "create-islands",
+          "title": "🏝️ Создание React Islands",
+          "description": "Создание интерактивных компонентов как React islands",
+          "label": "high", 
+          "assignedTo": ["developer"],
+          "dueDate": "2025-08-25",
+          "tags": ["islands", "interactivity"]
+        }
+      ]
+    },
+    {
+      "id": "in-progress",
+      "title": "In Progress", 
+      "cards": []
+    },
+    {
+      "id": "review",
+      "title": "Review",
+      "cards": []
+    },
+    {
+      "id": "done",
+      "title": "Done",
+      "cards": [
+        {
+          "id": "prd-created",
+          "title": "📋 PRD создан",
+          "description": "Создан продуктовый документ для миграции на Astro",
+          "label": "completed",
+          "assignedTo": ["AstroAgent"],
+          "completedDate": "2025-08-04",
+          "tags": ["documentation", "planning"]
+        },
+        {
+          "id": "astro-agent-created", 
+          "title": "🤖 AstroAgent создан",
+          "description": "Создан агент-специалист по фреймворку Astro",
+          "label": "completed",
+          "assignedTo": ["AstroAgent"],
+          "completedDate": "2025-08-04", 
+          "tags": ["agents", "tooling"]
+        }
+      ]
+    }
+  ]
+}

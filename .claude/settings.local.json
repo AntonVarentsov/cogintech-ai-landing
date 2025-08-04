@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(taskmaster:*)",
+      "Bash(npm run taskmaster:*)",
+      "Bash(npx taskmaster:*)",
+      "Bash(mkdir:*)",
+      "Bash(npx task-master:*)",
+      "Bash(task-master init:*)",
+      "Bash(task-master parse-prd:*)",
+      "Bash(task-master:*)",
+      "Bash(ls:*)",
+      "Bash(node:*)",
+      "WebFetch(domain:docs.task-master.dev)"
+    ],
+    "deny": []
+  }
+}

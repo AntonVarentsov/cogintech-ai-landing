@@ -1,0 +1,235 @@
+{
+  "name": "CognitechAI Landing - Astro Migration",
+  "description": "Миграция лендинговой страницы с React на Astro",
+  "version": "1.0.0",
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Фаза 1: Подготовка и настройка",
+      "description": "Инициализация Astro проекта и базовая настройка",
+      "status": "todo",
+      "priority": "critical",
+      "assignee": "developer",
+      "dueDate": "2025-08-11",
+      "labels": ["infrastructure", "setup"],
+      "subtasks": [
+        {
+          "id": "1.1",
+          "title": "Инициализировать новый Astro проект",
+          "status": "todo",
+          "estimate": "4h"
+        },
+        {
+          "id": "1.2", 
+          "title": "Настроить astro.config.mjs с интеграциями",
+          "status": "todo",
+          "estimate": "2h"
+        },
+        {
+          "id": "1.3",
+          "title": "Создать базовый Layout.astro",
+          "status": "todo", 
+          "estimate": "2h"
+        },
+        {
+          "id": "1.4",
+          "title": "Настроить GitHub Actions workflow",
+          "status": "todo",
+          "estimate": "3h"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Фаза 2: Миграция UI компонентов",
+      "description": "Перевод React компонентов в Astro формат",
+      "status": "todo",
+      "priority": "high",
+      "assignee": "developer",
+      "dueDate": "2025-08-18",
+      "labels": ["components", "migration"],
+      "subtasks": [
+        {
+          "id": "2.1",
+          "title": "Создать статические UI компоненты (.astro)",
+          "status": "todo",
+          "estimate": "8h"
+        },
+        {
+          "id": "2.2",
+          "title": "Мигрировать Navbar компонент",
+          "status": "todo",
+          "estimate": "4h"
+        },
+        {
+          "id": "2.3",
+          "title": "Мигрировать Footer компонент",
+          "status": "todo",
+          "estimate": "3h"
+        },
+        {
+          "id": "2.4",
+          "title": "Мигрировать Hero секцию",
+          "status": "todo",
+          "estimate": "5h"
+        },
+        {
+          "id": "2.5",
+          "title": "Мигрировать контентные блоки",
+          "status": "todo",
+          "estimate": "12h"
+        }
+      ]
+    },
+    {
+      "id": "3", 
+      "title": "Фаза 3: Интерактивные компоненты",
+      "description": "Создание React islands для интерактивности",
+      "status": "todo",
+      "priority": "high",
+      "assignee": "developer", 
+      "dueDate": "2025-08-25",
+      "labels": ["islands", "interactivity"],
+      "subtasks": [
+        {
+          "id": "3.1",
+          "title": "Создать LeadForm как React island",
+          "status": "todo",
+          "estimate": "4h"
+        },
+        {
+          "id": "3.2",
+          "title": "Создать BookDemo как React island",
+          "status": "todo",
+          "estimate": "3h"
+        },
+        {
+          "id": "3.3",
+          "title": "Создать CookieConsent как React island",
+          "status": "todo",
+          "estimate": "2h"
+        },
+        {
+          "id": "3.4",
+          "title": "Создать PricingSandbox как React island",
+          "status": "todo",
+          "estimate": "6h"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Фаза 4: Миграция страниц",
+      "description": "Перевод всех страниц в Astro формат",
+      "status": "todo",
+      "priority": "high",
+      "assignee": "developer",
+      "dueDate": "2025-09-01", 
+      "labels": ["pages", "routing"],
+      "subtasks": [
+        {
+          "id": "4.1",
+          "title": "Создать главную страницу index.astro",
+          "status": "todo",
+          "estimate": "6h"
+        },
+        {
+          "id": "4.2",
+          "title": "Мигрировать статические страницы",
+          "status": "todo",
+          "estimate": "10h"
+        },
+        {
+          "id": "4.3", 
+          "title": "Создать API routes",
+          "status": "todo",
+          "estimate": "8h"
+        },
+        {
+          "id": "4.4",
+          "title": "Настроить контактную форму",
+          "status": "todo",
+          "estimate": "4h"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Фаза 5: SEO и производительность",
+      "description": "Оптимизация SEO и производительности",
+      "status": "todo",
+      "priority": "medium",
+      "assignee": "developer",
+      "dueDate": "2025-09-08",
+      "labels": ["seo", "performance"],
+      "subtasks": [
+        {
+          "id": "5.1",
+          "title": "Создать компонент SEO.astro",
+          "status": "todo",
+          "estimate": "3h"
+        },
+        {
+          "id": "5.2",
+          "title": "Настроить sitemap.xml генерацию", 
+          "status": "todo",
+          "estimate": "2h"
+        },
+        {
+          "id": "5.3",
+          "title": "Оптимизировать изображения",
+          "status": "todo",
+          "estimate": "4h"
+        },
+        {
+          "id": "5.4",
+          "title": "Настроить code splitting",
+          "status": "todo",
+          "estimate": "3h"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Фаза 6: Тестирование и деплой",
+      "description": "Комплексное тестирование и развертывание",
+      "status": "todo", 
+      "priority": "critical",
+      "assignee": "developer",
+      "dueDate": "2025-09-15",
+      "labels": ["testing", "deployment"],
+      "subtasks": [
+        {
+          "id": "6.1",
+          "title": "Настроить E2E тестирование с Playwright",
+          "status": "todo",
+          "estimate": "6h"
+        },
+        {
+          "id": "6.2",
+          "title": "Провести Lighthouse аудит",
+          "status": "todo",
+          "estimate": "2h"
+        },
+        {
+          "id": "6.3",
+          "title": "A/B тестирование на staging",
+          "status": "todo",
+          "estimate": "4h"
+        },
+        {
+          "id": "6.4",
+          "title": "Production деплой",
+          "status": "todo",
+          "estimate": "3h"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "columns": ["todo", "in-progress", "review", "done"],
+    "defaultAssignee": "developer",
+    "autoArchive": true,
+    "sprintDuration": 7
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "tag": "master",
+  "project": "CognitechAI Astro Migration",
+  "tasks": [
+    {
+      "id": "astro-setup-1",
+      "title": "Настройка Astro проекта",
+      "description": "Инициализация нового Astro проекта с необходимыми интеграциями для миграции с React",
+      "status": "todo",
+      "priority": "critical",
+      "assignee": "developer",
+      "tags": ["infrastructure", "setup", "astro"],
+      "estimatedHours": 8,
+      "dueDate": "2025-08-11",
+      "file": "1-setup-astro-project.md"
+    },
+    {
+      "id": "base-structure-2",
+      "title": "Создание базовой структуры",
+      "description": "Создание базовой структуры проекта, лейаутов и основных компонентов",
+      "status": "todo",
+      "priority": "high",
+      "assignee": "developer",
+      "tags": ["structure", "layouts", "astro"],
+      "estimatedHours": 6,
+      "dueDate": "2025-08-12",
+      "file": "2-create-base-structure.md"
+    },
+    {
+      "id": "ui-migration-3",
+      "title": "Миграция UI компонентов",
+      "description": "Перевод React UI компонентов в Astro формат с разделением на статические и интерактивные",
+      "status": "todo",
+      "priority": "high",
+      "assignee": "developer",
+      "tags": ["components", "ui", "migration"],
+      "estimatedHours": 16,
+      "dueDate": "2025-08-18",
+      "file": "3-migrate-ui-components.md"
+    },
+    {
+      "id": "layout-migration-4",
+      "title": "Миграция layout компонентов",
+      "description": "Миграция основных layout компонентов: Navbar, Footer и других структурных элементов",
+      "status": "todo",
+      "priority": "critical",
+      "assignee": "developer",
+      "tags": ["layout", "navigation", "migration"],
+      "estimatedHours": 12,
+      "dueDate": "2025-08-15",
+      "file": "4-migrate-layout-components.md"
+    },
+    {
+      "id": "landing-migration-5",
+      "title": "Миграция компонентов лендинга",
+      "description": "Миграция всех статических компонентов лендинговой страницы в Astro формат",
+      "status": "todo",
+      "priority": "high",
+      "assignee": "developer",
+      "tags": ["landing", "components", "static"],
+      "estimatedHours": 18,
+      "dueDate": "2025-08-20",
+      "file": "5-migrate-landing-components.md"
+    },
+    {
+      "id": "react-islands-6",
+      "title": "Создание React Islands",
+      "description": "Создание интерактивных компонентов как React islands с правильной стратегией загрузки",
+      "status": "todo",
+      "priority": "high",
+      "assignee": "developer",
+      "tags": ["islands", "interactivity", "react"],
+      "estimatedHours": 14,
+      "dueDate": "2025-08-22",
+      "file": "6-create-react-islands.md"
+    },
+    {
+      "id": "pages-migration-7",
+      "title": "Миграция страниц",
+      "description": "Миграция всех страниц с React Router на file-based routing Astro",
+      "status": "todo",
+      "priority": "critical",
+      "assignee": "developer",
+      "tags": ["pages", "routing", "seo"],
+      "estimatedHours": 16,
+      "dueDate": "2025-08-25",
+      "file": "7-migrate-pages.md"
+    },
+    {
+      "id": "api-routes-8",
+      "title": "Создание API Routes",
+      "description": "Создание API маршрутов для обработки форм и интеграции с Supabase",
+      "status": "todo",
+      "priority": "high",
+      "assignee": "developer",
+      "tags": ["api", "backend", "forms"],
+      "estimatedHours": 10,
+      "dueDate": "2025-08-23",
+      "file": "8-create-api-routes.md"
+    },
+    {
+      "id": "seo-optimization-9",
+      "title": "SEO оптимизация",
+      "description": "Комплексная SEO оптимизация для улучшения индексации и ранжирования",
+      "status": "todo",
+      "priority": "medium",
+      "assignee": "developer",
+      "tags": ["seo", "performance", "meta"],
+      "estimatedHours": 10,
+      "dueDate": "2025-08-27",
+      "file": "9-seo-optimization.md"
+    },
+    {
+      "id": "performance-optimization-10",
+      "title": "Оптимизация производительности",
+      "description": "Настройка производительности, code splitting и оптимизация bundle size для максимальной скорости загрузки",
+      "status": "todo",
+      "priority": "medium",
+      "assignee": "developer",
+      "tags": ["performance", "optimization", "bundle"],
+      "estimatedHours": 8,
+      "dueDate": "2025-08-28",
+      "file": "10-performance-optimization.md"
+    },
+    {
+      "id": "testing-deployment-11",
+      "title": "Тестирование и деплой",
+      "description": "Комплексное тестирование и развертывание Astro версии в production с полной проверкой функциональности",
+      "status": "todo",
+      "priority": "critical",
+      "assignee": "developer",
+      "tags": ["testing", "deployment", "qa"],
+      "estimatedHours": 12,
+      "dueDate": "2025-08-30",
+      "file": "11-testing-deployment.md"
+    }
+  ],
+  "totalTasks": 11,
+  "totalHours": 130,
+  "created": "2025-08-04T06:00:00Z",
+  "updated": "2025-08-04T06:00:00Z"
+}
