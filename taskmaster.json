@@ -17,32 +17,77 @@
   },
   "workflow": {
     "columns": [
-      { "id": "todo", "name": "To Do", "color": "#e3f2fd" },
-      { "id": "in-progress", "name": "In Progress", "color": "#fff3e0" },
-      { "id": "review", "name": "Review", "color": "#f3e5f5" },
-      { "id": "done", "name": "Done", "color": "#e8f5e8" }
+      {
+        "id": "todo",
+        "name": "To Do",
+        "color": "#e3f2fd"
+      },
+      {
+        "id": "in-progress",
+        "name": "In Progress",
+        "color": "#fff3e0"
+      },
+      {
+        "id": "review",
+        "name": "Review",
+        "color": "#f3e5f5"
+      },
+      {
+        "id": "done",
+        "name": "Done",
+        "color": "#e8f5e8"
+      }
     ]
   },
   "labels": [
-    { "id": "critical", "name": "Critical", "color": "#f44336" },
-    { "id": "high", "name": "High", "color": "#ff9800" },
-    { "id": "medium", "name": "Medium", "color": "#2196f3" },
-    { "id": "low", "name": "Low", "color": "#4caf50" }
+    {
+      "id": "critical",
+      "name": "Critical",
+      "color": "#f44336"
+    },
+    {
+      "id": "high",
+      "name": "High",
+      "color": "#ff9800"
+    },
+    {
+      "id": "medium",
+      "name": "Medium",
+      "color": "#2196f3"
+    },
+    {
+      "id": "low",
+      "name": "Low",
+      "color": "#4caf50"
+    }
   ],
   "tags": [
-    "infrastructure", "setup", "migration", "components", 
-    "ui", "islands", "pages", "api", "seo", "testing", 
-    "deployment", "performance", "optimization"
+    "infrastructure",
+    "setup",
+    "migration",
+    "components",
+    "ui",
+    "islands",
+    "pages",
+    "api",
+    "seo",
+    "testing",
+    "deployment",
+    "performance",
+    "optimization"
   ],
   "tasks": [
     {
       "id": "astro-setup-1",
       "title": "Настройка Astro проекта",
       "description": "Инициализация нового Astro проекта с необходимыми интеграциями для миграции с React",
-      "status": "todo",
+      "status": "done",
       "priority": "critical",
       "assignee": "developer",
-      "tags": ["infrastructure", "setup"],
+      "tags": [
+        "infrastructure",
+        "setup"
+      ],
       "estimatedHours": 8,
       "dueDate": "2025-08-11",
       "created": "2025-08-04T06:00:00Z",
@@ -55,16 +100,21 @@
         "Адаптировать package.json scripts",
         "Настроить Vite конфигурацию для production",
         "Создать GitHub Actions workflow для Astro"
-      ]
+      ],
+      "startedAt": "2025-08-04T06:49:57.005Z",
+      "completedAt": "2025-08-04T07:03:28.139Z"
     },
     {
-      "id": "base-structure-2", 
+      "id": "base-structure-2",
       "title": "Создание базовой структуры",
       "description": "Создание базовой структуры проекта, лейаутов и основных компонентов",
-      "status": "todo",
+      "status": "done",
       "priority": "high",
-      "assignee": "developer", 
-      "tags": ["structure", "layouts"],
+      "assignee": "developer",
+      "tags": [
+        "structure",
+        "layouts"
+      ],
       "estimatedHours": 6,
       "dueDate": "2025-08-12",
       "created": "2025-08-04T06:00:00Z",
@@ -75,16 +125,22 @@
         "Создать компонент BaseHead.astro для SEO",
         "Настроить глобальные стили",
         "Создать базовые лейауты для разных типов страниц"
-      ]
+      ],
+      "startedAt": "2025-08-04T07:03:59.138Z",
+      "completedAt": "2025-08-04T07:15:12.438Z"
     },
     {
       "id": "ui-migration-3",
-      "title": "Миграция UI компонентов", 
+      "title": "Миграция UI компонентов",
       "description": "Перевод React UI компонентов в Astro формат с разделением на статические и интерактивные",
-      "status": "todo",
+      "status": "in-progress",
       "priority": "high",
       "assignee": "developer",
-      "tags": ["components", "ui", "migration"],
+      "tags": [
+        "components",
+        "ui",
+        "migration"
+      ],
       "estimatedHours": 16,
       "dueDate": "2025-08-18",
       "created": "2025-08-04T06:00:00Z",
@@ -93,9 +149,10 @@
         "Card.astro, Badge.astro, Separator.astro",
         "Avatar.astro, Alert.astro, Progress.astro",
         "Button.tsx (для интерактивности)",
-        "Dialog.tsx, Form.tsx, Input.tsx", 
+        "Dialog.tsx, Form.tsx, Input.tsx",
         "Select.tsx, Checkbox.tsx, Toast.tsx"
-      ]
+      ],
+      "startedAt": "2025-08-04T07:36:12.277Z"
     },
     {
       "id": "layout-migration-4",
@@ -104,7 +161,11 @@
       "status": "todo",
       "priority": "critical",
       "assignee": "developer",
-      "tags": ["layout", "navigation", "migration"],
+      "tags": [
+        "layout",
+        "navigation",
+        "migration"
+      ],
       "estimatedHours": 12,
       "dueDate": "2025-08-15",
       "created": "2025-08-04T06:00:00Z",
@@ -121,17 +182,21 @@
       "id": "landing-migration-5",
       "title": "Миграция компонентов лендинга",
       "description": "Миграция всех статических компонентов лендинговой страницы в Astro формат",
-      "status": "todo", 
+      "status": "todo",
       "priority": "high",
       "assignee": "developer",
-      "tags": ["landing", "components", "static"],
+      "tags": [
+        "landing",
+        "components",
+        "static"
+      ],
       "estimatedHours": 18,
       "dueDate": "2025-08-20",
       "created": "2025-08-04T06:00:00Z",
       "subtasks": [
         "NewHero.tsx → Hero.astro",
         "ProblemStatement.tsx → ProblemStatement.astro",
-        "Solution.tsx → Solution.astro", 
+        "Solution.tsx → Solution.astro",
         "ValueMetrics.tsx → ValueMetrics.astro",
         "SolutionBlocks.tsx → SolutionBlocks.astro",
         "SecurityIT.tsx → SecurityIT.astro",
@@ -143,9 +208,13 @@
       "title": "Создание React Islands",
       "description": "Создание интерактивных компонентов как React islands с правильной стратегией загрузки",
       "status": "todo",
-      "priority": "high", 
+      "priority": "high",
       "assignee": "developer",
-      "tags": ["islands", "interactivity", "react"],
+      "tags": [
+        "islands",
+        "interactivity",
+        "react"
+      ],
       "estimatedHours": 14,
       "dueDate": "2025-08-22",
       "created": "2025-08-04T06:00:00Z",
@@ -165,9 +234,13 @@
       "status": "todo",
       "priority": "critical",
       "assignee": "developer",
-      "tags": ["pages", "routing", "seo"],
+      "tags": [
+        "pages",
+        "routing",
+        "seo"
+      ],
       "estimatedHours": 16,
-      "dueDate": "2025-08-25", 
+      "dueDate": "2025-08-25",
       "created": "2025-08-04T06:00:00Z",
       "subtasks": [
         "Создать src/pages/index.astro",
@@ -179,12 +252,16 @@
     },
     {
       "id": "api-routes-8",
-      "title": "Создание API Routes", 
+      "title": "Создание API Routes",
       "description": "Создание API маршрутов для обработки форм и интеграции с Supabase",
       "status": "todo",
       "priority": "high",
       "assignee": "developer",
-      "tags": ["api", "backend", "forms"],
+      "tags": [
+        "api",
+        "backend",
+        "forms"
+      ],
       "estimatedHours": 10,
       "dueDate": "2025-08-23",
       "created": "2025-08-04T06:00:00Z",
@@ -203,7 +280,11 @@
       "status": "todo",
       "priority": "medium",
       "assignee": "developer",
-      "tags": ["seo", "performance", "meta"],
+      "tags": [
+        "seo",
+        "performance",
+        "meta"
+      ],
       "estimatedHours": 10,
       "dueDate": "2025-08-27",
       "created": "2025-08-04T06:00:00Z",
@@ -221,8 +302,12 @@
       "description": "Настройка производительности, code splitting и оптимизация bundle size",
       "status": "todo",
       "priority": "medium",
-      "assignee": "developer", 
-      "tags": ["performance", "optimization", "bundle"],
+      "assignee": "developer",
+      "tags": [
+        "performance",
+        "optimization",
+        "bundle"
+      ],
       "estimatedHours": 8,
       "dueDate": "2025-08-28",
       "created": "2025-08-04T06:00:00Z",
@@ -241,10 +326,14 @@
       "status": "todo",
       "priority": "critical",
       "assignee": "developer",
-      "tags": ["testing", "deployment", "qa"],
+      "tags": [
+        "testing",
+        "deployment",
+        "qa"
+      ],
       "estimatedHours": 12,
       "dueDate": "2025-08-30",
-      "created": "2025-08-04T06:00:00Z", 
+      "created": "2025-08-04T06:00:00Z",
       "subtasks": [
         "Настроить E2E тестирование с Playwright",
         "Провести полный Lighthouse аудит",

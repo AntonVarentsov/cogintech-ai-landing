@@ -12,7 +12,14 @@
       "Bash(task-master:*)",
       "Bash(ls:*)",
       "Bash(node:*)",
-      "WebFetch(domain:docs.task-master.dev)"
+      "WebFetch(domain:docs.task-master.dev)",
+      "Bash(npm create:*)",
+      "Bash(npx astro add:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm run check:*)",
+      "Bash(cp:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(npm run dev)"
     ],
     "deny": []
   }
