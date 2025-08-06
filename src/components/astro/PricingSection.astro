@@ -1,0 +1,114 @@
+---
+import Button from '@/components/ui/astro/Button.astro';
+
+const features = [
+  "AI-powered inspection analysis",
+  "24-hour report delivery for critical findings",
+  "Multi-agent verification system (95%+ accuracy)",
+  "Natural language data querying",
+  "Unlimited users and analysis requests",
+  "Customized reporting templates",
+  "Historical data integration",
+  "API access for your systems"
+];
+---
+
+<section id="pricing" class="section bg-white">
+  <div class="container px-0 sm:px-4 md:px-6">
+    <div class="max-w-3xl mx-auto text-center mb-12 px-4 sm:px-0">
+      <h2 class="section-title">
+        Transparent <span class="text-cogintech-blue">Pricing</span> with Guaranteed ROI
+      </h2>
+      <p class="text-lg text-foreground/80">
+        Our solution is priced to ensure you achieve at least a 25% cost reduction compared to your current process.
+      </p>
+    </div>
+
+    <div class="max-w-4xl mx-auto px-0 sm:px-4">
+      <div class="bg-gradient-to-r from-cogintech-blue to-cogintech-teal rounded-xl overflow-hidden shadow-lg m-0 sm:m-4">
+        <div class="bg-white/95 m-1 rounded-lg">
+          <div class="p-4 sm:p-8">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
+              <div>
+                <h3 class="text-2xl font-bold mb-2">Enterprise Solution</h3>
+                <p class="text-foreground/80">Tailored to your organization's specific needs</p>
+              </div>
+              <div class="mt-4 md:mt-0">
+                <div class="text-3xl font-bold text-cogintech-blue">Custom Pricing</div>
+                <div class="text-foreground/60">Guaranteed cost reduction</div>
+              </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <h4 class="font-semibold mb-4 text-lg">Included Features:</h4>
+                <ul class="space-y-3">
+                  {features.map((feature) => (
+                    <li class="flex items-start">
+                      <svg class="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="20,6 9,17 4,12"></polyline>
+                      </svg>
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              
+              <div class="bg-cogintech-blue/5 rounded-lg p-6 border border-cogintech-blue/20">
+                <h4 class="font-semibold mb-4 text-lg">Our Pricing Promise:</h4>
+                <ul class="space-y-4">
+                  <li class="flex items-start">
+                    <div class="w-8 h-8 rounded-full bg-cogintech-blue/10 flex items-center justify-center mr-3 flex-shrink-0">
+                      <span class="text-cogintech-blue font-bold">1</span>
+                    </div>
+                    <span>Our solution will be <span class="font-semibold">at least 25% cheaper</span> than your current inspection analysis process.</span>
+                  </li>
+                  <li class="flex items-start">
+                    <div class="w-8 h-8 rounded-full bg-cogintech-blue/10 flex items-center justify-center mr-3 flex-shrink-0">
+                      <span class="text-cogintech-blue font-bold">2</span>
+                    </div>
+                    <span><span class="font-semibold">Fixed-price data migration</span> ensures predictable onboarding costs with no surprises.</span>
+                  </li>
+                  <li class="flex items-start">
+                    <div class="w-8 h-8 rounded-full bg-cogintech-blue/10 flex items-center justify-center mr-3 flex-shrink-0">
+                      <span class="text-cogintech-blue font-bold">3</span>
+                    </div>
+                    <span>Flexible payment options including per-report, subscription, or enterprise licensing.</span>
+                  </li>
+                </ul>
+                
+                <div class="mt-6">
+                  <Button 
+                    class="w-full bg-cogintech-orange hover:bg-cogintech-orange/90 text-white scroll-to-form-btn"
+                  >
+                    Request Custom Quote
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-12 text-center max-w-2xl mx-auto px-4 sm:px-0">
+        <p class="text-lg">
+          Not ready for a full implementation? Ask about our <span class="font-semibold text-cogintech-blue">proof-of-concept package</span> to test our solution with your actual inspection data.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Scroll to lead form functionality
+    const scrollToFormBtns = document.querySelectorAll('.scroll-to-form-btn');
+    scrollToFormBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.getElementById('lead-form')?.scrollIntoView({ 
+          behavior: 'smooth' 
+        });
+      });
+    });
+  });
+</script>

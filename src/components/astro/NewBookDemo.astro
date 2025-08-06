@@ -1,0 +1,138 @@
+---
+// NewBookDemo component - exact copy from new-landing/BookDemo.tsx
+---
+
+<section id="book-demo" class="py-16 bg-cogintech-dark">
+  <div class="container">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4 text-white">
+          Book a 15-Minute Demo
+        </h2>
+        <p class="text-xl text-white/70 max-w-2xl mx-auto">
+          See how Cogintech can transform your inspection process in just 15 minutes
+        </p>
+      </div>
+      
+      <div class="bg-white/5 border border-white/10 rounded-lg shadow-sm">
+        <div class="p-6 pb-0">
+          <h3 class="text-xl font-semibold text-white">Schedule Your Demo</h3>
+          <p class="text-white/70">Get a personalized demonstration of our AI-powered analysis platform</p>
+        </div>
+        <div class="p-6">
+          <form onsubmit="handleNewBookDemoSubmit(event)" class="space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="space-y-2">
+                <label for="demo-name" class="block text-sm font-medium text-white">Full Name</label>
+                <input 
+                  id="demo-name" 
+                  name="name"
+                  type="text" 
+                  placeholder="John Smith"
+                  required
+                  class="w-full bg-white/10 border border-white/20 text-white placeholder:text-white/50 px-3 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-cogintech-teal/50"
+                />
+              </div>
+              
+              <div class="space-y-2">
+                <label for="demo-email" class="block text-sm font-medium text-white">Work Email</label>
+                <input 
+                  id="demo-email" 
+                  name="email"
+                  type="email" 
+                  placeholder="your.email@company.com"
+                  required
+                  class="w-full bg-white/10 border border-white/20 text-white placeholder:text-white/50 px-3 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-cogintech-teal/50"
+                />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="space-y-2">
+                <label for="demo-company" class="block text-sm font-medium text-white">Company Name</label>
+                <input 
+                  id="demo-company" 
+                  name="company"
+                  type="text" 
+                  placeholder="Your Company"
+                  required
+                  class="w-full bg-white/10 border border-white/20 text-white placeholder:text-white/50 px-3 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-cogintech-teal/50"
+                />
+              </div>
+              
+              <div class="space-y-2">
+                <label for="demo-role" class="block text-sm font-medium text-white">Your Role</label>
+                <input 
+                  id="demo-role" 
+                  name="role"
+                  type="text" 
+                  placeholder="e.g., Integrity Engineer"
+                  required
+                  class="w-full bg-white/10 border border-white/20 text-white placeholder:text-white/50 px-3 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-cogintech-teal/50"
+                />
+              </div>
+            </div>
+            
+            <div class="space-y-3">
+              <div class="flex items-start space-x-3">
+                <input 
+                  id="privacy-policy-demo"
+                  type="checkbox"
+                  required
+                  class="mt-1"
+                />
+                <label for="privacy-policy-demo" class="text-sm text-white/80 leading-relaxed">
+                  I agree to the{' '}
+                  <a 
+                    href="/privacy-policy" 
+                    class="text-cogintech-teal hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Privacy Policy
+                  </a>
+                </label>
+              </div>
+              
+              <div class="flex items-start space-x-3">
+                <input 
+                  id="terms-of-service-demo"
+                  type="checkbox"
+                  required
+                  class="mt-1"
+                />
+                <label for="terms-of-service-demo" class="text-sm text-white/80 leading-relaxed">
+                  I agree to the{' '}
+                  <a 
+                    href="/terms-of-service" 
+                    class="text-cogintech-teal hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Terms of Service
+                  </a>
+                </label>
+              </div>
+            </div>
+
+            <button 
+              type="submit"
+              class="w-full bg-cogintech-orange hover:bg-cogintech-orange/90 text-white font-medium py-2 px-4 rounded-lg transition-colors"
+            >
+              Book 15-Min Demo
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function handleNewBookDemoSubmit(event) {
+    event.preventDefault();
+    // Simple form handling - would normally integrate with backend
+    alert('Thank you! We\'ll contact you within 24 hours to confirm your 15-minute live demo session.');
+    event.target.reset();
+  }
+</script>

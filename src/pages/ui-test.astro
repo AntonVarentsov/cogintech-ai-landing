@@ -1,0 +1,105 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Badge from '@/components/ui/astro/Badge.astro';
+import Card from '@/components/ui/astro/Card.astro';
+import CardHeader from '@/components/ui/astro/CardHeader.astro';
+import CardTitle from '@/components/ui/astro/CardTitle.astro';
+import CardDescription from '@/components/ui/astro/CardDescription.astro';
+import CardContent from '@/components/ui/astro/CardContent.astro';
+import CardFooter from '@/components/ui/astro/CardFooter.astro';
+import Button from '@/components/ui/astro/Button.astro';
+import Separator from '@/components/ui/astro/Separator.astro';
+import Skeleton from '@/components/ui/astro/Skeleton.astro';
+import { InteractiveDemo } from '@/components/ui/react-islands/InteractiveDemo';
+---
+
+<BaseLayout title="UI Components Test">
+  <main class="container mx-auto py-16">
+    <h1 class="text-4xl font-bold mb-8">UI Components Test</h1>
+    
+    <!-- Badges -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">Badges</h2>
+      <div class="flex gap-2 mb-4">
+        <Badge>Default</Badge>
+        <Badge variant="secondary">Secondary</Badge>
+        <Badge variant="destructive">Destructive</Badge>
+        <Badge variant="outline">Outline</Badge>
+      </div>
+    </section>
+
+    <Separator class="my-8" />
+
+    <!-- Buttons -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">Buttons</h2>
+      <div class="flex gap-2 mb-4">
+        <Button>Default</Button>
+        <Button variant="secondary">Secondary</Button>
+        <Button variant="destructive">Destructive</Button>
+        <Button variant="outline">Outline</Button>
+        <Button variant="ghost">Ghost</Button>
+        <Button variant="link">Link</Button>
+      </div>
+      <div class="flex gap-2 mb-4">
+        <Button size="sm">Small</Button>
+        <Button size="default">Default</Button>
+        <Button size="lg">Large</Button>
+        <Button size="icon">🚀</Button>
+      </div>
+    </section>
+
+    <Separator class="my-8" />
+
+    <!-- Cards -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">Cards</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <Card>
+          <CardHeader>
+            <CardTitle>Card Title</CardTitle>
+            <CardDescription>Card description goes here</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <p>This is the card content area.</p>
+          </CardContent>
+          <CardFooter>
+            <Button>Action</Button>
+          </CardFooter>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Another Card</CardTitle>
+            <CardDescription>With different content</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <Skeleton class="h-4 w-full mb-2" />
+            <Skeleton class="h-4 w-3/4 mb-2" />
+            <Skeleton class="h-4 w-1/2" />
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+
+    <Separator class="my-8" />
+
+    <!-- Skeletons -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">Skeletons</h2>
+      <div class="space-y-2">
+        <Skeleton class="h-4 w-full" />
+        <Skeleton class="h-4 w-3/4" />
+        <Skeleton class="h-4 w-1/2" />
+      </div>
+    </section>
+
+    <Separator class="my-8" />
+
+    <!-- React Islands -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">React Islands (Interactive)</h2>
+      <InteractiveDemo client:load />
+    </section>
+  </main>
+</BaseLayout>

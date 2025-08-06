@@ -19,7 +19,14 @@
       "Bash(npm run check:*)",
       "Bash(cp:*)",
       "Bash(npm uninstall:*)",
-      "Bash(npm run dev)"
+      "Bash(npm run dev)",
+      "Bash(move:*)",
+      "Bash(move public react-version )",
+      "Bash(move index.html react-version )",
+      "Bash(move tsconfig.json react-version )",
+      "Bash(move tsconfig.node.json react-version )",
+      "Bash(move components.json react-version )",
+      "Bash(move postcss.config.js react-version )"
     ],
     "deny": []
   }

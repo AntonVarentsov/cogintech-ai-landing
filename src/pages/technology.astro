@@ -1,0 +1,128 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro';
+---
+
+<PageLayout 
+  title="Technology" 
+  description="Learn about the AI technology powering Cogintech's inspection analysis platform"
+>
+  <div class="space-y-12">
+    <section class="text-center">
+      <p class="text-lg text-foreground/80 max-w-3xl mx-auto">
+        Our cutting-edge AI technology combines multiple specialized agents, advanced machine learning, 
+        and deep industry knowledge to deliver unparalleled accuracy in equipment integrity analysis.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-3xl font-bold mb-8 text-cogintech-blue">Multi-Agent AI Architecture</h2>
+      <div class="bg-gradient-to-br from-cogintech-blue/5 to-cogintech-teal/5 p-8 rounded-lg mb-8">
+        <p class="text-lg text-foreground/80 mb-6">
+          At the heart of our platform is a sophisticated multi-agent AI system where specialized AI agents 
+          work together to analyze inspection data, cross-verify results, and ensure maximum accuracy.
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-lg border border-border">
+            <h3 class="text-xl font-semibold mb-3 text-cogintech-blue">Analysis Agent</h3>
+            <p class="text-foreground/80">Processes raw inspection data and identifies potential integrity issues using trained models.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border border-border">
+            <h3 class="text-xl font-semibold mb-3 text-cogintech-teal">Verification Agent</h3>
+            <p class="text-foreground/80">Cross-checks analysis results against historical data and industry standards.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg border border-border">
+            <h3 class="text-xl font-semibold mb-3 text-cogintech-orange">Reporting Agent</h3>
+            <p class="text-foreground/80">Generates comprehensive reports with recommendations and compliance information.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-3xl font-bold mb-8 text-cogintech-blue">Core Technologies</h2>
+      <div class="space-y-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div class="bg-white p-8 rounded-lg border border-border shadow-sm">
+            <h3 class="text-2xl font-semibold mb-4 text-cogintech-blue">Machine Learning</h3>
+            <ul class="space-y-3 text-foreground/80">
+              <li>• Deep neural networks trained on 10M+ inspection data points</li>
+              <li>• Computer vision for image and video analysis</li>
+              <li>• Time series analysis for trend identification</li>
+              <li>• Ensemble methods for improved accuracy</li>
+            </ul>
+          </div>
+          
+          <div class="bg-white p-8 rounded-lg border border-border shadow-sm">
+            <h3 class="text-2xl font-semibold mb-4 text-cogintech-teal">Natural Language Processing</h3>
+            <ul class="space-y-3 text-foreground/80">
+              <li>• Advanced language models for report understanding</li>
+              <li>• Natural language query interface</li>
+              <li>• Automated text extraction and classification</li>
+              <li>• Multi-language support for global operations</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bg-cogintech-dark/5 p-8 rounded-lg">
+          <h3 class="text-2xl font-semibold mb-6 text-cogintech-blue">Data Security & Privacy</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h4 class="text-xl font-semibold mb-3 text-cogintech-teal">Enterprise Security</h4>
+              <ul class="space-y-2 text-foreground/80">
+                <li>• End-to-end encryption</li>
+                <li>• SOC 2 Type II compliance</li>
+                <li>• Role-based access control</li>
+                <li>• Audit logging and monitoring</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-xl font-semibold mb-3 text-cogintech-orange">Data Privacy</h4>
+              <ul class="space-y-2 text-foreground/80">
+                <li>• GDPR and CCPA compliant</li>
+                <li>• Data anonymization options</li>
+                <li>• On-premises deployment available</li>
+                <li>• Customer data ownership guarantee</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-3xl font-bold mb-8 text-cogintech-blue">Performance Metrics</h2>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div class="text-center p-6 bg-white rounded-lg border border-border shadow-sm">
+          <div class="text-4xl font-bold text-cogintech-blue mb-2">95%+</div>
+          <div class="text-foreground/80">Analysis Accuracy</div>
+        </div>
+        <div class="text-center p-6 bg-white rounded-lg border border-border shadow-sm">
+          <div class="text-4xl font-bold text-cogintech-teal mb-2">24hrs</div>
+          <div class="text-foreground/80">Report Delivery</div>
+        </div>
+        <div class="text-center p-6 bg-white rounded-lg border border-border shadow-sm">
+          <div class="text-4xl font-bold text-cogintech-orange mb-2">99.9%</div>
+          <div class="text-foreground/80">System Uptime</div>
+        </div>
+        <div class="text-center p-6 bg-white rounded-lg border border-border shadow-sm">
+          <div class="text-4xl font-bold text-cogintech-blue mb-2">10M+</div>
+          <div class="text-foreground/80">Data Points Processed</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-cogintech-blue text-white p-8 rounded-lg text-center">
+      <h2 class="text-3xl font-bold mb-4">Experience Our Technology</h2>
+      <p class="text-xl text-white/80 mb-6">
+        See our AI technology in action with a personalized demo using your inspection data.
+      </p>
+      <a 
+        href="/#demo" 
+        class="inline-block bg-cogintech-orange hover:bg-cogintech-orange/90 text-white font-medium px-8 py-3 rounded-lg transition-colors"
+      >
+        Try Interactive Demo
+      </a>
+    </section>
+  </div>
+</PageLayout>

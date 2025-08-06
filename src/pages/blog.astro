@@ -1,0 +1,117 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro';
+---
+
+<PageLayout 
+  title="Blog" 
+  description="Insights and updates from the Cogintech team on AI, equipment integrity, and industry trends"
+>
+  <div class="space-y-12">
+    <section class="text-center">
+      <p class="text-lg text-foreground/80 max-w-3xl mx-auto">
+        Stay informed with our latest insights on AI technology, equipment integrity management, 
+        and digital transformation in the oil & gas industry.
+      </p>
+    </section>
+
+    <section class="space-y-8">
+      <article class="bg-white p-8 rounded-lg border border-border shadow-sm">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="px-3 py-1 bg-cogintech-blue/10 text-cogintech-blue rounded-full text-sm font-medium">AI Technology</span>
+          <span class="text-sm text-foreground/60">January 20, 2025</span>
+        </div>
+        <h2 class="text-2xl font-bold mb-4 text-cogintech-blue">
+          <a href="#" class="hover:text-cogintech-blue/80">The Future of Multi-Agent AI in Industrial Applications</a>
+        </h2>
+        <p class="text-foreground/80 mb-4">
+          Explore how multi-agent AI systems are revolutionizing industrial inspection and analysis, 
+          providing unprecedented accuracy and reliability in critical decision-making processes.
+        </p>
+        <a href="#" class="text-cogintech-blue hover:underline font-medium">Read More →</a>
+      </article>
+
+      <article class="bg-white p-8 rounded-lg border border-border shadow-sm">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="px-3 py-1 bg-cogintech-teal/10 text-cogintech-teal rounded-full text-sm font-medium">Industry Insights</span>
+          <span class="text-sm text-foreground/60">January 15, 2025</span>
+        </div>
+        <h2 class="text-2xl font-bold mb-4 text-cogintech-blue">
+          <a href="#" class="hover:text-cogintech-blue/80">Reducing Inspection Costs: ROI Analysis for Oil & Gas Operators</a>
+        </h2>
+        <p class="text-foreground/80 mb-4">
+          A comprehensive analysis of how AI-powered inspection analysis delivers measurable ROI, 
+          with real case studies showing 30%+ cost reductions and improved operational efficiency.
+        </p>
+        <a href="#" class="text-cogintech-blue hover:underline font-medium">Read More →</a>
+      </article>
+
+      <article class="bg-white p-8 rounded-lg border border-border shadow-sm">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="px-3 py-1 bg-cogintech-orange/10 text-cogintech-orange rounded-full text-sm font-medium">Best Practices</span>
+          <span class="text-sm text-foreground/60">January 10, 2025</span>
+        </div>
+        <h2 class="text-2xl font-bold mb-4 text-cogintech-blue">
+          <a href="#" class="hover:text-cogintech-blue/80">Digital Transformation in Equipment Integrity Management</a>
+        </h2>
+        <p class="text-foreground/80 mb-4">
+          Learn the key steps for successfully implementing AI-powered solutions in your integrity management workflow, 
+          from data preparation to change management strategies.
+        </p>
+        <a href="#" class="text-cogintech-blue hover:underline font-medium">Read More →</a>
+      </article>
+
+      <article class="bg-white p-8 rounded-lg border border-border shadow-sm">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="px-3 py-1 bg-cogintech-blue/10 text-cogintech-blue rounded-full text-sm font-medium">Technical Deep Dive</span>
+          <span class="text-sm text-foreground/60">January 5, 2025</span>
+        </div>
+        <h2 class="text-2xl font-bold mb-4 text-cogintech-blue">
+          <a href="#" class="hover:text-cogintech-blue/80">Natural Language Processing for Inspection Data Analysis</a>
+        </h2>
+        <p class="text-foreground/80 mb-4">
+          Discover how advanced NLP techniques enable engineers to query complex inspection databases 
+          using natural language, making critical information more accessible than ever.
+        </p>
+        <a href="#" class="text-cogintech-blue hover:underline font-medium">Read More →</a>
+      </article>
+
+      <article class="bg-white p-8 rounded-lg border border-border shadow-sm">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="px-3 py-1 bg-cogintech-teal/10 text-cogintech-teal rounded-full text-sm font-medium">Regulatory</span>
+          <span class="text-sm text-foreground/60">December 28, 2024</span>
+        </div>
+        <h2 class="text-2xl font-bold mb-4 text-cogintech-blue">
+          <a href="#" class="hover:text-cogintech-blue/80">AI and Regulatory Compliance in Oil & Gas Inspections</a>
+        </h2>
+        <p class="text-foreground/80 mb-4">
+          Understanding how AI-powered analysis meets and exceeds regulatory requirements, 
+          ensuring compliance while improving efficiency in inspection reporting.
+        </p>
+        <a href="#" class="text-cogintech-blue hover:underline font-medium">Read More →</a>
+      </article>
+    </section>
+
+    <section class="flex justify-center">
+      <nav class="flex items-center gap-2">
+        <button class="px-4 py-2 bg-cogintech-blue text-white rounded-lg font-medium">1</button>
+        <button class="px-4 py-2 text-foreground/60 hover:text-cogintech-blue">2</button>
+        <button class="px-4 py-2 text-foreground/60 hover:text-cogintech-blue">3</button>
+        <span class="px-2 text-foreground/60">...</span>
+        <button class="px-4 py-2 text-cogintech-blue hover:text-cogintech-blue/80">Next →</button>
+      </nav>
+    </section>
+
+    <section class="bg-cogintech-dark text-white p-8 rounded-lg text-center">
+      <h2 class="text-3xl font-bold mb-4">Stay Updated</h2>
+      <p class="text-xl text-white/80 mb-6">
+        Subscribe to our newsletter for the latest insights on AI and equipment integrity management.
+      </p>
+      <a 
+        href="mailto:newsletter@cogintech.ai?subject=Newsletter Subscription" 
+        class="inline-block bg-cogintech-orange hover:bg-cogintech-orange/90 text-white font-medium px-8 py-3 rounded-lg transition-colors"
+      >
+        Subscribe to Newsletter
+      </a>
+    </section>
+  </div>
+</PageLayout>

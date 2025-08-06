@@ -1,0 +1,81 @@
+---
+import '@/styles/globals.css';
+
+export interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  type?: string;
+  canonical?: string;
+  noindex?: boolean;
+}
+
+const { 
+  title, 
+  description = "CognitechAI - Революционная платформа искусственного интеллекта для автоматизации бизнес-процессов и повышения эффективности работы", 
+  image = "/dashboard.png",
+  type = "website",
+  canonical,
+  noindex = false
+} = Astro.props;
+
+const canonicalURL = canonical || (Astro.site ? new URL(Astro.url.pathname, Astro.site) : Astro.url.pathname);
+const imageURL = Astro.site ? new URL(image, Astro.site) : image;
+---
+
+<!-- Basic Meta Tags -->
+<meta charset="UTF-8" />
+<meta name="description" content={description} />
+{noindex && <meta name="robots" content="noindex, nofollow" />}
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="generator" content={Astro.generator} />
+
+<!-- Favicons -->
+<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="manifest" href="/site.webmanifest" />
+
+<!-- Canonical URL -->
+<link rel="canonical" href={canonicalURL} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content={type} />
+<meta property="og:url" content={canonicalURL} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={imageURL} />
+<meta property="og:site_name" content="CognitechAI" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content={canonicalURL} />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={imageURL} />
+
+<!-- Additional SEO -->
+<meta name="author" content="CognitechAI" />
+<meta name="theme-color" content="#1e293b" />
+
+<!-- Page Title -->
+<title>{title}</title>
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "CognitechAI",
+  "url": "https://cognitech.ai",
+  "logo": "https://cognitech.ai/dashboard.png",
+  "description": description,
+  "sameAs": [
+    "https://twitter.com/cognitech_ai",
+    "https://linkedin.com/company/cognitech-ai"
+  ]
+})} />
+
+<!-- Preconnect to external domains -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

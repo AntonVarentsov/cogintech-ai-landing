@@ -1,0 +1,106 @@
+---
+import Button from '@/components/ui/astro/Button.astro';
+---
+
+<section class="py-16 md:py-24 relative overflow-hidden">
+  <!-- Background decoration -->
+  <div class="absolute -top-24 -right-24 w-96 h-96 bg-cogintech-teal/10 rounded-full blur-3xl"></div>
+  <div class="absolute -bottom-32 -left-32 w-96 h-96 bg-cogintech-blue/10 rounded-full blur-3xl"></div>
+  
+  <div class="container relative">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="space-y-8 max-w-2xl">
+        <div class="space-y-6">
+          <h1 class="text-4xl md:text-5xl font-bold leading-tight lg:text-5xl">
+            <span class="gradient-text">Reduce Integrity Management and Inspection Costs</span>
+            <br />
+            by 30% with
+            <br />
+            AI-Powered Analysis
+          </h1>
+          <p class="text-xl text-foreground/80">
+            Accelerate report generation to <span class="font-semibold">24 hours</span> and improve accuracy to <span class="font-semibold">95%+</span> with our intelligent oil & gas equipment integrity analysis solution.
+          </p>
+        </div>
+        
+        <div class="flex flex-col sm:flex-row gap-4">
+          <Button 
+            size="lg" 
+            class="bg-cogintech-orange hover:bg-cogintech-orange/90 text-white font-medium px-8 py-6 scroll-to-form"
+          >
+            Request a Free Consultation
+            <svg class="ml-2 h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12,5 19,12 12,19"></polyline>
+            </svg>
+          </Button>
+          <Button 
+            variant="outline" 
+            size="lg" 
+            class="border-cogintech-blue text-cogintech-blue hover:bg-cogintech-blue/5 font-medium px-8 py-6 scroll-to-demo"
+          >
+            See How It Works
+          </Button>
+        </div>
+        
+        <div class="flex flex-wrap gap-8 pt-4 text-sm">
+          <div class="flex items-center">
+            <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mr-3">
+              <span class="text-green-600 font-bold">24h</span>
+            </div>
+            <span>Report Delivery</span>
+          </div>
+          <div class="flex items-center">
+            <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+              <span class="text-blue-600 font-bold">95%+</span>
+            </div>
+            <span>Accuracy Rate</span>
+          </div>
+          <div class="flex items-center">
+            <div class="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center mr-3">
+              <span class="text-orange-600 font-bold">30%</span>
+            </div>
+            <span>Cost Reduction</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="relative h-80 sm:h-96 md:h-[500px] rounded-xl overflow-hidden bg-gradient-to-b from-gray-50 to-cogintech-blue/10">
+        <video 
+          src="/lovable-uploads/import_pdf.mp4" 
+          title="AI-powered oil and gas infrastructure analysis" 
+          class="w-full h-auto max-h-full object-contain object-top"
+          autoplay 
+          muted 
+          loop
+          playsinline
+        ></video>
+        <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-cogintech-blue/20 to-transparent rounded-b-xl"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Scroll to form button
+    const scrollToFormBtns = document.querySelectorAll('.scroll-to-form');
+    scrollToFormBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.getElementById('lead-form')?.scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+    
+    // Scroll to demo button
+    const scrollToDemoBtns = document.querySelectorAll('.scroll-to-demo');
+    scrollToDemoBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.getElementById('demo')?.scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  });
+</script>

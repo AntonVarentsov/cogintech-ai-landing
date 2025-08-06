@@ -1,0 +1,16 @@
+---
+import { cn } from "@/utils";
+
+export interface Props {
+  class?: string;
+}
+
+const { class: className, ...props } = Astro.props;
+---
+
+<div 
+  class={cn("flex items-center p-6 pt-0", className)}
+  {...props}
+>
+  <slot />
+</div>

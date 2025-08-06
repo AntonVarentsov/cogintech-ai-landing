@@ -1,0 +1,16 @@
+---
+import { cn } from "@/utils";
+
+export interface Props {
+  class?: string;
+}
+
+const { class: className, ...props } = Astro.props;
+---
+
+<div
+  class={cn("animate-pulse rounded-md bg-muted", className)}
+  {...props}
+>
+  <slot />
+</div>

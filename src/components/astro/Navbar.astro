@@ -1,0 +1,273 @@
+---
+export interface Props {
+  currentPath?: string;
+}
+
+const { currentPath = '/' } = Astro.props;
+
+const companyPages = ['/about-us', '/our-team', '/careers', '/news', '/contact'];
+const resourcesPages = ['/case-studies', '/technology', '/blog', '/privacy-policy', '/terms-of-service', '/cookie-policy'];
+
+const isHomePage = currentPath === '/';
+const isCompanyPage = companyPages.includes(currentPath);
+const isResourcesPage = resourcesPages.includes(currentPath);
+---
+
+<nav class="py-3 border-b border-border sticky top-0 bg-background/95 backdrop-blur-sm z-50">
+  <div class="container flex justify-between items-center">
+    <!-- Logo -->
+    <div class="flex items-center">
+      <a href="/" class="flex items-center">
+        <img 
+          src="/lovable-uploads/ad840850-7ba3-4ea9-94b2-bcc7d798cc9b.png"
+          alt="Cognitive Industrial Technologies Logo"
+          class="h-10 mr-2 w-auto object-contain"
+          width="140"
+          height="40"
+        />
+      </a>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <div class="hidden lg:flex items-center space-x-6">
+      {isHomePage ? (
+        <>
+          <a href="#solution" class="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Solution</a>
+          <a href="#solution" class="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Demo</a>
+          <a href="#results" class="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Results</a>
+          <a href="#pricing" class="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Pricing</a>
+          
+          <!-- Company Dropdown -->
+          <div class="relative dropdown-menu">
+            <button class="flex items-center text-base text-foreground/80 hover:text-cogintech-blue transition-colors dropdown-trigger">
+              Company 
+              <svg class="ml-1 h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6,9 12,15 18,9"></polyline>
+              </svg>
+            </button>
+            <div class="dropdown-content absolute top-full left-0 mt-1 bg-background border border-border shadow-lg rounded-md py-1 min-w-[150px] z-50 hidden">
+              <a href="/about-us" class="block px-4 py-2 text-base text-foreground/80 hover:text-cogintech-blue hover:bg-accent transition-colors">About Us</a>
+              <a href="/our-team" class="block px-4 py-2 text-base text-foreground/80 hover:text-cogintech-blue hover:bg-accent transition-colors">Our Team</a>
+              <a href="/careers" class="block px-4 py-2 text-base text-foreground/80 hover:text-cogintech-blue hover:bg-accent transition-colors">Careers</a>
+              <a href="/news" class="block px-4 py-2 text-base text-foreground/80 hover:text-cogintech-blue hover:bg-accent transition-colors">News</a>
+              <a href="/contact" class="block px-4 py-2 text-base text-foreground/80 hover:text-cogintech-blue hover:bg-accent transition-colors">Contact</a>
+            </div>
+          </div>
+
+          <!-- Resources Dropdown -->
+          <div class="relative dropdown-menu">
+            <button class="flex items-center text-base text-foreground/80 hover:text-cogintech-blue transition-colors dropdown-trigger">
+              Resources 
+              <svg class="ml-1 h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6,9 12,15 18,9"></polyline>
+              </svg>
+            </button>
+            <div class="dropdown-content absolute top-full left-0 mt-1 bg-background border border-border shadow-lg rounded-md py-1 min-w-[150px] z-50 hidden">
+              <a href="/case-studies" class="block px-4 py-2 text-base text-foreground/80 hover:text-cogintech-blue hover:bg-accent transition-colors">Case Studies</a>
+              <a href="/technology" class="block px-4 py-2 text-base text-foreground/80 hover:text-cogintech-blue hover:bg-accent transition-colors">Technology</a>
+              <a href="/blog" class="block px-4 py-2 text-base text-foreground/80 hover:text-cogintech-blue hover:bg-accent transition-colors">Blog</a>
+              <a href="/privacy-policy" class="block px-4 py-2 text-base text-foreground/80 hover:text-cogintech-blue hover:bg-accent transition-colors">Privacy Policy</a>
+              <a href="/terms-of-service" class="block px-4 py-2 text-base text-foreground/80 hover:text-cogintech-blue hover:bg-accent transition-colors">Terms of Service</a>
+              <a href="/cookie-policy" class="block px-4 py-2 text-base text-foreground/80 hover:text-cogintech-blue hover:bg-accent transition-colors">Cookie Policy</a>
+            </div>
+          </div>
+        </>
+      ) : isCompanyPage ? (
+        <>
+          <a href="/" class="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Home</a>
+          <a href="/about-us" class="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">About Us</a>
+          <a href="/our-team" class="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Our Team</a>
+          <a href="/careers" class="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Careers</a>
+          <a href="/news" class="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">News</a>
+          <a href="/contact" class="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Contact</a>
+          
+          <!-- Resources Dropdown -->
+          <div class="relative dropdown-menu">
+            <button class="flex items-center text-base text-foreground/80 hover:text-cogintech-blue transition-colors dropdown-trigger">
+              Resources 
+              <svg class="ml-1 h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6,9 12,15 18,9"></polyline>
+              </svg>
+            </button>
+            <div class="dropdown-content absolute top-full left-0 mt-1 bg-background border border-border shadow-lg rounded-md py-1 min-w-[150px] z-50 hidden">
+              <a href="/case-studies" class="block px-4 py-2 text-base text-foreground/80 hover:text-cogintech-blue hover:bg-accent transition-colors">Case Studies</a>
+              <a href="/technology" class="block px-4 py-2 text-base text-foreground/80 hover:text-cogintech-blue hover:bg-accent transition-colors">Technology</a>
+              <a href="/blog" class="block px-4 py-2 text-base text-foreground/80 hover:text-cogintech-blue hover:bg-accent transition-colors">Blog</a>
+              <a href="/privacy-policy" class="block px-4 py-2 text-base text-foreground/80 hover:text-cogintech-blue hover:bg-accent transition-colors">Privacy Policy</a>
+              <a href="/terms-of-service" class="block px-4 py-2 text-base text-foreground/80 hover:text-cogintech-blue hover:bg-accent transition-colors">Terms of Service</a>
+              <a href="/cookie-policy" class="block px-4 py-2 text-base text-foreground/80 hover:text-cogintech-blue hover:bg-accent transition-colors">Cookie Policy</a>
+            </div>
+          </div>
+        </>
+      ) : isResourcesPage ? (
+        <>
+          <a href="/" class="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Home</a>
+          <a href="/case-studies" class="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Case Studies</a>
+          <a href="/technology" class="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Technology</a>
+          <a href="/blog" class="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Blog</a>
+          <a href="/privacy-policy" class="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Privacy Policy</a>
+          <a href="/terms-of-service" class="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Terms of Service</a>
+          
+          <!-- Company Dropdown -->
+          <div class="relative dropdown-menu">
+            <button class="flex items-center text-base text-foreground/80 hover:text-cogintech-blue transition-colors dropdown-trigger">
+              Company 
+              <svg class="ml-1 h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6,9 12,15 18,9"></polyline>
+              </svg>
+            </button>
+            <div class="dropdown-content absolute top-full left-0 mt-1 bg-background border border-border shadow-lg rounded-md py-1 min-w-[150px] z-50 hidden">
+              <a href="/about-us" class="block px-4 py-2 text-base text-foreground/80 hover:text-cogintech-blue hover:bg-accent transition-colors">About Us</a>
+              <a href="/our-team" class="block px-4 py-2 text-base text-foreground/80 hover:text-cogintech-blue hover:bg-accent transition-colors">Our Team</a>
+              <a href="/careers" class="block px-4 py-2 text-base text-foreground/80 hover:text-cogintech-blue hover:bg-accent transition-colors">Careers</a>
+              <a href="/news" class="block px-4 py-2 text-base text-foreground/80 hover:text-cogintech-blue hover:bg-accent transition-colors">News</a>
+              <a href="/contact" class="block px-4 py-2 text-base text-foreground/80 hover:text-cogintech-blue hover:bg-accent transition-colors">Contact</a>
+            </div>
+          </div>
+        </>
+      ) : (
+        <>
+          <a href="/" class="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Home</a>
+          <a href="/about-us" class="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">About Us</a>
+          <a href="/our-team" class="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Our Team</a>
+          <a href="/careers" class="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Careers</a>
+          <a href="/news" class="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">News</a>
+          <a href="/contact" class="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Contact</a>
+        </>
+      )}
+      <button 
+        class="bg-cogintech-orange hover:bg-cogintech-orange/90 text-white text-base px-4 py-2 rounded-md transition-colors try-free-btn"
+      >
+        Try For Free
+      </button>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button 
+      class="lg:hidden mobile-menu-toggle" 
+      aria-label="Toggle menu"
+    >
+      <svg class="h-5 w-5 menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+      <svg class="h-5 w-5 close-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="lg:hidden absolute top-16 left-0 right-0 bg-background border-b border-border z-50 mobile-menu hidden">
+    <div class="container py-3 flex flex-col space-y-2">
+      {isHomePage ? (
+        <>
+          <a href="#solution" class="py-1 text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Solution</a>
+          <a href="#solution" class="py-1 text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Demo</a>
+          <a href="#results" class="py-1 text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Results</a>
+          <a href="#pricing" class="py-1 text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Pricing</a>
+          
+          <!-- Company Section in Mobile -->
+          <div class="border-t border-border pt-3 mt-2">
+            <div class="text-xs font-semibold text-foreground mb-2">Company</div>
+            <a href="/about-us" class="block py-1 pl-3 text-base text-foreground/80 hover:text-cogintech-blue transition-colors">About Us</a>
+            <a href="/our-team" class="block py-1 pl-3 text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Our Team</a>
+            <a href="/careers" class="block py-1 pl-3 text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Careers</a>
+            <a href="/news" class="block py-1 pl-3 text-base text-foreground/80 hover:text-cogintech-blue transition-colors">News</a>
+            <a href="/contact" class="block py-1 pl-3 text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Contact</a>
+          </div>
+
+          <!-- Resources Section in Mobile -->
+          <div class="border-t border-border pt-3 mt-2">
+            <div class="text-xs font-semibold text-foreground mb-2">Resources</div>
+            <a href="/case-studies" class="block py-1 pl-3 text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Case Studies</a>
+            <a href="/technology" class="block py-1 pl-3 text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Technology</a>
+            <a href="/blog" class="block py-1 pl-3 text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Blog</a>
+            <a href="/privacy-policy" class="block py-1 pl-3 text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Privacy Policy</a>
+            <a href="/terms-of-service" class="block py-1 pl-3 text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Terms of Service</a>
+            <a href="/cookie-policy" class="block py-1 pl-3 text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Cookie Policy</a>
+          </div>
+        </>
+      ) : (
+        <>
+          <a href="/" class="py-1 text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Home</a>
+          <a href="/about-us" class="py-1 text-base text-foreground/80 hover:text-cogintech-blue transition-colors">About Us</a>
+          <a href="/our-team" class="py-1 text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Our Team</a>
+          <a href="/careers" class="py-1 text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Careers</a>
+          <a href="/news" class="py-1 text-base text-foreground/80 hover:text-cogintech-blue transition-colors">News</a>
+          <a href="/contact" class="py-1 text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Contact</a>
+        </>
+      )}
+      <button class="bg-cogintech-orange hover:bg-cogintech-orange/90 text-white w-full text-base mt-3 px-4 py-2 rounded-md transition-colors try-free-btn">
+        Try For Free
+      </button>
+    </div>
+  </div>
+</nav>
+
+<script>
+  // Dropdown functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const dropdownMenus = document.querySelectorAll('.dropdown-menu');
+    
+    dropdownMenus.forEach(menu => {
+      const trigger = menu.querySelector('.dropdown-trigger');
+      const content = menu.querySelector('.dropdown-content');
+      
+      if (trigger && content) {
+        trigger.addEventListener('click', (e) => {
+          e.preventDefault();
+          content.classList.toggle('hidden');
+        });
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+          if (e.target && !menu.contains(e.target as Node)) {
+            content.classList.add('hidden');
+          }
+        });
+      }
+    });
+    
+    // Mobile menu functionality
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const menuIcon = document.querySelector('.menu-icon');
+    const closeIcon = document.querySelector('.close-icon');
+    
+    if (mobileMenuToggle && mobileMenu && menuIcon && closeIcon) {
+      mobileMenuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        menuIcon.classList.toggle('hidden');
+        closeIcon.classList.toggle('hidden');
+      });
+      
+      // Close mobile menu when clicking on links
+      const mobileLinks = mobileMenu.querySelectorAll('a');
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          menuIcon.classList.remove('hidden');
+          closeIcon.classList.add('hidden');
+        });
+      });
+    }
+    
+    // Try Free button functionality
+    const tryFreeBtns = document.querySelectorAll('.try-free-btn');
+    tryFreeBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const currentPath = window.location.pathname;
+        if (currentPath === '/') {
+          document.getElementById('pricing')?.scrollIntoView({
+            behavior: 'smooth'
+          });
+        } else {
+          window.location.href = '/#pricing';
+        }
+      });
+    });
+  });
+</script>

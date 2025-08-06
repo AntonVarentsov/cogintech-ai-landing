@@ -1,0 +1,143 @@
+---
+// NewHero component - exact copy from original
+---
+
+<section class="py-16 md:py-24 relative overflow-hidden">
+  <!-- Background decoration -->
+  <div class="absolute -top-24 -right-24 w-96 h-96 bg-cogintech-teal/10 rounded-full blur-3xl"></div>
+  <div class="absolute -bottom-32 -left-32 w-96 h-96 bg-cogintech-blue/10 rounded-full blur-3xl"></div>
+  
+  <div class="container relative">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+      <div class="space-y-8 max-w-2xl">
+        <div class="space-y-6">
+          <h1 class="text-4xl md:text-5xl font-bold leading-tight lg:text-5xl">
+            <span class="text-red-600">Stop losing $40M/yr</span><br />
+            to sudden failures
+          </h1>
+          <p class="text-xl text-foreground/80">
+            Cut unplanned downtime by <span class="font-semibold text-cogintech-orange">30%</span> and save <span class="font-semibold text-green-600">$10M</span> with AI-powered integrity management.
+          </p>
+        </div>
+        
+        <div class="flex flex-col sm:flex-row gap-4">
+          <button 
+            class="bg-cogintech-orange hover:bg-cogintech-orange/90 text-white font-medium px-8 py-6 rounded-lg transition-colors scroll-to-pricing flex items-center justify-center"
+          >
+            Try Sandbox
+            <svg class="ml-2 h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12,5 19,12 12,19"></polyline>
+            </svg>
+          </button>
+          <button 
+            class="border border-cogintech-blue text-cogintech-blue hover:bg-cogintech-blue/5 font-medium px-8 py-6 rounded-lg transition-colors scroll-to-demo"
+          >
+            Book 15-min Live Demo
+          </button>
+        </div>
+      </div>
+      
+      <div 
+        class="relative aspect-[2/1] rounded-xl overflow-hidden bg-white border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity shadow-sm"
+        onclick="openVideoModal()"
+        tabindex="0"
+        role="button"
+        aria-label="Открыть видео демонстрацию загрузки файла в дашборд"
+      >
+        <video 
+          src="/lovable-uploads/file_to_dashboard.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+          class="w-full h-full object-contain"
+          aria-label="Демонстрация: перетаскивание файла в дашборд"
+        ></video>
+      </div>
+    </div>
+    
+    <!-- Statistics row spanning full width -->
+    <div class="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+      <div class="flex flex-col items-center">
+        <div class="w-16 h-16 rounded-full bg-red-100 flex items-center justify-center mb-4">
+          <span class="text-red-600 font-bold text-lg">-30%</span>
+        </div>
+        <span class="text-lg font-medium">Downtime Reduction</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mb-4">
+          <span class="text-green-600 font-bold text-lg">$10M</span>
+        </div>
+        <span class="text-lg font-medium">Annual Savings</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-4">
+          <span class="text-blue-600 font-bold text-lg">95%+</span>
+        </div>
+        <span class="text-lg font-medium">Accuracy Rate</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="video-modal" class="fixed inset-0 bg-black/90 flex items-center justify-center z-50 hidden" onclick="closeVideoModal()">
+    <div class="relative w-full h-full flex items-center justify-center p-4">
+      <button 
+        onclick="closeVideoModal()"
+        class="absolute top-4 right-4 z-10 bg-white/20 hover:bg-white/40 text-white rounded-full p-3 transition-colors"
+        aria-label="Закрыть видео"
+        title="Закрыть видео"
+      >
+        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="w-full h-full flex items-center justify-center">
+        <video 
+          src="/lovable-uploads/file_to_dashboard.mp4" 
+          autoplay
+          muted
+          loop
+          playsinline
+          class="w-auto h-auto max-w-full max-h-full object-contain" 
+          style="max-width: 95vw; max-height: 95vh;"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function openVideoModal() {
+    document.getElementById('video-modal')?.classList.remove('hidden');
+  }
+  
+  function closeVideoModal() {
+    document.getElementById('video-modal')?.classList.add('hidden');
+  }
+  
+  // Close modal on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeVideoModal();
+    }
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const scrollToPricingBtns = document.querySelectorAll('.scroll-to-pricing');
+    scrollToPricingBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+    
+    const scrollToDemoBtns = document.querySelectorAll('.scroll-to-demo');
+    scrollToDemoBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.getElementById('book-demo')?.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  });
+</script>

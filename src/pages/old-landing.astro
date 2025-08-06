@@ -1,0 +1,23 @@
+---
+import MainLayout from '@/layouts/MainLayout.astro';
+import Hero from '@/components/astro/Hero.astro';
+import ProblemStatement from '@/components/astro/ProblemStatement.astro';
+import Solution from '@/components/astro/Solution.astro';
+import DemoSection from '@/components/react-islands/DemoSection.tsx';
+import Testimonials from '@/components/astro/Testimonials.astro';
+import PricingSection from '@/components/astro/PricingSection.astro';
+import LeadForm from '@/components/react-islands/LeadForm.tsx';
+---
+
+<MainLayout 
+  title="AI Integrity Platform – cut failures 30% | Cogintech"
+  description="Stop losing $40M to unplanned shutdowns. Book a 15-min demo."
+>
+  <Hero />
+  <ProblemStatement />
+  <Solution />
+  <DemoSection client:load />
+  <Testimonials />
+  <PricingSection />
+  <LeadForm client:load />
+</MainLayout>

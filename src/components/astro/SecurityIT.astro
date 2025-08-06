@@ -1,0 +1,211 @@
+---
+const features = [
+  {
+    title: "Flexible Deployment",
+    description: "On-premises, cloud, or hybrid deployment options to meet your security requirements.",
+    icon: "server"
+  },
+  {
+    title: "Enterprise Security",
+    description: "Encryption at rest and in transit, with SOC-2 compliance certification in progress.",
+    icon: "lock"
+  },
+  {
+    title: "Data Protection",
+    description: "Your data stays under your control. We provide the tools, you own the insights.",
+    icon: "shield"
+  },
+  {
+    title: "API Integration",
+    description: "Seamless integration with existing systems through comprehensive REST APIs.",
+    icon: "file-text"
+  }
+];
+---
+
+<section class="py-16 bg-gradient-to-b from-background to-gray-50/50">
+  <div class="container">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold mb-4">
+        Built for <span class="text-cogintech-blue">enterprise security</span>
+      </h2>
+      <p class="text-xl text-foreground/70 max-w-3xl mx-auto">
+        IT and InfoSec approved architecture with enterprise-grade security and compliance.
+      </p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+      {features.map((feature, index) => (
+        <div class="flex items-start space-x-4 p-6 rounded-xl bg-white shadow-sm border border-gray-100">
+          <div class="w-12 h-12 bg-cogintech-blue/10 rounded-lg flex items-center justify-center flex-shrink-0">
+            {feature.icon === "server" && (
+              <svg class="h-6 w-6 text-cogintech-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="4" rx="1" ry="1"></rect>
+                <rect x="2" y="9" width="20" height="4" rx="1" ry="1"></rect>
+                <rect x="2" y="15" width="20" height="4" rx="1" ry="1"></rect>
+                <line x1="6" y1="5" x2="6.01" y2="5"></line>
+                <line x1="6" y1="11" x2="6.01" y2="11"></line>
+                <line x1="6" y1="17" x2="6.01" y2="17"></line>
+              </svg>
+            )}
+            {feature.icon === "lock" && (
+              <svg class="h-6 w-6 text-cogintech-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <circle cx="12" cy="16" r="1"></circle>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            )}
+            {feature.icon === "shield" && (
+              <svg class="h-6 w-6 text-cogintech-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            )}
+            {feature.icon === "file-text" && (
+              <svg class="h-6 w-6 text-cogintech-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14,2 14,8 20,8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10,9 9,9 8,9"></polyline>
+              </svg>
+            )}
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-2">{feature.title}</h3>
+            <p class="text-foreground/70">{feature.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+    
+    <div class="text-center">
+      <button 
+        class="border border-cogintech-blue text-cogintech-blue hover:bg-cogintech-blue/5 font-medium px-8 py-3 rounded-lg transition-colors"
+        onclick="openApiModal()"
+      >
+        View API Documentation
+      </button>
+    </div>
+  </div>
+
+  <!-- API Documentation Modal -->
+  <div id="api-modal" class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 hidden" onclick="closeApiModal()">
+    <div class="bg-white rounded-lg p-6 max-w-md w-full mx-4" onclick="event.stopPropagation()">
+      <div class="flex justify-between items-center mb-4">
+        <h3 class="text-lg font-semibold">API Documentation Coming Soon</h3>
+        <button onclick="closeApiModal()" class="text-gray-500 hover:text-gray-700">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      
+      <div class="space-y-6">
+        <p class="text-foreground/70">
+          Our comprehensive API documentation is in development. Subscribe to get notified when it's available!
+        </p>
+        
+        <form onsubmit="handleApiSubscription(event)" class="space-y-4">
+          <div>
+            <label for="api-name" class="block text-sm font-medium mb-1">Full Name</label>
+            <input 
+              id="api-name" 
+              name="name" 
+              type="text"
+              required 
+              placeholder="Enter your name"
+              class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cogintech-blue/50"
+            />
+          </div>
+          
+          <div>
+            <label for="api-email" class="block text-sm font-medium mb-1">Email</label>
+            <input 
+              id="api-email" 
+              name="email" 
+              type="email"
+              required 
+              placeholder="Enter your email"
+              class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cogintech-blue/50"
+            />
+          </div>
+          
+          <div class="space-y-3">
+            <div class="flex items-start space-x-3">
+              <input 
+                id="api-privacy-policy"
+                type="checkbox"
+                required
+                class="mt-1"
+              />
+              <label for="api-privacy-policy" class="text-sm text-foreground/70 leading-relaxed">
+                I agree to the{' '}
+                <a 
+                  href="/privacy-policy" 
+                  class="text-cogintech-blue hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Privacy Policy
+                </a>
+              </label>
+            </div>
+            
+            <div class="flex items-start space-x-3">
+              <input 
+                id="api-terms-of-service"
+                type="checkbox"
+                required
+                class="mt-1"
+              />
+              <label for="api-terms-of-service" class="text-sm text-foreground/70 leading-relaxed">
+                I agree to the{' '}
+                <a 
+                  href="/terms-of-service" 
+                  class="text-cogintech-blue hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Terms of Service
+                </a>
+              </label>
+            </div>
+          </div>
+
+          <button 
+            type="submit" 
+            class="w-full bg-cogintech-blue hover:bg-cogintech-blue/90 text-white font-medium py-2 px-4 rounded-lg transition-colors"
+          >
+            Subscribe for Updates
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function openApiModal() {
+    document.getElementById('api-modal')?.classList.remove('hidden');
+  }
+  
+  function closeApiModal() {
+    document.getElementById('api-modal')?.classList.add('hidden');
+  }
+  
+  function handleApiSubscription(event) {
+    event.preventDefault();
+    // Simple form handling - would normally integrate with backend
+    alert('Thank you for subscribing! We\'ll notify you when the API documentation is ready.');
+    closeApiModal();
+    event.target.reset();
+  }
+  
+  // Close modal on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeApiModal();
+    }
+  });
+</script>

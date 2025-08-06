@@ -1,0 +1,20 @@
+---
+import { cn } from "@/utils";
+
+export interface Props {
+  class?: string;
+  as?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+}
+
+const { class: className, as: Tag = "h3", ...props } = Astro.props;
+---
+
+<Tag 
+  class={cn(
+    "text-2xl font-semibold leading-none tracking-tight",
+    className
+  )}
+  {...props}
+>
+  <slot />
+</Tag>
