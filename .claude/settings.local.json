@@ -26,7 +26,8 @@
       "Bash(move tsconfig.json react-version )",
       "Bash(move tsconfig.node.json react-version )",
       "Bash(move components.json react-version )",
-      "Bash(move postcss.config.js react-version )"
+      "Bash(move postcss.config.js react-version )",
+      "Bash(taskkill:*)"
     ],
     "deny": []
   }

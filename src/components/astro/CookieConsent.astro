@@ -1,0 +1,73 @@
+---
+// Cookie Consent Banner Component for Astro
+---
+
+<div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-50 bg-card border-t border-border shadow-lg hidden">
+  <div class="container flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 py-4">
+    <div class="flex-1">
+      <p class="text-sm text-muted-foreground">
+        We use cookies to improve our website performance, analyze traffic, and personalize content. 
+        By continuing to use our site, you agree to our 
+        <a href="/cookie-policy" class="text-primary hover:underline">
+          cookie policy
+        </a>.
+      </p>
+    </div>
+    <div class="flex items-center gap-3">
+      <button
+        id="decline-cookies"
+        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 px-3 text-sm"
+      >
+        Decline
+      </button>
+      <button
+        id="accept-cookies"
+        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-9 px-3 text-sm"
+      >
+        Accept All
+      </button>
+      <button
+        id="close-cookies"
+        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 w-9 p-1"
+      >
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="m18 6-12 12"/>
+          <path d="m6 6 12 12"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const cookieBanner = document.getElementById('cookie-banner');
+    const acceptBtn = document.getElementById('accept-cookies');
+    const declineBtn = document.getElementById('decline-cookies');
+    const closeBtn = document.getElementById('close-cookies');
+
+    // Check if user has already made a choice
+    const consent = localStorage.getItem('cookieConsent');
+    if (!consent) {
+      cookieBanner?.classList.remove('hidden');
+    }
+
+    // Accept cookies
+    acceptBtn?.addEventListener('click', function() {
+      localStorage.setItem('cookieConsent', 'accepted');
+      cookieBanner?.classList.add('hidden');
+    });
+
+    // Decline cookies
+    declineBtn?.addEventListener('click', function() {
+      localStorage.setItem('cookieConsent', 'declined');
+      cookieBanner?.classList.add('hidden');
+    });
+
+    // Close banner (same as decline)
+    closeBtn?.addEventListener('click', function() {
+      localStorage.setItem('cookieConsent', 'declined');
+      cookieBanner?.classList.add('hidden');
+    });
+  });
+</script>

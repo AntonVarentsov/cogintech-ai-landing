@@ -1,107 +1,75 @@
 ---
 import PageLayout from '@/layouts/PageLayout.astro';
+
+const newsItems = [
+  {
+    title: "Cogintech Launches Revolutionary AI Platform for Oil & Gas Equipment Integrity",
+    date: "May 15, 2025",
+    summary: "Our new platform reduces analysis time by 95% while improving accuracy to industry-leading levels.",
+    image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12"
+  },
+  {
+    title: "Industry Leader XYZ Oil Partners with Cogintech for AI-Powered Equipment Analysis",
+    date: "April 3, 2025", 
+    summary: "XYZ Oil has selected Cogintech's AI solution to enhance their equipment integrity management processes.",
+    image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07"
+  },
+  {
+    title: "Cogintech Expands Operations to Middle East",
+    date: "March 10, 2025",
+    summary: "Our new office in Dubai will serve the growing demand for advanced AI solutions in the Middle East region.",
+    image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c"
+  },
+  {
+    title: "Cogintech CEO to Speak at Global Oil & Gas Technology Summit",
+    date: "February 22, 2025",
+    summary: "Alex Johnson will present on 'The Future of AI in Equipment Integrity Management' at next month's summit.",
+    image: "https://images.unsplash.com/photo-1591115765373-5207764f72e4"
+  }
+];
 ---
 
 <PageLayout 
-  title="News & Updates" 
-  description="Latest news and updates from Cogintech"
+  title="Latest AI & Oil Gas Industry News | Cogintech"
+  description="Stay updated with Cogintech's latest developments, partnerships, and industry insights in AI-powered equipment integrity management for oil & gas sector."
+  keywords="Cogintech news, AI oil gas news, equipment integrity news, industrial AI updates, NDT technology news"
+  ogTitle="Latest AI & Oil Gas Industry News"
+  ogDescription="Stay updated with Cogintech's latest developments and industry insights in AI-powered equipment integrity."
+  ogImage="/lovable-uploads/22fc09d7-63fe-4527-885a-d78c38ec2e86.png"
 >
-  <div class="space-y-12">
-    <section>
-      <div class="space-y-8">
-        <article class="bg-white p-8 rounded-lg border border-border shadow-sm">
-          <div class="flex items-center gap-4 mb-4">
-            <span class="px-3 py-1 bg-cogintech-blue/10 text-cogintech-blue rounded-full text-sm font-medium">Product Update</span>
-            <span class="text-sm text-foreground/60">January 15, 2025</span>
-          </div>
-          <h2 class="text-2xl font-bold mb-4 text-cogintech-blue">Multi-Agent AI System Achieves 96.5% Accuracy Rate</h2>
-          <p class="text-foreground/80 mb-4">
-            Our latest AI system update has achieved a new milestone with 96.5% accuracy in equipment integrity analysis. 
-            The improvement comes from enhanced cross-verification algorithms and expanded training data from real-world inspections.
-          </p>
-          <p class="text-foreground/80">
-            This breakthrough enables even more reliable automated analysis, further reducing the need for manual review 
-            while maintaining the highest safety standards required in oil & gas operations.
-          </p>
-        </article>
-
-        <article class="bg-white p-8 rounded-lg border border-border shadow-sm">
-          <div class="flex items-center gap-4 mb-4">
-            <span class="px-3 py-1 bg-cogintech-teal/10 text-cogintech-teal rounded-full text-sm font-medium">Partnership</span>
-            <span class="text-sm text-foreground/60">December 20, 2024</span>
-          </div>
-          <h2 class="text-2xl font-bold mb-4 text-cogintech-blue">Strategic Partnership with Leading Inspection Services Provider</h2>
-          <p class="text-foreground/80 mb-4">
-            We're excited to announce our partnership with a major inspection services company, expanding our reach 
-            to serve more oil & gas operators across North America and Europe.
-          </p>
-          <p class="text-foreground/80">
-            This collaboration will accelerate the adoption of AI-powered integrity analysis, bringing our 24-hour 
-            report delivery and cost reduction benefits to a broader market.
-          </p>
-        </article>
-
-        <article class="bg-white p-8 rounded-lg border border-border shadow-sm">
-          <div class="flex items-center gap-4 mb-4">
-            <span class="px-3 py-1 bg-cogintech-orange/10 text-cogintech-orange rounded-full text-sm font-medium">Funding</span>
-            <span class="text-sm text-foreground/60">November 30, 2024</span>
-          </div>
-          <h2 class="text-2xl font-bold mb-4 text-cogintech-blue">Series A Funding Round Successfully Completed</h2>
-          <p class="text-foreground/80 mb-4">
-            Cogintech has successfully raised $12M in Series A funding led by industrial technology investors. 
-            The funding will accelerate product development and market expansion.
-          </p>
-          <p class="text-foreground/80">
-            With this investment, we're expanding our engineering team and enhancing our AI capabilities 
-            to serve the growing demand for automated integrity analysis solutions.
-          </p>
-        </article>
-
-        <article class="bg-white p-8 rounded-lg border border-border shadow-sm">
-          <div class="flex items-center gap-4 mb-4">
-            <span class="px-3 py-1 bg-cogintech-blue/10 text-cogintech-blue rounded-full text-sm font-medium">Industry Recognition</span>
-            <span class="text-sm text-foreground/60">October 15, 2024</span>
-          </div>
-          <h2 class="text-2xl font-bold mb-4 text-cogintech-blue">Named "Innovation of the Year" at Oil & Gas Technology Conference</h2>
-          <p class="text-foreground/80 mb-4">
-            Our AI-powered inspection analysis platform received the "Innovation of the Year" award at the 
-            annual Oil & Gas Technology Conference, recognizing our impact on industry efficiency and safety.
-          </p>
-          <p class="text-foreground/80">
-            The award highlights our contribution to transforming traditional inspection processes and 
-            delivering measurable cost savings to operators worldwide.
-          </p>
-        </article>
-
-        <article class="bg-white p-8 rounded-lg border border-border shadow-sm">
-          <div class="flex items-center gap-4 mb-4">
-            <span class="px-3 py-1 bg-cogintech-teal/10 text-cogintech-teal rounded-full text-sm font-medium">Product Launch</span>
-            <span class="text-sm text-foreground/60">September 10, 2024</span>
-          </div>
-          <h2 class="text-2xl font-bold mb-4 text-cogintech-blue">Natural Language Query Interface Now Available</h2>
-          <p class="text-foreground/80 mb-4">
-            Engineers can now interact with inspection data using natural language queries, making it easier 
-            than ever to extract critical insights from historical and current inspection records.
-          </p>
-          <p class="text-foreground/80">
-            This new interface democratizes access to complex inspection data, enabling faster decision-making 
-            and more efficient maintenance planning across operations teams.
-          </p>
-        </article>
+  <main class="flex-1">
+    <section class="section">
+      <div class="container">
+        <h1 class="text-4xl font-bold mb-8">Latest News</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {newsItems.map((news, index) => (
+            <div class="bg-card rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow flex flex-col">
+              <div class="h-64 overflow-hidden">
+                <img 
+                  src={news.image} 
+                  alt={news.title} 
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="p-6 flex-1 flex flex-col">
+                <div class="mb-2 text-sm text-foreground/60">{news.date}</div>
+                <h3 class="text-xl font-bold mb-3">{news.title}</h3>
+                <p class="text-foreground/80 mb-4 flex-1">{news.summary}</p>
+                <button class="text-cogintech-blue hover:text-cogintech-blue/80 font-medium self-start">
+                  Read More →
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+        
+        <div class="mt-12 flex justify-center">
+          <button class="bg-cogintech-blue hover:bg-cogintech-blue/90 text-white font-medium px-8 py-3 rounded-md">
+            View All News
+          </button>
+        </div>
       </div>
     </section>
-
-    <section class="bg-cogintech-dark text-white p-8 rounded-lg text-center">
-      <h2 class="text-3xl font-bold mb-4">Stay Updated</h2>
-      <p class="text-xl text-white/80 mb-6">
-        Get the latest news and product updates delivered to your inbox.
-      </p>
-      <a 
-        href="mailto:news@cogintech.ai?subject=Newsletter Subscription" 
-        class="inline-block bg-cogintech-orange hover:bg-cogintech-orange/90 text-white font-medium px-8 py-3 rounded-lg transition-colors"
-      >
-        Subscribe to Newsletter
-      </a>
-    </section>
-  </div>
+  </main>
 </PageLayout>

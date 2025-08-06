@@ -1,128 +1,105 @@
 ---
 import PageLayout from '@/layouts/PageLayout.astro';
+
+const technologies = [
+  {
+    title: "Multi-Agent AI Analysis",
+    description: "Our system employs multiple specialized AI agents that collaboratively analyze inspection data, cross-verify findings, and generate comprehensive reports with higher accuracy than traditional single-review methods.",
+    icon: "🤖"
+  },
+  {
+    title: "Computer Vision",
+    description: "Advanced computer vision algorithms detect anomalies in visual inspection data, identifying corrosion, cracks, and other defects with pixel-level precision across thousands of images.",
+    icon: "👁️"
+  },
+  {
+    title: "Natural Language Processing",
+    description: "Our NLP technology enables engineers to query equipment history and inspection data using everyday language, making insights accessible without complex database knowledge.",
+    icon: "💬"
+  },
+  {
+    title: "Predictive Analytics",
+    description: "By analyzing historical data patterns, our system forecasts potential equipment failures and maintenance needs, allowing for proactive rather than reactive integrity management.",
+    icon: "📈"
+  },
+  {
+    title: "Centralized Data Repository",
+    description: "Our platform consolidates inspection data from multiple sources into a unified, searchable database, eliminating information silos and providing a complete equipment history.",
+    icon: "🗄️"
+  },
+  {
+    title: "Secure Cloud Infrastructure",
+    description: "All data is stored and processed in enterprise-grade secure cloud environments with multiple redundancies and industry-leading encryption standards.",
+    icon: "☁️"
+  }
+];
 ---
 
 <PageLayout 
-  title="Technology" 
-  description="Learn about the AI technology powering Cogintech's inspection analysis platform"
+  title="AI Technology for Equipment Integrity - Computer Vision & ML | Cogintech"
+  description="Discover our multi-agent AI analysis, computer vision, and predictive analytics technology for oil & gas equipment integrity management. 95%+ accuracy."
+  keywords="AI technology, computer vision, predictive analytics, multi-agent AI, equipment integrity, NDT automation, machine learning oil gas"
+  ogTitle="AI Technology for Equipment Integrity - Computer Vision & ML"
+  ogDescription="Discover our multi-agent AI analysis, computer vision, and predictive analytics technology for equipment integrity."
+  ogImage="/lovable-uploads/22fc09d7-63fe-4527-885a-d78c38ec2e86.png"
 >
-  <div class="space-y-12">
-    <section class="text-center">
-      <p class="text-lg text-foreground/80 max-w-3xl mx-auto">
-        Our cutting-edge AI technology combines multiple specialized agents, advanced machine learning, 
-        and deep industry knowledge to deliver unparalleled accuracy in equipment integrity analysis.
-      </p>
-    </section>
-
-    <section>
-      <h2 class="text-3xl font-bold mb-8 text-cogintech-blue">Multi-Agent AI Architecture</h2>
-      <div class="bg-gradient-to-br from-cogintech-blue/5 to-cogintech-teal/5 p-8 rounded-lg mb-8">
-        <p class="text-lg text-foreground/80 mb-6">
-          At the heart of our platform is a sophisticated multi-agent AI system where specialized AI agents 
-          work together to analyze inspection data, cross-verify results, and ensure maximum accuracy.
+  <main class="flex-1">
+    <section class="section">
+      <div class="container">
+        <h1 class="text-4xl font-bold mb-4 text-center">Our Technology</h1>
+        <p class="text-lg text-center max-w-3xl mx-auto mb-12">
+          At Cogintech, we've developed a suite of AI-powered technologies specifically designed for equipment integrity management in the oil and gas industry.
         </p>
         
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div class="bg-white p-6 rounded-lg border border-border">
-            <h3 class="text-xl font-semibold mb-3 text-cogintech-blue">Analysis Agent</h3>
-            <p class="text-foreground/80">Processes raw inspection data and identifies potential integrity issues using trained models.</p>
-          </div>
-          <div class="bg-white p-6 rounded-lg border border-border">
-            <h3 class="text-xl font-semibold mb-3 text-cogintech-teal">Verification Agent</h3>
-            <p class="text-foreground/80">Cross-checks analysis results against historical data and industry standards.</p>
-          </div>
-          <div class="bg-white p-6 rounded-lg border border-border">
-            <h3 class="text-xl font-semibold mb-3 text-cogintech-orange">Reporting Agent</h3>
-            <p class="text-foreground/80">Generates comprehensive reports with recommendations and compliance information.</p>
-          </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          {technologies.map((tech, index) => (
+            <div class="bg-card rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+              <div class="text-4xl mb-4">{tech.icon}</div>
+              <h3 class="text-xl font-bold mb-3">{tech.title}</h3>
+              <p class="text-foreground/80">{tech.description}</p>
+            </div>
+          ))}
         </div>
-      </div>
-    </section>
-
-    <section>
-      <h2 class="text-3xl font-bold mb-8 text-cogintech-blue">Core Technologies</h2>
-      <div class="space-y-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div class="bg-white p-8 rounded-lg border border-border shadow-sm">
-            <h3 class="text-2xl font-semibold mb-4 text-cogintech-blue">Machine Learning</h3>
-            <ul class="space-y-3 text-foreground/80">
-              <li>• Deep neural networks trained on 10M+ inspection data points</li>
-              <li>• Computer vision for image and video analysis</li>
-              <li>• Time series analysis for trend identification</li>
-              <li>• Ensemble methods for improved accuracy</li>
-            </ul>
-          </div>
+        
+        <div class="bg-gradient-to-r from-cogintech-blue/10 to-cogintech-teal/10 rounded-lg p-8">
+          <h2 class="text-2xl font-bold mb-6 text-center">How Our Technology Process Works</h2>
           
-          <div class="bg-white p-8 rounded-lg border border-border shadow-sm">
-            <h3 class="text-2xl font-semibold mb-4 text-cogintech-teal">Natural Language Processing</h3>
-            <ul class="space-y-3 text-foreground/80">
-              <li>• Advanced language models for report understanding</li>
-              <li>• Natural language query interface</li>
-              <li>• Automated text extraction and classification</li>
-              <li>• Multi-language support for global operations</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="bg-cogintech-dark/5 p-8 rounded-lg">
-          <h3 class="text-2xl font-semibold mb-6 text-cogintech-blue">Data Security & Privacy</h3>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <h4 class="text-xl font-semibold mb-3 text-cogintech-teal">Enterprise Security</h4>
-              <ul class="space-y-2 text-foreground/80">
-                <li>• End-to-end encryption</li>
-                <li>• SOC 2 Type II compliance</li>
-                <li>• Role-based access control</li>
-                <li>• Audit logging and monitoring</li>
-              </ul>
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div class="bg-white rounded-lg p-6 relative">
+              <div class="w-10 h-10 rounded-full bg-cogintech-blue text-white flex items-center justify-center font-bold mb-4">1</div>
+              <h3 class="text-lg font-semibold mb-2">Data Ingestion</h3>
+              <p class="text-sm">We ingest inspection data from multiple sources, including reports, images, and sensor readings.</p>
+              <div class="absolute -right-4 top-1/2 transform -translate-y-1/2 hidden md:block">
+                <div class="w-8 h-2 bg-cogintech-blue"></div>
+              </div>
             </div>
-            <div>
-              <h4 class="text-xl font-semibold mb-3 text-cogintech-orange">Data Privacy</h4>
-              <ul class="space-y-2 text-foreground/80">
-                <li>• GDPR and CCPA compliant</li>
-                <li>• Data anonymization options</li>
-                <li>• On-premises deployment available</li>
-                <li>• Customer data ownership guarantee</li>
-              </ul>
+            
+            <div class="bg-white rounded-lg p-6 relative">
+              <div class="w-10 h-10 rounded-full bg-cogintech-blue text-white flex items-center justify-center font-bold mb-4">2</div>
+              <h3 class="text-lg font-semibold mb-2">AI Processing</h3>
+              <p class="text-sm">Our multi-agent AI system analyzes the data, identifying patterns, anomalies, and critical findings.</p>
+              <div class="absolute -right-4 top-1/2 transform -translate-y-1/2 hidden md:block">
+                <div class="w-8 h-2 bg-cogintech-blue"></div>
+              </div>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6 relative">
+              <div class="w-10 h-10 rounded-full bg-cogintech-blue text-white flex items-center justify-center font-bold mb-4">3</div>
+              <h3 class="text-lg font-semibold mb-2">Verification</h3>
+              <p class="text-sm">Multiple AI agents cross-verify findings to ensure accuracy and eliminate false positives.</p>
+              <div class="absolute -right-4 top-1/2 transform -translate-y-1/2 hidden md:block">
+                <div class="w-8 h-2 bg-cogintech-blue"></div>
+              </div>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6">
+              <div class="w-10 h-10 rounded-full bg-cogintech-blue text-white flex items-center justify-center font-bold mb-4">4</div>
+              <h3 class="text-lg font-semibold mb-2">Reporting</h3>
+              <p class="text-sm">Comprehensive reports with prioritized findings are generated and delivered within 24 hours.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <section>
-      <h2 class="text-3xl font-bold mb-8 text-cogintech-blue">Performance Metrics</h2>
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-        <div class="text-center p-6 bg-white rounded-lg border border-border shadow-sm">
-          <div class="text-4xl font-bold text-cogintech-blue mb-2">95%+</div>
-          <div class="text-foreground/80">Analysis Accuracy</div>
-        </div>
-        <div class="text-center p-6 bg-white rounded-lg border border-border shadow-sm">
-          <div class="text-4xl font-bold text-cogintech-teal mb-2">24hrs</div>
-          <div class="text-foreground/80">Report Delivery</div>
-        </div>
-        <div class="text-center p-6 bg-white rounded-lg border border-border shadow-sm">
-          <div class="text-4xl font-bold text-cogintech-orange mb-2">99.9%</div>
-          <div class="text-foreground/80">System Uptime</div>
-        </div>
-        <div class="text-center p-6 bg-white rounded-lg border border-border shadow-sm">
-          <div class="text-4xl font-bold text-cogintech-blue mb-2">10M+</div>
-          <div class="text-foreground/80">Data Points Processed</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-cogintech-blue text-white p-8 rounded-lg text-center">
-      <h2 class="text-3xl font-bold mb-4">Experience Our Technology</h2>
-      <p class="text-xl text-white/80 mb-6">
-        See our AI technology in action with a personalized demo using your inspection data.
-      </p>
-      <a 
-        href="/#demo" 
-        class="inline-block bg-cogintech-orange hover:bg-cogintech-orange/90 text-white font-medium px-8 py-3 rounded-lg transition-colors"
-      >
-        Try Interactive Demo
-      </a>
-    </section>
-  </div>
+  </main>
 </PageLayout>

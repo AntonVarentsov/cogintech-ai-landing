@@ -1,117 +1,143 @@
 ---
 import PageLayout from '@/layouts/PageLayout.astro';
+
+const blogPosts = [
+  {
+    title: "The Future of AI in Oil & Gas Equipment Integrity",
+    date: "May 10, 2025",
+    author: "Alex Johnson",
+    summary: "How artificial intelligence is transforming the way companies approach equipment integrity management and what to expect in the next five years.",
+    image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12",
+    tags: ["AI", "Future Trends", "Equipment Integrity"]
+  },
+  {
+    title: "5 Ways AI Reduces Costs in Industrial Inspection Analysis",
+    date: "April 22, 2025",
+    author: "Sarah Chen",
+    summary: "Discover how AI-powered analysis is helping oil and gas companies significantly reduce their inspection costs while improving safety outcomes.",
+    image: "https://images.unsplash.com/photo-1581093588401-fbb62a02f120",
+    tags: ["Cost Reduction", "Inspection", "ROI"]
+  },
+  {
+    title: "Case Study: How XYZ Oil Improved Safety with AI Analysis",
+    date: "April 5, 2025",
+    author: "Michael Rodriguez",
+    summary: "A detailed look at how one of our clients achieved remarkable safety improvements by implementing AI-powered equipment integrity analysis.",
+    image: "https://images.unsplash.com/photo-1565108771564-269bbb4473ce",
+    tags: ["Case Study", "Safety", "Implementation"]
+  },
+  {
+    title: "The Role of Computer Vision in Detecting Equipment Defects",
+    date: "March 18, 2025",
+    author: "Emily Williams",
+    summary: "How advanced computer vision algorithms are revolutionizing defect detection in industrial equipment with greater accuracy than human inspection.",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+    tags: ["Computer Vision", "Defect Detection", "Technology"]
+  },
+  {
+    title: "Regulatory Compliance Made Easier with AI-Powered Analysis",
+    date: "February 27, 2025",
+    author: "David Singh",
+    summary: "How our AI solution helps oil and gas companies meet and exceed regulatory requirements for equipment integrity management.",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85",
+    tags: ["Compliance", "Regulations", "Best Practices"]
+  },
+  {
+    title: "The Data Challenge: Consolidating Equipment History",
+    date: "February 12, 2025",
+    author: "Rebecca Thompson",
+    summary: "Strategies for overcoming the challenge of fragmented equipment data and building a comprehensive historical database for better analysis.",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+    tags: ["Data Management", "Integration", "Best Practices"]
+  }
+];
 ---
 
 <PageLayout 
-  title="Blog" 
-  description="Insights and updates from the Cogintech team on AI, equipment integrity, and industry trends"
+  title="AI & Equipment Integrity Blog - Industry Insights | Cogintech"
+  description="Expert insights on AI technology, equipment integrity management, and digital transformation in oil & gas. Stay updated with latest industry trends."
+  keywords="AI blog, equipment integrity insights, oil gas technology, industrial AI trends, NDT technology news"
+  ogTitle="AI & Equipment Integrity Blog - Industry Insights"
+  ogDescription="Expert insights on AI technology and equipment integrity management in oil & gas industry."
+  ogImage="/lovable-uploads/22fc09d7-63fe-4527-885a-d78c38ec2e86.png"
 >
-  <div class="space-y-12">
-    <section class="text-center">
-      <p class="text-lg text-foreground/80 max-w-3xl mx-auto">
-        Stay informed with our latest insights on AI technology, equipment integrity management, 
-        and digital transformation in the oil & gas industry.
-      </p>
+  <main class="flex-1">
+    <section class="section">
+      <div class="container">
+        <h1 class="text-4xl font-bold mb-8">Our Blog</h1>
+        
+        <div class="flex flex-col md:flex-row gap-8">
+          <div class="md:w-2/3">
+            <div class="grid grid-cols-1 gap-8">
+              {blogPosts.map((post, index) => (
+                <div class="bg-card rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow flex flex-col md:flex-row">
+                  <div class="md:w-1/3">
+                    <img 
+                      src={post.image} 
+                      alt={post.title} 
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div class="p-6 md:w-2/3">
+                    <div class="flex items-center text-sm text-foreground/60 mb-2">
+                      <span>{post.date}</span>
+                      <span class="mx-2">•</span>
+                      <span>{post.author}</span>
+                    </div>
+                    <h2 class="text-xl font-bold mb-3">{post.title}</h2>
+                    <p class="text-foreground/80 mb-4">{post.summary}</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                      {post.tags.map((tag, idx) => (
+                        <span class="bg-muted px-2 py-1 rounded-full text-xs">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                    <button class="text-cogintech-blue hover:text-cogintech-blue/80 font-medium">
+                      Read More →
+                    </button>
+                  </div>
+                </div>
+              ))}
+            </div>
+            
+            <div class="mt-8 flex justify-center">
+              <button class="bg-cogintech-blue hover:bg-cogintech-blue/90 text-white font-medium px-8 py-3 rounded-md">
+                Load More Articles
+              </button>
+            </div>
+          </div>
+          
+          <div class="md:w-1/3">
+            <div class="bg-card rounded-lg shadow-md p-6 mb-6">
+              <h3 class="text-xl font-bold mb-4">Categories</h3>
+              <ul class="space-y-2">
+                <li><a href="#" class="block p-2 hover:bg-muted rounded-md transition-colors">AI & Technology</a></li>
+                <li><a href="#" class="block p-2 hover:bg-muted rounded-md transition-colors">Equipment Integrity</a></li>
+                <li><a href="#" class="block p-2 hover:bg-muted rounded-md transition-colors">Cost Reduction</a></li>
+                <li><a href="#" class="block p-2 hover:bg-muted rounded-md transition-colors">Case Studies</a></li>
+                <li><a href="#" class="block p-2 hover:bg-muted rounded-md transition-colors">Industry Insights</a></li>
+                <li><a href="#" class="block p-2 hover:bg-muted rounded-md transition-colors">Regulatory Compliance</a></li>
+              </ul>
+            </div>
+            
+            <div class="bg-card rounded-lg shadow-md p-6">
+              <h3 class="text-xl font-bold mb-4">Subscribe to Our Newsletter</h3>
+              <p class="mb-4">Stay updated with the latest insights and news in AI-powered equipment integrity management.</p>
+              <form class="space-y-3">
+                <input 
+                  type="email" 
+                  placeholder="Your email address" 
+                  class="w-full p-2 border border-border rounded-md"
+                />
+                <button type="submit" class="w-full bg-cogintech-orange hover:bg-cogintech-orange/90 text-white font-medium py-2 rounded-md">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-
-    <section class="space-y-8">
-      <article class="bg-white p-8 rounded-lg border border-border shadow-sm">
-        <div class="flex items-center gap-4 mb-4">
-          <span class="px-3 py-1 bg-cogintech-blue/10 text-cogintech-blue rounded-full text-sm font-medium">AI Technology</span>
-          <span class="text-sm text-foreground/60">January 20, 2025</span>
-        </div>
-        <h2 class="text-2xl font-bold mb-4 text-cogintech-blue">
-          <a href="#" class="hover:text-cogintech-blue/80">The Future of Multi-Agent AI in Industrial Applications</a>
-        </h2>
-        <p class="text-foreground/80 mb-4">
-          Explore how multi-agent AI systems are revolutionizing industrial inspection and analysis, 
-          providing unprecedented accuracy and reliability in critical decision-making processes.
-        </p>
-        <a href="#" class="text-cogintech-blue hover:underline font-medium">Read More →</a>
-      </article>
-
-      <article class="bg-white p-8 rounded-lg border border-border shadow-sm">
-        <div class="flex items-center gap-4 mb-4">
-          <span class="px-3 py-1 bg-cogintech-teal/10 text-cogintech-teal rounded-full text-sm font-medium">Industry Insights</span>
-          <span class="text-sm text-foreground/60">January 15, 2025</span>
-        </div>
-        <h2 class="text-2xl font-bold mb-4 text-cogintech-blue">
-          <a href="#" class="hover:text-cogintech-blue/80">Reducing Inspection Costs: ROI Analysis for Oil & Gas Operators</a>
-        </h2>
-        <p class="text-foreground/80 mb-4">
-          A comprehensive analysis of how AI-powered inspection analysis delivers measurable ROI, 
-          with real case studies showing 30%+ cost reductions and improved operational efficiency.
-        </p>
-        <a href="#" class="text-cogintech-blue hover:underline font-medium">Read More →</a>
-      </article>
-
-      <article class="bg-white p-8 rounded-lg border border-border shadow-sm">
-        <div class="flex items-center gap-4 mb-4">
-          <span class="px-3 py-1 bg-cogintech-orange/10 text-cogintech-orange rounded-full text-sm font-medium">Best Practices</span>
-          <span class="text-sm text-foreground/60">January 10, 2025</span>
-        </div>
-        <h2 class="text-2xl font-bold mb-4 text-cogintech-blue">
-          <a href="#" class="hover:text-cogintech-blue/80">Digital Transformation in Equipment Integrity Management</a>
-        </h2>
-        <p class="text-foreground/80 mb-4">
-          Learn the key steps for successfully implementing AI-powered solutions in your integrity management workflow, 
-          from data preparation to change management strategies.
-        </p>
-        <a href="#" class="text-cogintech-blue hover:underline font-medium">Read More →</a>
-      </article>
-
-      <article class="bg-white p-8 rounded-lg border border-border shadow-sm">
-        <div class="flex items-center gap-4 mb-4">
-          <span class="px-3 py-1 bg-cogintech-blue/10 text-cogintech-blue rounded-full text-sm font-medium">Technical Deep Dive</span>
-          <span class="text-sm text-foreground/60">January 5, 2025</span>
-        </div>
-        <h2 class="text-2xl font-bold mb-4 text-cogintech-blue">
-          <a href="#" class="hover:text-cogintech-blue/80">Natural Language Processing for Inspection Data Analysis</a>
-        </h2>
-        <p class="text-foreground/80 mb-4">
-          Discover how advanced NLP techniques enable engineers to query complex inspection databases 
-          using natural language, making critical information more accessible than ever.
-        </p>
-        <a href="#" class="text-cogintech-blue hover:underline font-medium">Read More →</a>
-      </article>
-
-      <article class="bg-white p-8 rounded-lg border border-border shadow-sm">
-        <div class="flex items-center gap-4 mb-4">
-          <span class="px-3 py-1 bg-cogintech-teal/10 text-cogintech-teal rounded-full text-sm font-medium">Regulatory</span>
-          <span class="text-sm text-foreground/60">December 28, 2024</span>
-        </div>
-        <h2 class="text-2xl font-bold mb-4 text-cogintech-blue">
-          <a href="#" class="hover:text-cogintech-blue/80">AI and Regulatory Compliance in Oil & Gas Inspections</a>
-        </h2>
-        <p class="text-foreground/80 mb-4">
-          Understanding how AI-powered analysis meets and exceeds regulatory requirements, 
-          ensuring compliance while improving efficiency in inspection reporting.
-        </p>
-        <a href="#" class="text-cogintech-blue hover:underline font-medium">Read More →</a>
-      </article>
-    </section>
-
-    <section class="flex justify-center">
-      <nav class="flex items-center gap-2">
-        <button class="px-4 py-2 bg-cogintech-blue text-white rounded-lg font-medium">1</button>
-        <button class="px-4 py-2 text-foreground/60 hover:text-cogintech-blue">2</button>
-        <button class="px-4 py-2 text-foreground/60 hover:text-cogintech-blue">3</button>
-        <span class="px-2 text-foreground/60">...</span>
-        <button class="px-4 py-2 text-cogintech-blue hover:text-cogintech-blue/80">Next →</button>
-      </nav>
-    </section>
-
-    <section class="bg-cogintech-dark text-white p-8 rounded-lg text-center">
-      <h2 class="text-3xl font-bold mb-4">Stay Updated</h2>
-      <p class="text-xl text-white/80 mb-6">
-        Subscribe to our newsletter for the latest insights on AI and equipment integrity management.
-      </p>
-      <a 
-        href="mailto:newsletter@cogintech.ai?subject=Newsletter Subscription" 
-        class="inline-block bg-cogintech-orange hover:bg-cogintech-orange/90 text-white font-medium px-8 py-3 rounded-lg transition-colors"
-      >
-        Subscribe to Newsletter
-      </a>
-    </section>
-  </div>
+  </main>
 </PageLayout>
