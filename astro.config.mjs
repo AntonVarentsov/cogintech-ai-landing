@@ -11,9 +11,6 @@ export default defineConfig({
     tailwind({ applyBaseStyles: false }),
   ],
   vite: {
-    server: {
-      port: 8080
-    },
     build: {
       rollupOptions: {
         output: {
