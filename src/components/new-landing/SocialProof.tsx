@@ -16,18 +16,18 @@ const EarlyAdopters = () => {
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {/* Live Demo Card */}
-          <div className="bg-white/80 backdrop-blur-sm border border-cogintech-orange/20 rounded-xl p-8 text-center hover:bg-white/90 transition-all duration-300 shadow-lg">
+          <div className="bg-white/80 backdrop-blur-sm border border-cogintech-orange/20 rounded-xl p-8 text-center hover:bg-white/90 transition-all duration-300 shadow-lg flex flex-col">
             <div className="w-16 h-16 bg-cogintech-orange/20 rounded-full flex items-center justify-center mx-auto mb-6">
               <Users className="w-8 h-8 text-cogintech-orange" />
             </div>
             <h3 className="text-2xl font-bold mb-4 text-cogintech-dark">Live Demo with Your Team</h3>
-            <p className="text-cogintech-dark/70 mb-6">
+            <p className="text-cogintech-dark/70 mb-6 flex-1">
               Walk through a real scenario with your files.
             </p>
             <Button 
               variant="cogintech-orange"
               size="lg"
-              className="w-full font-semibold"
+              className="w-full font-semibold mt-auto"
               onClick={() => document.getElementById('demo-form')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Book Demo
@@ -35,18 +35,18 @@ const EarlyAdopters = () => {
           </div>
 
           {/* Test Access Card */}
-          <div className="bg-white/80 backdrop-blur-sm border border-cogintech-teal/20 rounded-xl p-8 text-center hover:bg-white/90 transition-all duration-300 shadow-lg">
+          <div className="bg-white/80 backdrop-blur-sm border border-cogintech-teal/20 rounded-xl p-8 text-center hover:bg-white/90 transition-all duration-300 shadow-lg flex flex-col">
             <div className="w-16 h-16 bg-cogintech-teal/20 rounded-full flex items-center justify-center mx-auto mb-6">
               <Play className="w-8 h-8 text-cogintech-teal" />
             </div>
             <h3 className="text-2xl font-bold mb-4 text-cogintech-dark">Test Access (Sandbox)</h3>
-            <p className="text-cogintech-dark/70 mb-6">
+            <p className="text-cogintech-dark/70 mb-6 flex-1">
               Hands-on with sample data • Optional upload of your files during demo.
             </p>
             <Button 
               variant="cogintech-teal"
               size="lg"
-              className="w-full font-semibold"
+              className="w-full font-semibold mt-auto"
               onClick={() => window.open('https://sandbox.cogintech.com', '_blank')}
             >
               Get Test Access
@@ -54,18 +54,18 @@ const EarlyAdopters = () => {
           </div>
 
           {/* Subscribe Card */}
-          <div className="bg-white/80 backdrop-blur-sm border border-cogintech-blue/20 rounded-xl p-8 text-center hover:bg-white/90 transition-all duration-300 shadow-lg">
+          <div className="bg-white/80 backdrop-blur-sm border border-cogintech-blue/20 rounded-xl p-8 text-center hover:bg-white/90 transition-all duration-300 shadow-lg flex flex-col">
             <div className="w-16 h-16 bg-cogintech-blue/20 rounded-full flex items-center justify-center mx-auto mb-6">
               <Mail className="w-8 h-8 text-cogintech-blue" />
             </div>
             <h3 className="text-2xl font-bold mb-4 text-cogintech-dark">Subscribe for Updates</h3>
-            <p className="text-cogintech-dark/70 mb-6">
+            <p className="text-cogintech-dark/70 mb-6 flex-1">
               Product news, features and tips.
             </p>
             <Button 
-              variant="cogintech-blue-outline"
+              variant="cogintech-blue"
               size="lg"
-              className="w-full font-semibold"
+              className="w-full font-semibold mt-auto"
               onClick={() => document.getElementById('newsletter-signup')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Subscribe to News
