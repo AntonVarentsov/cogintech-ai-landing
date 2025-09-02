@@ -99,8 +99,9 @@ const HowItWorks = () => {
         {/* CTA Section */}
         <div className="text-center">
           <Button 
+            variant="cogintech-teal"
             size="lg"
-            className="bg-cogintech-teal hover:bg-cogintech-teal/90 text-white px-12 py-4 text-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+            className="px-12 py-4 text-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
             onClick={() => window.open('https://sandbox.cogintech.com', '_blank')}
           >
             Try the Sandbox →
