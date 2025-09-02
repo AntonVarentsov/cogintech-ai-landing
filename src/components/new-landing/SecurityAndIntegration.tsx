@@ -160,6 +160,33 @@ const SecurityAndIntegration = () => {
             Planned certifications on the roadmap.
           </p>
         </div>
+        
+        {/* Integration logos */}
+        <div className="mt-16 text-center">
+          <h3 className="text-xl font-semibold text-foreground mb-6">Integrations</h3>
+          <div className="flex flex-wrap justify-center items-center gap-8 opacity-70">
+            <span className="text-foreground/60 font-medium px-4 py-2 border border-foreground/20 rounded-lg">SAP</span>
+            <span className="text-foreground/60 font-medium px-4 py-2 border border-foreground/20 rounded-lg">Maximo</span>
+            <span className="text-foreground/60 font-medium px-4 py-2 border border-foreground/20 rounded-lg">SharePoint</span>
+            <span className="text-foreground/60 font-medium px-4 py-2 border border-foreground/20 rounded-lg">AVEVA</span>
+            <span className="text-foreground/60 font-medium px-4 py-2 border border-foreground/20 rounded-lg">Oracle EAM</span>
+            <span className="text-foreground/60 font-medium px-4 py-2 border border-foreground/20 rounded-lg">API</span>
+          </div>
+          
+          {/* Cloud/On-Prem toggle */}
+          <div className="mt-12 max-w-2xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-cogintech-blue/10 rounded-xl p-6 text-center">
+                <h4 className="text-lg font-semibold text-foreground mb-2">Cloud</h4>
+                <p className="text-foreground/70 text-sm">Quick setup, managed infrastructure, instant updates</p>
+              </div>
+              <div className="bg-cogintech-teal/10 rounded-xl p-6 text-center">
+                <h4 className="text-lg font-semibold text-foreground mb-2">On-Premise</h4>
+                <p className="text-foreground/70 text-sm">Full control, custom security, air-gapped deployment</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

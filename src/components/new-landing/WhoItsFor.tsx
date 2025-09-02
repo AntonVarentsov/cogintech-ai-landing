@@ -5,19 +5,19 @@ const WhoItsFor = () => {
     {
       icon: Building,
       title: "Service Company Owners",
-      benefit: "Higher margins",
+      benefit: "Increase margins",
       description: "Standardize deliverables and reduce project overhead with AI-driven reporting consistency."
     },
     {
       icon: Users,
       title: "Heads of Engineering",
-      benefit: "Faster delivery",
+      benefit: "Speed up delivery",
       description: "Cut report preparation time by automating data extraction and analysis workflows."
     },
     {
       icon: Server,
       title: "IT & Digital",
-      benefit: "Secure integration",
+      benefit: "Standardize quality",
       description: "Deploy AI tools without disrupting existing systems or compromising data security."
     }
   ];

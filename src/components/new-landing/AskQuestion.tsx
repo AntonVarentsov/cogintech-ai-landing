@@ -105,7 +105,7 @@ const AskQuestion = () => {
               </Button>
               
               <p className="text-sm text-foreground/60 text-center">
-                We typically respond within 24 hours during business days.
+                We reply within 1 business day.
               </p>
             </form>
           </div>

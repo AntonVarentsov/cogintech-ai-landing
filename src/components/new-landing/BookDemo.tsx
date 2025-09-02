@@ -160,7 +160,7 @@ const BookDemo = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="demo-company" className="text-white">Company Name</Label>
+                    <Label htmlFor="demo-company" className="text-white">Company</Label>
                     <Input 
                       id="demo-company" 
                       name="company"
@@ -174,18 +174,56 @@ const BookDemo = () => {
                   </div>
                   
                   <div className="space-y-2">
-                    <Label htmlFor="demo-role" className="text-white">Your Role</Label>
+                    <Label htmlFor="demo-role" className="text-white">Role</Label>
                     <Input 
                       id="demo-role" 
                       name="role"
                       type="text" 
-                      placeholder="e.g., Integrity Engineer"
+                      placeholder="e.g., Head of Engineering"
                       value={formData.role}
                       onChange={handleChange}
                       required
                       className="bg-white/10 border-white/20 text-white placeholder:text-white/50 focus-visible:ring-cogintech-teal"
                     />
                   </div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <Label htmlFor="demo-industry" className="text-white">Industry (optional)</Label>
+                    <Input 
+                      id="demo-industry" 
+                      name="industry"
+                      type="text" 
+                      placeholder="e.g., Oil & Gas"
+                      className="bg-white/10 border-white/20 text-white placeholder:text-white/50 focus-visible:ring-cogintech-teal"
+                    />
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <Label htmlFor="demo-goal" className="text-white">Primary Goal (optional)</Label>
+                    <select 
+                      id="demo-goal" 
+                      name="goal"
+                      className="bg-white/10 border border-white/20 text-white rounded-md px-3 py-2 h-10 w-full focus-visible:ring-2 focus-visible:ring-cogintech-teal"
+                    >
+                      <option value="">Select goal</option>
+                      <option value="faster-reporting">Faster reporting</option>
+                      <option value="consistent-quality">Consistent quality</option>
+                      <option value="lower-costs">Lower costs</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-3">
+                  <Checkbox 
+                    id="sandbox-access"
+                    className="mt-1"
+                  />
+                  <label htmlFor="sandbox-access" className="text-sm text-white/80 leading-relaxed">
+                    I want a sandbox account as well
+                  </label>
                 </div>
                 
                 <div className="space-y-3">

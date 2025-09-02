@@ -84,11 +84,13 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-white font-semibold mb-4">Legal</h3>
+            <h3 className="text-white font-semibold mb-4">Resources</h3>
             <ul className="space-y-2">
+              <li><a href="/security-whitepaper.pdf" target="_blank" className="hover:text-cogintech-teal transition-colors">Security Whitepaper (PDF)</a></li>
               <li><Link to="/privacy-policy" className="hover:text-cogintech-teal transition-colors">Privacy Policy</Link></li>
               <li><Link to="/terms-of-service" className="hover:text-cogintech-teal transition-colors">Terms of Service</Link></li>
               <li><Link to="/cookie-policy" className="hover:text-cogintech-teal transition-colors">Cookie Policy</Link></li>
+              <li><a href="https://linkedin.com/company/cogintech" target="_blank" className="hover:text-cogintech-teal transition-colors">LinkedIn</a></li>
             </ul>
           </div>
         </div>

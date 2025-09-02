@@ -43,12 +43,12 @@ const PainAmplifier = () => {
           ))}
         </div>
         
-        {/* Optional pull quote */}
-        <div className="mt-16 text-center">
-          <blockquote className="text-lg italic text-foreground/60 max-w-2xl mx-auto">
+        {/* Pull quote */}
+        <div className="mt-12 text-center">
+          <blockquote className="text-lg italic text-foreground/60">
             "We spend hours just finding past reports."
+            <footer className="mt-2 text-sm text-foreground/50">— Service company owner</footer>
           </blockquote>
-          <p className="text-sm text-foreground/50 mt-2">— Service company owner</p>
         </div>
       </div>
     </section>
