@@ -16,7 +16,7 @@ const ValueMetrics = () => {
     },
     {
       value: "Higher",
-      label: "report consistency",
+      label: "and accuracy of reports",
       description: "AI-powered standardization ensures reliable, client-ready outputs",
       icon: Shield
     },
