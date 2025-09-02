@@ -59,9 +59,7 @@ const Alternatives = () => {
         <div className="max-w-6xl mx-auto">
           {/* Header Cards */}
           <div className="grid grid-cols-4 gap-6 mb-8">
-            <div className="text-right pr-6">
-              <h3 className="text-lg font-semibold text-foreground">Features</h3>
-            </div>
+            <div className=""></div>
             {alternatives.map((alt, index) => {
               const IconComponent = alt.icon;
               return (
