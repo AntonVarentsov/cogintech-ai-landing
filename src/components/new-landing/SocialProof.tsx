@@ -3,7 +3,7 @@ import { Rocket, Users, Zap, CheckCircle, Play, Mail } from "lucide-react";
 
 const EarlyAdopters = () => {
   return (
-    <section id="early-adopters" className="py-20 bg-gradient-to-br from-cogintech-dark/70 via-cogintech-blue/40 to-cogintech-teal/30">
+    <section id="early-adopters" className="py-20 bg-gradient-to-br from-cogintech-dark/90 via-cogintech-dark/80 to-cogintech-blue/60">
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">

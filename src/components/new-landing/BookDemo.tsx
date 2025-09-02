@@ -88,7 +88,7 @@ const BookDemo = () => {
   const isFormValid = agreements.privacyPolicy && agreements.termsOfService;
 
   return (
-    <section id="book-demo" className="py-16 bg-gradient-to-br from-cogintech-blue/50 via-cogintech-dark/60 to-cogintech-teal/40">
+    <section id="book-demo" className="py-16 bg-gradient-to-br from-cogintech-dark/85 via-cogintech-dark/75 to-cogintech-teal/60">
       <div className="container">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
