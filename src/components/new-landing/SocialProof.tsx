@@ -3,7 +3,7 @@ import { Rocket, Users, Zap, CheckCircle, Play, Mail } from "lucide-react";
 
 const EarlyAdopters = () => {
   return (
-    <section id="early-adopters" className="py-20 bg-gradient-to-br from-cogintech-dark/90 via-cogintech-dark/80 to-cogintech-blue/60">
+    <section id="early-adopters" className="py-20 bg-gradient-to-br from-cogintech-dark/95 via-cogintech-dark to-cogintech-blue/20">
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
@@ -16,18 +16,17 @@ const EarlyAdopters = () => {
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {/* Live Demo Card */}
-          <div className="bg-white/80 backdrop-blur-sm border border-cogintech-orange/20 rounded-xl p-8 text-center hover:bg-white/90 transition-all duration-300 shadow-lg flex flex-col">
+          <div className="bg-white/5 backdrop-blur-sm border border-white/20 rounded-xl p-8 text-center hover:bg-white/10 transition-all duration-300">
             <div className="w-16 h-16 bg-cogintech-orange/20 rounded-full flex items-center justify-center mx-auto mb-6">
               <Users className="w-8 h-8 text-cogintech-orange" />
             </div>
-            <h3 className="text-2xl font-bold mb-4 text-cogintech-dark">Live Demo with Your Team</h3>
-            <p className="text-cogintech-dark/70 mb-6 flex-1">
+            <h3 className="text-2xl font-bold mb-4 text-white">Live Demo /B with Your Team</h3>
+            <p className="text-white/70 mb-6">
               Walk through a real scenario with your files.
             </p>
             <Button 
-              variant="cogintech-orange"
               size="lg"
-              className="w-full font-semibold mt-auto"
+              className="w-full bg-cogintech-orange hover:bg-cogintech-orange/90 text-white font-semibold"
               onClick={() => document.getElementById('demo-form')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Book Demo
@@ -35,18 +34,18 @@ const EarlyAdopters = () => {
           </div>
 
           {/* Test Access Card */}
-          <div className="bg-white/80 backdrop-blur-sm border border-cogintech-teal/20 rounded-xl p-8 text-center hover:bg-white/90 transition-all duration-300 shadow-lg flex flex-col">
+          <div className="bg-white/5 backdrop-blur-sm border border-white/20 rounded-xl p-8 text-center hover:bg-white/10 transition-all duration-300">
             <div className="w-16 h-16 bg-cogintech-teal/20 rounded-full flex items-center justify-center mx-auto mb-6">
               <Play className="w-8 h-8 text-cogintech-teal" />
             </div>
-            <h3 className="text-2xl font-bold mb-4 text-cogintech-dark">Test Access (Sandbox)</h3>
-            <p className="text-cogintech-dark/70 mb-6 flex-1">
+            <h3 className="text-2xl font-bold mb-4 text-white">Test Access (Sandbox)</h3>
+            <p className="text-white/70 mb-6">
               Hands-on with sample data • Optional upload of your files during demo.
             </p>
             <Button 
-              variant="cogintech-teal"
               size="lg"
-              className="w-full font-semibold mt-auto"
+              variant="outline"
+              className="w-full border-cogintech-teal bg-cogintech-teal/10 text-cogintech-teal hover:bg-cogintech-teal hover:text-white font-semibold"
               onClick={() => window.open('https://sandbox.cogintech.com', '_blank')}
             >
               Get Test Access
@@ -54,18 +53,18 @@ const EarlyAdopters = () => {
           </div>
 
           {/* Subscribe Card */}
-          <div className="bg-white/80 backdrop-blur-sm border border-cogintech-blue/20 rounded-xl p-8 text-center hover:bg-white/90 transition-all duration-300 shadow-lg flex flex-col">
-            <div className="w-16 h-16 bg-cogintech-blue/20 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Mail className="w-8 h-8 text-cogintech-blue" />
+          <div className="bg-white/5 backdrop-blur-sm border border-white/20 rounded-xl p-8 text-center hover:bg-white/10 transition-all duration-300">
+            <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
+              <Mail className="w-8 h-8 text-white" />
             </div>
-            <h3 className="text-2xl font-bold mb-4 text-cogintech-dark">Subscribe for Updates</h3>
-            <p className="text-cogintech-dark/70 mb-6 flex-1">
+            <h3 className="text-2xl font-bold mb-4 text-white">Subscribe for Updates</h3>
+            <p className="text-white/70 mb-6">
               Product news, features and tips.
             </p>
             <Button 
-              variant="cogintech-blue"
               size="lg"
-              className="w-full font-semibold mt-auto"
+              variant="outline"
+              className="w-full border-white/40 text-white hover:bg-white/10 font-semibold"
               onClick={() => document.getElementById('newsletter-signup')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Subscribe to News
@@ -73,23 +72,21 @@ const EarlyAdopters = () => {
           </div>
         </div>
 
-        <div className="text-center space-y-6">
-          <div className="inline-flex items-center gap-4 bg-cogintech-orange/20 text-white px-8 py-4 rounded-full text-lg font-semibold border border-cogintech-orange/30">
+        <div className="text-center space-y-4">
+          <div className="inline-flex items-center gap-4 bg-white/10 text-white px-8 py-4 rounded-full text-lg font-semibold">
             <Rocket className="w-6 h-6" />
             Limited slots available.
           </div>
           
-          <div className="max-w-md mx-auto">
-            <Button 
-              variant="outline"
-              size="lg"
-              className="w-full font-semibold border-white text-white hover:bg-white hover:text-cogintech-dark"
-              onClick={() => document.getElementById('ask-question')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              <Mail className="mr-2 h-5 w-5" />
-              Ask a Question
-            </Button>
-          </div>
+          <Button 
+            variant="outline"
+            size="lg"
+            className="border-white/40 text-white hover:bg-white/10 font-medium"
+            onClick={() => document.getElementById('ask-question')?.scrollIntoView({ behavior: 'smooth' })}
+          >
+            Ask a Question
+            <Mail className="ml-2 h-4 w-4" />
+          </Button>
         </div>
       </div>
     </section>
