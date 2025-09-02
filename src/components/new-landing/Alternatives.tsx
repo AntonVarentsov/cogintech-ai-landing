@@ -45,7 +45,7 @@ const Alternatives = () => {
   };
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-gradient-to-br from-gray-50 to-white">
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
@@ -56,34 +56,81 @@ const Alternatives = () => {
           </p>
         </div>
         
-        <div className="overflow-x-auto">
-          <div className="inline-block min-w-full">
-            <div className="grid grid-cols-4 gap-6 mb-6">
-              <div className="p-6"></div>
-              {alternatives.map((alt, index) => {
-                const IconComponent = alt.icon;
-                return (
-                  <div key={index} className="bg-gray-50 rounded-xl p-8 text-center">
-                    <div className={`w-12 h-12 ${alt.name === 'Cogintech AI' ? 'bg-cogintech-teal/20' : 'bg-gray-200'} rounded-full flex items-center justify-center mx-auto mb-4`}>
-                      <IconComponent className={`w-6 h-6 ${alt.name === 'Cogintech AI' ? 'text-cogintech-teal' : 'text-gray-600'}`} />
-                    </div>
-                    <h3 className="font-bold text-foreground">{alt.name}</h3>
-                  </div>
-                );
-              })}
+        <div className="max-w-6xl mx-auto">
+          {/* Header Cards */}
+          <div className="grid grid-cols-4 gap-6 mb-8">
+            <div className="text-right pr-6">
+              <h3 className="text-lg font-semibold text-foreground">Features</h3>
             </div>
-            
-            {Object.keys(alternatives[0].features).map((feature) => (
-              <div key={feature} className="grid grid-cols-4 gap-6 mb-4 py-6 border-b border-gray-100">
-                <div className="px-6 py-2 font-semibold text-lg text-foreground">{feature}</div>
+            {alternatives.map((alt, index) => {
+              const IconComponent = alt.icon;
+              return (
+                <div key={index} className={`${
+                  alt.name === 'Cogintech AI' 
+                    ? 'bg-gradient-to-br from-cogintech-teal/10 to-cogintech-teal/5 border-2 border-cogintech-teal/20' 
+                    : 'bg-white border border-gray-200'
+                } rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300`}>
+                  <div className={`w-14 h-14 ${
+                    alt.name === 'Cogintech AI' 
+                      ? 'bg-cogintech-teal/20' 
+                      : 'bg-gray-100'
+                  } rounded-full flex items-center justify-center mx-auto mb-4`}>
+                    <IconComponent className={`w-7 h-7 ${
+                      alt.name === 'Cogintech AI' 
+                        ? 'text-cogintech-teal' 
+                        : 'text-gray-600'
+                    }`} />
+                  </div>
+                  <h3 className="font-bold text-lg text-foreground">{alt.name}</h3>
+                </div>
+              );
+            })}
+          </div>
+          
+          {/* Comparison Table */}
+          <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+            {Object.keys(alternatives[0].features).map((feature, featureIndex) => (
+              <div key={feature} className={`grid grid-cols-4 gap-6 ${
+                featureIndex !== Object.keys(alternatives[0].features).length - 1 
+                  ? 'border-b border-gray-100' 
+                  : ''
+              } hover:bg-gray-50/50 transition-colors duration-200`}>
+                <div className="p-6 bg-gray-50/70 border-r border-gray-100">
+                  <h4 className="font-semibold text-lg text-foreground">{feature}</h4>
+                </div>
                 {alternatives.map((alt, index) => (
-                  <div key={index} className="px-6 py-2 flex items-center gap-4">
-                    {getStatusIcon(alt.name, feature)}
-                    <span className="text-base font-medium text-foreground/80">{alt.features[feature as keyof typeof alt.features]}</span>
+                  <div key={index} className={`p-6 flex items-center gap-4 ${
+                    alt.name === 'Cogintech AI' ? 'bg-cogintech-teal/5' : ''
+                  }`}>
+                    <div className="flex-shrink-0">
+                      {getStatusIcon(alt.name, feature)}
+                    </div>
+                    <span className={`text-base font-medium ${
+                      alt.name === 'Cogintech AI' 
+                        ? 'text-cogintech-teal font-semibold' 
+                        : 'text-foreground/80'
+                    }`}>
+                      {alt.features[feature as keyof typeof alt.features]}
+                    </span>
                   </div>
                 ))}
               </div>
             ))}
+          </div>
+          
+          {/* Call to Action */}
+          <div className="text-center mt-8">
+            <p className="text-sm text-foreground/60 mb-4">
+              Ready to see the difference AI can make for your engineering team?
+            </p>
+            <div className="flex justify-center gap-4">
+              <button className="px-6 py-3 bg-cogintech-teal text-white font-semibold rounded-lg hover:bg-cogintech-teal/90 transition-colors duration-200">
+                Get Test Access
+              </button>
+              <button className="px-6 py-3 border border-gray-300 text-foreground font-semibold rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                Book Demo
+              </button>
+            </div>
           </div>
         </div>
       </div>
