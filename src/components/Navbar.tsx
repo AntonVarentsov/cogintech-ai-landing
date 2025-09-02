@@ -195,7 +195,8 @@ const Navbar = () => {
             </>
           )}
           <Button 
-            className="bg-cogintech-orange hover:bg-cogintech-orange/90 text-base px-4 py-2"
+            variant="cogintech-orange"
+            className="text-base px-4 py-2"
             onClick={handleTryFree}
           >
             Get Test Access
@@ -565,7 +566,8 @@ const Navbar = () => {
               </>
             )}
             <Button 
-              className="bg-cogintech-orange hover:bg-cogintech-orange/90 w-full text-base mt-3"
+              variant="cogintech-orange"
+              className="w-full text-base mt-3"
               onClick={() => {
                 setIsMenuOpen(false);
                 handleTryFree();
