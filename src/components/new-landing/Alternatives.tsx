@@ -36,12 +36,12 @@ const Alternatives = () => {
 
   const getStatusIcon = (alternative: string, feature: string) => {
     if (alternative === "Cogintech AI") {
-      return <Check className="w-4 h-4 text-green-600" />;
+      return <Check className="w-6 h-6 text-green-600 font-bold stroke-[3]" />;
     }
     if (alternative === "Folders & SharePoint") {
-      return feature === "Setup time" ? <Check className="w-4 h-4 text-green-600" /> : <X className="w-4 h-4 text-red-500" />;
+      return feature === "Setup time" ? <Check className="w-6 h-6 text-green-600 font-bold stroke-[3]" /> : <X className="w-6 h-6 text-red-500 font-bold stroke-[3]" />;
     }
-    return <Minus className="w-4 h-4 text-yellow-500" />;
+    return <Minus className="w-6 h-6 text-yellow-500 font-bold stroke-[3]" />;
   };
 
   return (
@@ -74,12 +74,12 @@ const Alternatives = () => {
             </div>
             
             {Object.keys(alternatives[0].features).map((feature) => (
-              <div key={feature} className="grid grid-cols-4 gap-4 mb-3 py-3 border-b border-gray-100">
-                <div className="p-4 font-semibold text-foreground">{feature}</div>
+              <div key={feature} className="grid grid-cols-4 gap-4 mb-3 py-4 border-b border-gray-100">
+                <div className="p-4 font-semibold text-lg text-foreground">{feature}</div>
                 {alternatives.map((alt, index) => (
                   <div key={index} className="p-4 flex items-center gap-3">
                     {getStatusIcon(alt.name, feature)}
-                    <span className="text-sm text-foreground/70">{alt.features[feature as keyof typeof alt.features]}</span>
+                    <span className="text-base font-medium text-foreground/80">{alt.features[feature as keyof typeof alt.features]}</span>
                   </div>
                 ))}
               </div>
