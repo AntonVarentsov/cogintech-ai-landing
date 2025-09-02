@@ -1,15 +1,19 @@
 
 import Navbar from "@/components/Navbar";
 import SEOHead from "@/components/SEOHead";
+import StickyHeader from "@/components/new-landing/StickyHeader";
 import NewHero from "@/components/new-landing/NewHero";
 import PainAmplifier from "@/components/new-landing/PainAmplifier";
 import ValueMetrics from "@/components/new-landing/ValueMetrics";
+import WhoItsFor from "@/components/new-landing/WhoItsFor";
 import HowItWorks from "@/components/new-landing/HowItWorks";
 import MCPSection from "@/components/new-landing/MCPSection";
 import EarlyAdopters from "@/components/new-landing/SocialProof";
+import Alternatives from "@/components/new-landing/Alternatives";
 import SecurityAndIntegration from "@/components/new-landing/SecurityAndIntegration";
 import BookDemo from "@/components/new-landing/BookDemo";
 import FAQ from "@/components/new-landing/FAQ";
+import AskQuestion from "@/components/new-landing/AskQuestion";
 import Footer from "@/components/Footer";
 
 const NewLanding = () => {
@@ -23,16 +27,20 @@ const NewLanding = () => {
         ogDescription="Cut reporting time from weeks to days. AI-powered tools for engineering service companies: faster reports, less manual work, higher client trust."
         ogImage="/lovable-uploads/22fc09d7-63fe-4527-885a-d78c38ec2e86.png"
       />
+      <StickyHeader />
       <Navbar />
         <NewHero />
         <PainAmplifier />
         <ValueMetrics />
+        <WhoItsFor />
         <HowItWorks />
         <MCPSection />
         <EarlyAdopters />
+        <Alternatives />
         <SecurityAndIntegration />
         <BookDemo />
         <FAQ />
+        <AskQuestion />
       <Footer />
     </div>
   );

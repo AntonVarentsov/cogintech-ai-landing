@@ -27,8 +27,7 @@ const HowItWorks = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4 text-foreground">Upload & Connect</h3>
               <p className="text-foreground/70 text-lg leading-relaxed">
-                Put all your project files (PDFs, Excel, drawings) in one secure place. 
-                Connect with your existing systems seamlessly.
+                PDFs, drawings, Excel — no IT overhaul.
               </p>
             </div>
             {/* Arrow for desktop */}
@@ -48,8 +47,7 @@ const HowItWorks = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4 text-foreground">AI Organizes & Analyzes</h3>
               <p className="text-foreground/70 text-lg leading-relaxed">
-                Our AI automatically classifies and prepares your data for instant use. 
-                No manual sorting required.
+                Auto-classification, linking, and prep for instant use.
               </p>
             </div>
             {/* Arrow for desktop */}
@@ -69,8 +67,7 @@ const HowItWorks = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4 text-foreground">Ask & Report</h3>
               <p className="text-foreground/70 text-lg leading-relaxed">
-                Get answers in plain English, generate reports in clicks. 
-                From question to client-ready document in minutes.
+                Plain-English answers and client-ready reports.
               </p>
             </div>
           </div>
@@ -85,7 +82,7 @@ const HowItWorks = () => {
             </p>
           </div>
           
-          <div className="relative max-w-4xl mx-auto">
+            <div className="relative max-w-4xl mx-auto">
             <video 
               className="w-full h-auto rounded-xl shadow-lg"
               controls
@@ -95,6 +92,7 @@ const HowItWorks = () => {
               <source src="/lovable-uploads/AI_assistant.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
+            <p className="text-center text-sm text-foreground/60 mt-4">2-min product tour (no sound needed)</p>
           </div>
         </div>
 
@@ -107,8 +105,8 @@ const HowItWorks = () => {
           >
             Try the Sandbox →
           </Button>
-          <p className="text-sm text-foreground/60 mt-4">
-            No installation required • Test with sample data • Free access
+          <p className="text-sm text-foreground/60 mt-2 mb-2">
+            No setup required • Sample data included
           </p>
         </div>
       </div>

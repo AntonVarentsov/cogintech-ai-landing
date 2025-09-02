@@ -40,7 +40,7 @@ const EarlyAdopters = () => {
             </div>
             <h3 className="text-2xl font-bold mb-4 text-white">Test Access (Sandbox)</h3>
             <p className="text-white/70 mb-6">
-              Hands-on with sample data. No setup required.
+              Hands-on with sample data • Optional upload of your files during demo.
             </p>
             <Button 
               size="lg"
@@ -72,11 +72,21 @@ const EarlyAdopters = () => {
           </div>
         </div>
 
-        <div className="text-center">
+        <div className="text-center space-y-4">
           <div className="inline-flex items-center gap-4 bg-white/10 text-white px-8 py-4 rounded-full text-lg font-semibold">
             <Rocket className="w-6 h-6" />
             Limited slots available.
           </div>
+          
+          <Button 
+            variant="outline"
+            size="lg"
+            className="border-white/40 text-white hover:bg-white/10 font-medium"
+            onClick={() => document.getElementById('ask-question')?.scrollIntoView({ behavior: 'smooth' })}
+          >
+            Ask a Question
+            <Mail className="ml-2 h-4 w-4" />
+          </Button>
         </div>
       </div>
     </section>

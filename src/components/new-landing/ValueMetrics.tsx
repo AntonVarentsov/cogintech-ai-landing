@@ -16,7 +16,7 @@ const ValueMetrics = () => {
     },
     {
       value: "Higher",
-      label: "report accuracy",
+      label: "report consistency",
       description: "AI-powered standardization ensures reliable, client-ready outputs",
       icon: Shield
     },
@@ -59,6 +59,13 @@ const ValueMetrics = () => {
               </p>
             </div>
           ))}
+        </div>
+        
+        {/* Benchmarks link */}
+        <div className="text-center mt-8">
+          <button className="text-sm text-cogintech-blue hover:text-cogintech-blue/80 underline">
+            See how we calculate these benchmarks
+          </button>
         </div>
       </div>
     </section>

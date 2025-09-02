@@ -45,11 +45,21 @@ const SecurityAndIntegration = () => {
             <div className="w-16 h-16 bg-cogintech-blue/10 rounded-full flex items-center justify-center mx-auto mb-6">
               <Settings className="w-8 h-8 text-cogintech-blue" />
             </div>
-            <h3 className="text-xl font-bold mb-4 text-foreground">ERP, DMS, CMMS Integration</h3>
+            <h3 className="text-xl font-bold mb-4 text-foreground">System Integration</h3>
             <p className="text-foreground/70">
-              Seamless API connections with your existing business systems. 
+              API connections with SAP, Maximo, SharePoint, AVEVA, Oracle EAM, and more. 
               No data silos, no manual imports – everything flows automatically.
             </p>
+            
+            {/* Integration logos */}
+            <div className="flex flex-wrap justify-center gap-4 mt-4 opacity-60">
+              <span className="text-xs bg-gray-100 px-2 py-1 rounded">SAP</span>
+              <span className="text-xs bg-gray-100 px-2 py-1 rounded">Maximo</span>
+              <span className="text-xs bg-gray-100 px-2 py-1 rounded">SharePoint</span>
+              <span className="text-xs bg-gray-100 px-2 py-1 rounded">AVEVA</span>
+              <span className="text-xs bg-gray-100 px-2 py-1 rounded">Oracle EAM</span>
+              <span className="text-xs bg-gray-100 px-2 py-1 rounded">API</span>
+            </div>
           </div>
         </div>
 
@@ -66,9 +76,9 @@ const SecurityAndIntegration = () => {
                   <Shield className="w-5 h-5 text-cogintech-teal" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-2">SOC 2 Type II Compliant</h4>
+                  <h4 className="font-semibold text-foreground mb-2">Designed to meet SOC 2 Type II practices</h4>
                   <p className="text-foreground/70 text-sm">
-                    Audited security controls and data protection measures
+                    Security controls and data protection measures aligned with industry standards
                   </p>
                 </div>
               </div>
@@ -90,9 +100,9 @@ const SecurityAndIntegration = () => {
                   <Zap className="w-5 h-5 text-cogintech-teal" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-2">GDPR & CCPA Ready</h4>
+                  <h4 className="font-semibold text-foreground mb-2">GDPR-ready data processing features</h4>
                   <p className="text-foreground/70 text-sm">
-                    Full compliance with international data privacy regulations
+                    Aligned with ISO/IEC 27001 controls and international data privacy standards
                   </p>
                 </div>
               </div>

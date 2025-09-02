@@ -19,6 +19,22 @@ const MCPSection = () => {
             With the MCP interface, your engineers can assemble custom AI workflows — from data prep to client-ready templates — without writing code. Standardize quality, speed up delivery, and keep your know-how in-house.
           </p>
           
+          {/* Feature chips */}
+          <div className="flex flex-wrap justify-center gap-4 mb-8">
+            <div className="flex items-center gap-2 px-4 py-2 bg-white/60 border border-cogintech-teal/20 rounded-full">
+              <div className="w-2 h-2 bg-cogintech-teal rounded-full"></div>
+              <span className="text-sm font-medium text-foreground">Auto-extraction templates</span>
+            </div>
+            <div className="flex items-center gap-2 px-4 py-2 bg-white/60 border border-cogintech-teal/20 rounded-full">
+              <div className="w-2 h-2 bg-cogintech-teal rounded-full"></div>
+              <span className="text-sm font-medium text-foreground">Report builders</span>
+            </div>
+            <div className="flex items-center gap-2 px-4 py-2 bg-white/60 border border-cogintech-teal/20 rounded-full">
+              <div className="w-2 h-2 bg-cogintech-teal rounded-full"></div>
+              <span className="text-sm font-medium text-foreground">Workflow automation</span>
+            </div>
+          </div>
+          
           <Button 
             variant="outline"
             size="lg"

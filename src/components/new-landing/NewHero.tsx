@@ -15,12 +15,16 @@ const NewHero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div className="space-y-8 max-w-2xl">
             <div className="space-y-6">
+              <div className="flex items-center gap-2 mb-4">
+                <div className="px-3 py-1 bg-cogintech-teal/10 text-cogintech-teal text-sm font-medium rounded-full border border-cogintech-teal/20">
+                  MVP · Limited early-adopter slots this quarter
+                </div>
+              </div>
               <h1 className="text-4xl md:text-5xl font-bold leading-tight lg:text-5xl">
-                <span className="bg-gradient-to-r from-cogintech-blue to-cogintech-teal bg-clip-text text-transparent">Cogintech Integrity AI Double Your Engineering Team Productivity</span><br />
-                
+                <span className="bg-gradient-to-r from-cogintech-blue to-cogintech-teal bg-clip-text text-transparent">Double Your Engineering Productivity with AI</span>
               </h1>
               <p className="text-xl text-foreground/80">
-                <span className="font-semibold text-cogintech-teal"> Automatically create databases from technical documents and deploy AI assistants for search, analysis, and decision support</span>
+                <span className="font-semibold text-cogintech-teal">Turn scattered technical files into a structured database and get AI assistants for search, analysis and client-ready reporting.</span>
               </p>
             </div>
             
@@ -71,23 +75,28 @@ const NewHero = () => {
             <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-cogintech-orange/20 flex items-center justify-center">
               <span className="text-cogintech-orange font-bold text-3xl">30%</span>
             </div>
-            <div className="text-2xl font-bold text-cogintech-orange mb-1">Time saved</div>
-            <div className="text-base font-bold text-foreground/70">on typical engineering tasks</div>
+            <div className="text-2xl font-bold text-cogintech-orange mb-1">Less effort</div>
+            <div className="text-base font-bold text-foreground/70">engineering effort</div>
           </div>
           <div className="bg-white/60 backdrop-blur-sm border border-gray-200/50 rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300">
             <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-cogintech-teal/20 flex items-center justify-center">
               <span className="text-cogintech-teal font-bold text-3xl">10×</span>
             </div>
             <div className="text-2xl font-bold text-cogintech-teal mb-1">Faster</div>
-            <div className="text-base font-bold text-foreground/70">finding nesessary information</div>
+            <div className="text-base font-bold text-foreground/70">information access</div>
           </div>
           <div className="bg-white/60 backdrop-blur-sm border border-gray-200/50 rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300">
             <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-cogintech-blue/20 flex items-center justify-center">
-              <span className="text-cogintech-blue font-bold text-2xl">95%+</span>
+              <span className="text-cogintech-blue font-bold text-2xl">Higher</span>
             </div>
-            <div className="text-2xl font-bold text-cogintech-blue mb-1">Higher</div>
-            <div className="text-base font-bold text-foreground/70">report accuracy</div>
+            <div className="text-2xl font-bold text-cogintech-blue mb-1">Consistency</div>
+            <div className="text-base font-bold text-foreground/70">report consistency</div>
           </div>
+        </div>
+        
+        {/* Disclaimer */}
+        <div className="mt-6 text-center">
+          <p className="text-sm text-foreground/60 italic">Based on internal benchmarks and early user feedback.</p>
         </div>
       </div>
 
