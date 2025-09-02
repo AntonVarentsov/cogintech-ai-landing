@@ -20,7 +20,7 @@ const EarlyAdopters = () => {
             <div className="w-16 h-16 bg-cogintech-orange/20 rounded-full flex items-center justify-center mx-auto mb-6">
               <Users className="w-8 h-8 text-cogintech-orange" />
             </div>
-            <h3 className="text-2xl font-bold mb-4 text-white">Live Demo </B>with Your Team</h3>
+            <h3 className="text-2xl font-bold mb-4 text-white">Live Demo /B with Your Team</h3>
             <p className="text-white/70 mb-6">
               Walk through a real scenario with your files.
             </p>
