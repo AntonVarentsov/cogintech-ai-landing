@@ -71,7 +71,7 @@ const NewHero = () => {
               <span className="text-cogintech-blue font-bold text-2xl">Higher</span>
             </div>
             <div className="text-2xl font-bold text-cogintech-blue mb-1">Consistency</div>
-            <div className="text-base font-bold text-foreground/70">report consistency</div>
+            <div className="text-base font-bold text-foreground/70">accuracy of reports</div>
           </div>
         </div>
         
