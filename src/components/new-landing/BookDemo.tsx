@@ -88,22 +88,22 @@ const BookDemo = () => {
   const isFormValid = agreements.privacyPolicy && agreements.termsOfService;
 
   return (
-    <section id="book-demo" className="py-16 bg-cogintech-dark">
+    <section id="book-demo" className="py-16 bg-gradient-to-br from-cogintech-teal/10 via-cogintech-blue/5 to-cogintech-orange/10">
       <div className="container">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-white">
+            <h2 className="text-3xl font-bold mb-4 text-cogintech-dark">
               Book a 15-Minute Demo
             </h2>
-            <p className="text-xl text-white/70 max-w-2xl mx-auto">
+            <p className="text-xl text-cogintech-dark/70 max-w-2xl mx-auto">
               See how Cogintech can transform your inspection process in just 15 minutes
             </p>
           </div>
           
-          <Card className="bg-white/5 border-white/10">
+          <Card className="bg-white/80 border-cogintech-teal/20 shadow-lg">
             <CardHeader>
-              <CardTitle className="text-xl text-white">Schedule Your Demo</CardTitle>
-              <CardDescription className="text-white/70">
+              <CardTitle className="text-xl text-cogintech-dark">Schedule Your Demo</CardTitle>
+              <CardDescription className="text-cogintech-dark/70">
                 Get a personalized demonstration of our AI-powered analysis platform
               </CardDescription>
             </CardHeader>
@@ -125,7 +125,7 @@ const BookDemo = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="demo-name" className="text-white">Full Name</Label>
+                    <Label htmlFor="demo-name" className="text-cogintech-dark">Full Name</Label>
                     <Input 
                       id="demo-name" 
                       name="name"
@@ -134,12 +134,12 @@ const BookDemo = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="bg-white/10 border-white/20 text-white placeholder:text-white/50 focus-visible:ring-cogintech-teal"
+                      className="bg-white/50 border-cogintech-dark/20 text-cogintech-dark placeholder:text-cogintech-dark/50 focus-visible:ring-cogintech-teal"
                     />
                   </div>
                   
                   <div className="space-y-2">
-                    <Label htmlFor="demo-email" className="text-white">Work Email</Label>
+                    <Label htmlFor="demo-email" className="text-cogintech-dark">Work Email</Label>
                     <Input 
                       id="demo-email" 
                       name="email"
@@ -148,7 +148,7 @@ const BookDemo = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className={`bg-white/10 border-white/20 text-white placeholder:text-white/50 focus-visible:ring-cogintech-teal ${
+                      className={`bg-white/50 border-cogintech-dark/20 text-cogintech-dark placeholder:text-cogintech-dark/50 focus-visible:ring-cogintech-teal ${
                         !emailValidation.isValid ? 'border-red-500' : ''
                       }`}
                     />
@@ -160,7 +160,7 @@ const BookDemo = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="demo-company" className="text-white">Company</Label>
+                    <Label htmlFor="demo-company" className="text-cogintech-dark">Company</Label>
                     <Input 
                       id="demo-company" 
                       name="company"
@@ -169,12 +169,12 @@ const BookDemo = () => {
                       value={formData.company}
                       onChange={handleChange}
                       required
-                      className="bg-white/10 border-white/20 text-white placeholder:text-white/50 focus-visible:ring-cogintech-teal"
+                      className="bg-white/50 border-cogintech-dark/20 text-cogintech-dark placeholder:text-cogintech-dark/50 focus-visible:ring-cogintech-teal"
                     />
                   </div>
                   
                   <div className="space-y-2">
-                    <Label htmlFor="demo-role" className="text-white">Role</Label>
+                    <Label htmlFor="demo-role" className="text-cogintech-dark">Role</Label>
                     <Input 
                       id="demo-role" 
                       name="role"
@@ -183,29 +183,29 @@ const BookDemo = () => {
                       value={formData.role}
                       onChange={handleChange}
                       required
-                      className="bg-white/10 border-white/20 text-white placeholder:text-white/50 focus-visible:ring-cogintech-teal"
+                      className="bg-white/50 border-cogintech-dark/20 text-cogintech-dark placeholder:text-cogintech-dark/50 focus-visible:ring-cogintech-teal"
                     />
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="demo-industry" className="text-white">Industry (optional)</Label>
+                    <Label htmlFor="demo-industry" className="text-cogintech-dark">Industry (optional)</Label>
                     <Input 
                       id="demo-industry" 
                       name="industry"
                       type="text" 
                       placeholder="e.g., Oil & Gas"
-                      className="bg-white/10 border-white/20 text-white placeholder:text-white/50 focus-visible:ring-cogintech-teal"
+                      className="bg-white/50 border-cogintech-dark/20 text-cogintech-dark placeholder:text-cogintech-dark/50 focus-visible:ring-cogintech-teal"
                     />
                   </div>
                   
                   <div className="space-y-2">
-                    <Label htmlFor="demo-goal" className="text-white">Primary Goal (optional)</Label>
+                    <Label htmlFor="demo-goal" className="text-cogintech-dark">Primary Goal (optional)</Label>
                     <select 
                       id="demo-goal" 
                       name="goal"
-                      className="bg-white/10 border border-white/20 text-white rounded-md px-3 py-2 h-10 w-full focus-visible:ring-2 focus-visible:ring-cogintech-teal"
+                      className="bg-white/50 border border-cogintech-dark/20 text-cogintech-dark rounded-md px-3 py-2 h-10 w-full focus-visible:ring-2 focus-visible:ring-cogintech-teal"
                     >
                       <option value="">Select goal</option>
                       <option value="faster-reporting">Faster reporting</option>
@@ -221,7 +221,7 @@ const BookDemo = () => {
                     id="sandbox-access"
                     className="mt-1"
                   />
-                  <label htmlFor="sandbox-access" className="text-sm text-white/80 leading-relaxed">
+                  <label htmlFor="sandbox-access" className="text-sm text-cogintech-dark/80 leading-relaxed">
                     I want a sandbox account as well
                   </label>
                 </div>
@@ -234,7 +234,7 @@ const BookDemo = () => {
                       onCheckedChange={handleAgreementChange('privacyPolicy')}
                       className="mt-1"
                     />
-                    <label htmlFor="privacy-policy-demo" className="text-sm text-white/80 leading-relaxed">
+                    <label htmlFor="privacy-policy-demo" className="text-sm text-cogintech-dark/80 leading-relaxed">
                       I agree to the{' '}
                       <Link 
                         to="/privacy-policy" 
@@ -254,7 +254,7 @@ const BookDemo = () => {
                       onCheckedChange={handleAgreementChange('termsOfService')}
                       className="mt-1"
                     />
-                    <label htmlFor="terms-of-service-demo" className="text-sm text-white/80 leading-relaxed">
+                    <label htmlFor="terms-of-service-demo" className="text-sm text-cogintech-dark/80 leading-relaxed">
                       I agree to the{' '}
                       <Link 
                         to="/terms-of-service" 
