@@ -26,7 +26,7 @@ const EarlyAdopters = () => {
             </p>
             <Button 
               size="lg"
-              className="w-full bg-cogintech-orange hover:bg-cogintech-orange/90 text-white font-semibold"
+              className="w-full bg-cogintech-orange hover:bg-cogintech-orange/90 text-white font-semibold border-0"
               onClick={() => document.getElementById('demo-form')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Book Demo
@@ -44,8 +44,7 @@ const EarlyAdopters = () => {
             </p>
             <Button 
               size="lg"
-              variant="outline"
-              className="w-full border-cogintech-teal bg-cogintech-teal/10 text-cogintech-teal hover:bg-cogintech-teal hover:text-white font-semibold"
+              className="w-full bg-cogintech-teal hover:bg-cogintech-teal/90 text-white font-semibold border-0"
               onClick={() => window.open('https://sandbox.cogintech.com', '_blank')}
             >
               Get Test Access
@@ -63,8 +62,7 @@ const EarlyAdopters = () => {
             </p>
             <Button 
               size="lg"
-              variant="outline"
-              className="w-full border-white/40 text-white hover:bg-white/10 font-semibold"
+              className="w-full bg-white/10 hover:bg-white/20 text-white font-semibold border border-white/30"
               onClick={() => document.getElementById('newsletter-signup')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Subscribe to News
@@ -72,21 +70,22 @@ const EarlyAdopters = () => {
           </div>
         </div>
 
-        <div className="text-center space-y-4">
+        <div className="text-center space-y-6">
           <div className="inline-flex items-center gap-4 bg-white/10 text-white px-8 py-4 rounded-full text-lg font-semibold">
             <Rocket className="w-6 h-6" />
             Limited slots available.
           </div>
           
-          <Button 
-            variant="outline"
-            size="lg"
-            className="border-white/40 text-white hover:bg-white/10 font-medium"
-            onClick={() => document.getElementById('ask-question')?.scrollIntoView({ behavior: 'smooth' })}
-          >
-            Ask a Question
-            <Mail className="ml-2 h-4 w-4" />
-          </Button>
+          <div className="max-w-md mx-auto">
+            <Button 
+              size="lg"
+              className="w-full bg-white/10 hover:bg-white/20 text-white font-semibold border border-white/30"
+              onClick={() => document.getElementById('ask-question')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              <Mail className="mr-2 h-5 w-5" />
+              Ask a Question
+            </Button>
+          </div>
         </div>
       </div>
     </section>
