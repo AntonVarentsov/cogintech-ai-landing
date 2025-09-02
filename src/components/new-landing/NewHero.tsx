@@ -1,12 +1,9 @@
 import React, { useState } from "react";
 import { ArrowRight, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
 const NewHero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-
-  return (
-    <section className="py-16 md:py-24 relative overflow-hidden">
+  return <section className="py-16 md:py-24 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute -top-24 -right-24 w-96 h-96 bg-cogintech-teal/10 rounded-full blur-3xl"></div>
       <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-cogintech-blue/10 rounded-full blur-3xl"></div>
@@ -24,48 +21,32 @@ const NewHero = () => {
                 <span className="bg-gradient-to-r from-cogintech-blue to-cogintech-teal bg-clip-text text-transparent">Double Your Engineering Productivity with AI</span>
               </h1>
               <p className="text-xl text-foreground/80">
-                <span className="font-semibold text-cogintech-teal">Turn scattered technical files into a structured database and get AI assistants for search, analysis and client-ready reporting.</span>
+                <span className="font-semibold text-stone-600">Turn scattered technical files into a structured database and get AI assistants for search, analysis and client-ready reporting.</span>
               </p>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
-                className="bg-cogintech-orange hover:bg-cogintech-orange/90 text-white font-medium px-8 py-6"
-                onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
-              >
+              <Button size="lg" className="bg-cogintech-orange hover:bg-cogintech-orange/90 text-white font-medium px-8 py-6" onClick={() => document.getElementById('pricing')?.scrollIntoView({
+              behavior: 'smooth'
+            })}>
                 Get Test Access
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="border-cogintech-blue text-cogintech-blue hover:bg-cogintech-blue/5 font-medium px-8 py-6"
-                onClick={() => document.getElementById('book-demo')?.scrollIntoView({ behavior: 'smooth' })}
-              >
+              <Button variant="outline" size="lg" className="border-cogintech-blue text-cogintech-blue hover:bg-cogintech-blue/5 font-medium px-8 py-6" onClick={() => document.getElementById('book-demo')?.scrollIntoView({
+              behavior: 'smooth'
+            })}>
                 Book a 15-min Demo
               </Button>
             </div>
           </div>
           
-          <div 
-            className="relative aspect-[2/1] rounded-xl overflow-hidden bg-white border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity shadow-sm" 
-            onClick={() => setIsModalOpen(true)}
-            role="button"
-            tabIndex={0}
-            aria-label="Open data extraction process demonstration"
-            onKeyDown={(e) => {
-              if (e.key === 'Enter' || e.key === ' ') {
-                e.preventDefault();
-                setIsModalOpen(true);
-              }
-            }}
-          >
-            <img 
-              src="/lovable-uploads/8779f590-9e4c-43b9-abf7-8e951aa8db60.png"
-              alt="Document Chaos → Structured Database → AI Assistant"
-              className="w-full h-full object-contain"
-            />
+          <div className="relative aspect-[2/1] rounded-xl overflow-hidden bg-white border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity shadow-sm" onClick={() => setIsModalOpen(true)} role="button" tabIndex={0} aria-label="Open data extraction process demonstration" onKeyDown={e => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            setIsModalOpen(true);
+          }
+        }}>
+            <img src="/lovable-uploads/8779f590-9e4c-43b9-abf7-8e951aa8db60.png" alt="Document Chaos → Structured Database → AI Assistant" className="w-full h-full object-contain" />
           </div>
         </div>
         
@@ -101,30 +82,19 @@ const NewHero = () => {
       </div>
 
       {/* Modal */}
-      {isModalOpen && (
-        <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-50" onClick={() => setIsModalOpen(false)}>
+      {isModalOpen && <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-50" onClick={() => setIsModalOpen(false)}>
           <div className="relative w-full h-full flex items-center justify-center p-4">
-            <button 
-              onClick={() => setIsModalOpen(false)}
-              className="absolute top-4 right-4 z-10 bg-white/20 hover:bg-white/40 text-white rounded-full p-3 transition-colors"
-              aria-label="Close image"
-              title="Close image"
-            >
+            <button onClick={() => setIsModalOpen(false)} className="absolute top-4 right-4 z-10 bg-white/20 hover:bg-white/40 text-white rounded-full p-3 transition-colors" aria-label="Close image" title="Close image">
               <X className="h-6 w-6" aria-hidden="true" />
             </button>
             <div className="w-full h-full flex items-center justify-center">
-              <img 
-                src="/lovable-uploads/8779f590-9e4c-43b9-abf7-8e951aa8db60.png" 
-                alt="Document Chaos → Structured Database → AI Assistant"
-                className="w-auto h-auto max-w-full max-h-full object-contain" 
-                style={{ maxWidth: '95vw', maxHeight: '95vh' }}
-              />
+              <img src="/lovable-uploads/8779f590-9e4c-43b9-abf7-8e951aa8db60.png" alt="Document Chaos → Structured Database → AI Assistant" className="w-auto h-auto max-w-full max-h-full object-contain" style={{
+            maxWidth: '95vw',
+            maxHeight: '95vh'
+          }} />
             </div>
           </div>
-        </div>
-      )}
-    </section>
-  );
+        </div>}
+    </section>;
 };
-
 export default NewHero;
