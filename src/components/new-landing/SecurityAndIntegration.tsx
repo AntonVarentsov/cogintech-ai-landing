@@ -1,190 +1,181 @@
-import React from "react";
-import { Shield, Cloud, Users, Settings, Lock, Zap } from "lucide-react";
+import { Shield, Users, Server } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const SecurityAndIntegration = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-cogintech-light/20 via-background to-cogintech-blue/5">
+    <section className="py-16 bg-gradient-to-br from-cogintech-blue/5 to-background">
       <div className="container">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Enterprise-Ready 
-            <span className="text-cogintech-blue"> Security & Integration</span>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
+            Security, Privacy & IT (MVP)
           </h2>
           <p className="text-xl text-foreground/70 max-w-3xl mx-auto">
-            Built for engineering service companies that need both flexibility and security
+            We take data protection seriously. Below is what's available today, what's enabled during pilot, and what's next on our roadmap.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {/* Cloud or On-Prem */}
-          <div className="bg-card/50 backdrop-blur-sm border border-cogintech-blue/20 rounded-xl p-8 text-center hover:shadow-lg transition-all duration-300">
-            <div className="w-16 h-16 bg-cogintech-blue/10 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Cloud className="w-8 h-8 text-cogintech-blue" />
+        {/* Now / Pilot / Next Structure */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          {/* Available Now */}
+          <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200">
+            <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-6">
+              <Shield className="w-6 h-6 text-green-600" />
             </div>
-            <h3 className="text-xl font-bold mb-4 text-foreground">Cloud or On-Prem Deployment</h3>
-            <p className="text-foreground/70">
-              Choose between secure cloud hosting or on-premises deployment. 
-              Both options provide the same powerful AI capabilities with enterprise-grade security.
-            </p>
+            <h3 className="text-xl font-bold mb-4 text-center text-foreground">Available Now (MVP)</h3>
+            <ul className="space-y-3 text-foreground/70">
+              <li className="flex items-start gap-2">
+                <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                <span>Encryption in transit (TLS)</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                <span>Secure cloud hosting (provider-managed)</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                <span>Access controls (per account), activity logs (basic)</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                <span>Data deletion on request</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                <span>We don't train foundation models on your data</span>
+              </li>
+            </ul>
           </div>
 
-          {/* Role-Based Access */}
-          <div className="bg-card/50 backdrop-blur-sm border border-cogintech-teal/20 rounded-xl p-8 text-center hover:shadow-lg transition-all duration-300">
-            <div className="w-16 h-16 bg-cogintech-teal/10 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Users className="w-8 h-8 text-cogintech-teal" />
+          {/* Available in Pilot */}
+          <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200">
+            <div className="w-12 h-12 bg-cogintech-teal/20 rounded-lg flex items-center justify-center mx-auto mb-6">
+              <Users className="w-6 h-6 text-cogintech-teal" />
             </div>
-            <h3 className="text-xl font-bold mb-4 text-foreground">Role-Based Access Control</h3>
-            <p className="text-foreground/70">
-              Granular permissions ensure team members only access relevant projects and data. 
-              Perfect for managing client confidentiality and project isolation.
-            </p>
+            <h3 className="text-xl font-bold mb-4 text-center text-foreground">Available in Pilot</h3>
+            <ul className="space-y-3 text-foreground/70">
+              <li className="flex items-start gap-2">
+                <div className="w-2 h-2 bg-cogintech-teal rounded-full mt-2"></div>
+                <span>Private project spaces & role-based access (RBAC)</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <div className="w-2 h-2 bg-cogintech-teal rounded-full mt-2"></div>
+                <span>Guided data upload (no IT overhaul)</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <div className="w-2 h-2 bg-cogintech-teal rounded-full mt-2"></div>
+                <span>Optional NDA + DPA before any data is shared</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <div className="w-2 h-2 bg-cogintech-teal rounded-full mt-2"></div>
+                <span>EU data residency option (subject to pilot setup)</span>
+              </li>
+            </ul>
           </div>
 
-          {/* Integration */}
-          <div className="bg-card/50 backdrop-blur-sm border border-cogintech-blue/20 rounded-xl p-8 text-center hover:shadow-lg transition-all duration-300">
-            <div className="w-16 h-16 bg-cogintech-blue/10 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Settings className="w-8 h-8 text-cogintech-blue" />
+          {/* Planned Next */}
+          <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200">
+            <div className="w-12 h-12 bg-cogintech-blue/20 rounded-lg flex items-center justify-center mx-auto mb-6">
+              <Server className="w-6 h-6 text-cogintech-blue" />
             </div>
-            <h3 className="text-xl font-bold mb-4 text-foreground">System Integration</h3>
-            <p className="text-foreground/70">
-              API connections with SAP, Maximo, SharePoint, AVEVA, Oracle EAM, and more. 
-              No data silos, no manual imports – everything flows automatically.
-            </p>
-            
-            {/* Integration logos */}
-            <div className="flex flex-wrap justify-center gap-4 mt-4 opacity-60">
-              <span className="text-xs bg-gray-100 px-2 py-1 rounded">SAP</span>
-              <span className="text-xs bg-gray-100 px-2 py-1 rounded">Maximo</span>
-              <span className="text-xs bg-gray-100 px-2 py-1 rounded">SharePoint</span>
-              <span className="text-xs bg-gray-100 px-2 py-1 rounded">AVEVA</span>
-              <span className="text-xs bg-gray-100 px-2 py-1 rounded">Oracle EAM</span>
-              <span className="text-xs bg-gray-100 px-2 py-1 rounded">API</span>
+            <h3 className="text-xl font-bold mb-4 text-center text-foreground">Planned Next (Roadmap)</h3>
+            <ul className="space-y-3 text-foreground/70">
+              <li className="flex items-start gap-2">
+                <div className="w-2 h-2 bg-cogintech-blue rounded-full mt-2"></div>
+                <span>SSO (SAML/OIDC) & granular RBAC</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <div className="w-2 h-2 bg-cogintech-blue rounded-full mt-2"></div>
+                <span>Audit trails & retention policies</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <div className="w-2 h-2 bg-cogintech-blue rounded-full mt-2"></div>
+                <span>On-prem / VPC deployment option</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <div className="w-2 h-2 bg-cogintech-blue rounded-full mt-2"></div>
+                <span>Connectors: SharePoint, SAP/Maximo, AVEVA, REST API</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Security Standards - Updated */}
+        <div className="bg-gray-50 rounded-2xl p-8 mb-12">
+          <h3 className="text-xl font-bold mb-6 text-center text-foreground">Security Framework Approach</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <ul className="space-y-3 text-foreground/70">
+              <li className="flex items-start gap-2">
+                <div className="w-2 h-2 bg-cogintech-orange rounded-full mt-2"></div>
+                <span>Designed to meet SOC 2 Type II practices</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <div className="w-2 h-2 bg-cogintech-orange rounded-full mt-2"></div>
+                <span>Aligned with ISO/IEC 27001 controls</span>
+              </li>
+            </ul>
+            <ul className="space-y-3 text-foreground/70">
+              <li className="flex items-start gap-2">
+                <div className="w-2 h-2 bg-cogintech-orange rounded-full mt-2"></div>
+                <span>GDPR-ready data processing features</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <div className="w-2 h-2 bg-cogintech-orange rounded-full mt-2"></div>
+                <span>API-first architecture for secure integrations</span>
+              </li>
+            </ul>
+          </div>
+          <p className="text-sm text-foreground/60 italic mt-6 text-center">Planned certifications on the roadmap.</p>
+        </div>
+
+        {/* Mini-FAQ */}
+        <div className="bg-white rounded-2xl p-8 mb-12 shadow-sm border border-gray-200">
+          <h3 className="text-xl font-bold mb-6 text-center text-foreground">Quick Security & IT Questions</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="space-y-4">
+              <div>
+                <h4 className="font-semibold text-foreground mb-2">Is this production-ready?</h4>
+                <p className="text-sm text-foreground/70">We're in MVP with limited early adopters. Start with a demo or sandbox; a guided pilot takes ~2 weeks.</p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-foreground mb-2">Can we test without sharing sensitive data?</h4>
+                <p className="text-sm text-foreground/70">Yes. Use our sandbox with sample data. For pilots, we sign NDA/DPA and isolate your project space.</p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-foreground mb-2">Do you store or use our data to train models?</h4>
+                <p className="text-sm text-foreground/70">No. Your data stays within your tenant; we don't use it to train foundation models.</p>
+              </div>
+            </div>
+            <div className="space-y-4">
+              <div>
+                <h4 className="font-semibold text-foreground mb-2">What about on-prem or private cloud?</h4>
+                <p className="text-sm text-foreground/70">Planned. During pilot we evaluate deployment constraints and agree the path (VPC / on-prem).</p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-foreground mb-2">How do integrations work?</h4>
+                <p className="text-sm text-foreground/70">API-first approach. SharePoint / SAP / Maximo / AVEVA connectors are on the roadmap; during pilot we provide guided export/import.</p>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Security Features Grid */}
-        <div className="bg-gradient-to-br from-cogintech-dark/10 to-cogintech-blue/10 rounded-2xl p-8 border border-cogintech-blue/20">
-          <h3 className="text-2xl font-bold text-center mb-8 text-foreground">
-            Enterprise Security Standards
-          </h3>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-cogintech-teal/20 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Shield className="w-5 h-5 text-cogintech-teal" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-foreground mb-2">Designed to meet SOC 2 Type II practices</h4>
-                  <p className="text-foreground/70 text-sm">
-                    Security controls and data protection measures aligned with industry standards
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-cogintech-blue/20 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Lock className="w-5 h-5 text-cogintech-blue" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-foreground mb-2">End-to-End Encryption</h4>
-                  <p className="text-foreground/70 text-sm">
-                    AES-256 encryption in transit and at rest
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-cogintech-teal/20 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Zap className="w-5 h-5 text-cogintech-teal" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-foreground mb-2">GDPR-ready data processing features</h4>
-                  <p className="text-foreground/70 text-sm">
-                    Aligned with ISO/IEC 27001 controls and international data privacy standards
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-cogintech-blue/20 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Users className="w-5 h-5 text-cogintech-blue" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-foreground mb-2">Multi-Factor Authentication</h4>
-                  <p className="text-foreground/70 text-sm">
-                    SSO integration and MFA for enhanced security
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-cogintech-teal/20 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Shield className="w-5 h-5 text-cogintech-teal" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-foreground mb-2">Regular Security Audits</h4>
-                  <p className="text-foreground/70 text-sm">
-                    Continuous monitoring and third-party security assessments
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-cogintech-blue/20 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Lock className="w-5 h-5 text-cogintech-blue" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-foreground mb-2">Data Isolation</h4>
-                  <p className="text-foreground/70 text-sm">
-                    Client data is completely isolated and never commingled
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="text-center mt-12">
-          <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-            <strong>Peace of mind for your clients:</strong> All data processing happens in secure, 
-            isolated environments with full audit trails and compliance documentation.
-          </p>
-        </div>
-        
-        <div className="text-center mt-8">
-          <p className="text-sm text-foreground/60">
-            Planned certifications on the roadmap.
-          </p>
-        </div>
-        
-        {/* Integration logos */}
-        <div className="mt-16 text-center">
-          <h3 className="text-xl font-semibold text-foreground mb-6">Integrations</h3>
-          <div className="flex flex-wrap justify-center items-center gap-8 opacity-70">
-            <span className="text-foreground/60 font-medium px-4 py-2 border border-foreground/20 rounded-lg">SAP</span>
-            <span className="text-foreground/60 font-medium px-4 py-2 border border-foreground/20 rounded-lg">Maximo</span>
-            <span className="text-foreground/60 font-medium px-4 py-2 border border-foreground/20 rounded-lg">SharePoint</span>
-            <span className="text-foreground/60 font-medium px-4 py-2 border border-foreground/20 rounded-lg">AVEVA</span>
-            <span className="text-foreground/60 font-medium px-4 py-2 border border-foreground/20 rounded-lg">Oracle EAM</span>
-            <span className="text-foreground/60 font-medium px-4 py-2 border border-foreground/20 rounded-lg">API</span>
-          </div>
-          
-          {/* Cloud/On-Prem toggle */}
-          <div className="mt-12 max-w-2xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-cogintech-blue/10 rounded-xl p-6 text-center">
-                <h4 className="text-lg font-semibold text-foreground mb-2">Cloud</h4>
-                <p className="text-foreground/70 text-sm">Quick setup, managed infrastructure, instant updates</p>
-              </div>
-              <div className="bg-cogintech-teal/10 rounded-xl p-6 text-center">
-                <h4 className="text-lg font-semibold text-foreground mb-2">On-Premise</h4>
-                <p className="text-foreground/70 text-sm">Full control, custom security, air-gapped deployment</p>
-              </div>
-            </div>
+        {/* CTAs */}
+        <div className="text-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button 
+              variant="outline"
+              size="lg"
+              className="border-cogintech-blue text-cogintech-blue hover:bg-cogintech-blue/5 font-medium px-8 py-6"
+            >
+              Read the 1-page Security Note
+            </Button>
+            <Button 
+              variant="outline"
+              size="lg"
+              className="border-cogintech-teal text-cogintech-teal hover:bg-cogintech-teal/5 font-medium px-8 py-6"
+              onClick={() => document.getElementById('ask-question')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              Ask a Security Question
+            </Button>
           </div>
         </div>
       </div>
