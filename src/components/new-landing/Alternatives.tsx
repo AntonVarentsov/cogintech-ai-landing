@@ -58,12 +58,12 @@ const Alternatives = () => {
         
         <div className="overflow-x-auto">
           <div className="inline-block min-w-full">
-            <div className="grid grid-cols-4 gap-4 mb-4">
-              <div className="p-4"></div>
+            <div className="grid grid-cols-4 gap-6 mb-6">
+              <div className="p-6"></div>
               {alternatives.map((alt, index) => {
                 const IconComponent = alt.icon;
                 return (
-                  <div key={index} className="bg-gray-50 rounded-xl p-6 text-center">
+                  <div key={index} className="bg-gray-50 rounded-xl p-8 text-center">
                     <div className={`w-12 h-12 ${alt.name === 'Cogintech AI' ? 'bg-cogintech-teal/20' : 'bg-gray-200'} rounded-full flex items-center justify-center mx-auto mb-4`}>
                       <IconComponent className={`w-6 h-6 ${alt.name === 'Cogintech AI' ? 'text-cogintech-teal' : 'text-gray-600'}`} />
                     </div>
@@ -74,10 +74,10 @@ const Alternatives = () => {
             </div>
             
             {Object.keys(alternatives[0].features).map((feature) => (
-              <div key={feature} className="grid grid-cols-4 gap-4 mb-3 py-4 border-b border-gray-100">
-                <div className="p-4 font-semibold text-lg text-foreground">{feature}</div>
+              <div key={feature} className="grid grid-cols-4 gap-6 mb-4 py-6 border-b border-gray-100">
+                <div className="px-6 py-2 font-semibold text-lg text-foreground">{feature}</div>
                 {alternatives.map((alt, index) => (
-                  <div key={index} className="p-4 flex items-center gap-3">
+                  <div key={index} className="px-6 py-2 flex items-center gap-4">
                     {getStatusIcon(alt.name, feature)}
                     <span className="text-base font-medium text-foreground/80">{alt.features[feature as keyof typeof alt.features]}</span>
                   </div>
