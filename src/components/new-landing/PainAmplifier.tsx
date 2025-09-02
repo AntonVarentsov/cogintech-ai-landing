@@ -1,4 +1,4 @@
-import { Search, Timer, Target } from "lucide-react";
+import { Search, Timer, Target, Copy } from "lucide-react";
 
 const PainAmplifier = () => {
   const painPoints = [
@@ -16,6 +16,11 @@ const PainAmplifier = () => {
       icon: Target,
       title: "Inconsistent Quality",
       description: "Inconsistent documentation makes quality and compliance hard to guarantee."
+    },
+    {
+      icon: Copy,
+      title: "Manual Data Handling",
+      description: "Copy-paste between systems and manual data preparation consume hours of valuable engineering time."
     }
   ];
 
@@ -27,11 +32,11 @@ const PainAmplifier = () => {
             Why Enineering Teams Lose Time and Efficiency
           </h2>
           <p className="text-xl text-foreground/70 max-w-3xl mx-auto">
-            Three critical gaps are eating into your engineering team productivity
+            Four critical gaps are eating into your engineering team productivity
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {painPoints.map((point, index) => (
             <div key={index} className="text-center p-6 rounded-xl bg-white shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
               <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
