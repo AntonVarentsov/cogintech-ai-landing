@@ -25,8 +25,9 @@ const EarlyAdopters = () => {
               Walk through a real scenario with your files.
             </p>
             <Button 
+              variant="cogintech-orange"
               size="lg"
-              className="w-full bg-cogintech-orange hover:bg-cogintech-orange/90 text-white font-semibold border-0"
+              className="w-full font-semibold"
               onClick={() => document.getElementById('demo-form')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Book Demo
@@ -43,8 +44,9 @@ const EarlyAdopters = () => {
               Hands-on with sample data • Optional upload of your files during demo.
             </p>
             <Button 
+              variant="cogintech-teal"
               size="lg"
-              className="w-full bg-cogintech-teal hover:bg-cogintech-teal/90 text-white font-semibold border-0"
+              className="w-full font-semibold"
               onClick={() => window.open('https://sandbox.cogintech.com', '_blank')}
             >
               Get Test Access
@@ -61,8 +63,9 @@ const EarlyAdopters = () => {
               Product news, features and tips.
             </p>
             <Button 
+              variant="cogintech-blue-outline"
               size="lg"
-              className="w-full bg-cogintech-blue/10 hover:bg-cogintech-blue/20 text-cogintech-blue font-semibold border border-cogintech-blue/30"
+              className="w-full font-semibold"
               onClick={() => document.getElementById('newsletter-signup')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Subscribe to News
@@ -78,8 +81,9 @@ const EarlyAdopters = () => {
           
           <div className="max-w-md mx-auto">
             <Button 
+              variant="outline"
               size="lg"
-              className="w-full bg-white/10 hover:bg-white/20 text-white font-semibold border border-white/30"
+              className="w-full font-semibold border-white text-white hover:bg-white hover:text-cogintech-dark"
               onClick={() => document.getElementById('ask-question')?.scrollIntoView({ behavior: 'smooth' })}
             >
               <Mail className="mr-2 h-5 w-5" />

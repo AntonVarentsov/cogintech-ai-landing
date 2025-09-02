@@ -2,6 +2,7 @@
 import Navbar from "@/components/Navbar";
 import SEOHead from "@/components/SEOHead";
 import Footer from "@/components/Footer";
+import { Button } from "@/components/ui/button";
 
 const News = () => {
   const newsItems = [
@@ -71,9 +72,9 @@ const News = () => {
             </div>
             
             <div className="mt-12 flex justify-center">
-              <button className="bg-cogintech-blue hover:bg-cogintech-blue/90 text-white font-medium px-8 py-3 rounded-md">
+              <Button variant="cogintech-blue" className="font-medium px-8 py-3">
                 View All News
-              </button>
+              </Button>
             </div>
           </div>
         </section>

@@ -1,4 +1,5 @@
 import { FolderOpen, Database, Brain, Check, X, Minus } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Alternatives = () => {
   const alternatives = [
@@ -122,12 +123,12 @@ const Alternatives = () => {
               Ready to see the difference AI can make for your engineering team?
             </p>
             <div className="flex justify-center gap-4">
-              <button className="px-6 py-3 bg-cogintech-teal text-white font-semibold rounded-lg hover:bg-cogintech-teal/90 transition-colors duration-200">
+              <Button variant="cogintech-teal" className="px-6 py-3 font-semibold">
                 Get Test Access
-              </button>
-              <button className="px-6 py-3 border border-gray-300 text-foreground font-semibold rounded-lg hover:bg-gray-50 transition-colors duration-200">
+              </Button>
+              <Button variant="outline" className="px-6 py-3 font-semibold">
                 Book Demo
-              </button>
+              </Button>
             </div>
           </div>
         </div>

@@ -269,8 +269,9 @@ const BookDemo = () => {
                 </div>
 
                 <Button 
+                  variant="cogintech-orange"
                   type="submit"
-                  className="w-full bg-cogintech-orange hover:bg-cogintech-orange/90 text-white disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full disabled:opacity-50 disabled:cursor-not-allowed"
                   disabled={isSubmitting || !isFormValid || !emailValidation.isValid || !csrfToken}
                 >
                   {isSubmitting ? "Booking Demo..." : "Book 15-Min Demo"}
