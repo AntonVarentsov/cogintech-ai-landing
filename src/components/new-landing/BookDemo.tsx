@@ -88,19 +88,19 @@ const BookDemo = () => {
   const isFormValid = agreements.privacyPolicy && agreements.termsOfService;
 
   return (
-    <section id="book-demo" className="py-16 bg-gradient-to-br from-cogintech-teal/10 via-cogintech-blue/5 to-cogintech-orange/10">
+    <section id="book-demo" className="py-16 bg-gradient-to-br from-cogintech-blue/50 via-cogintech-dark/60 to-cogintech-teal/40">
       <div className="container">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-cogintech-dark">
+            <h2 className="text-3xl font-bold mb-4 text-white">
               Book a 15-Minute Demo
             </h2>
-            <p className="text-xl text-cogintech-dark/70 max-w-2xl mx-auto">
+            <p className="text-xl text-white/70 max-w-2xl mx-auto">
               See how Cogintech can transform your inspection process in just 15 minutes
             </p>
           </div>
           
-          <Card className="bg-white/80 border-cogintech-teal/20 shadow-lg">
+          <Card className="bg-white/90 border-white/20 shadow-lg">
             <CardHeader>
               <CardTitle className="text-xl text-cogintech-dark">Schedule Your Demo</CardTitle>
               <CardDescription className="text-cogintech-dark/70">

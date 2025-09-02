@@ -3,13 +3,13 @@ import { Rocket, Users, Zap, CheckCircle, Play, Mail } from "lucide-react";
 
 const EarlyAdopters = () => {
   return (
-    <section id="early-adopters" className="py-20 bg-gradient-to-br from-cogintech-blue/10 via-cogintech-teal/5 to-cogintech-orange/10">
+    <section id="early-adopters" className="py-20 bg-gradient-to-br from-cogintech-dark/70 via-cogintech-blue/40 to-cogintech-teal/30">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-cogintech-dark">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
             Be the First to Experience AI-Powered Engineering Services
           </h2>
-          <p className="text-xl text-cogintech-dark/70 max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-white/80 max-w-3xl mx-auto mb-8">
             We're opening a limited number of MVP slots this quarter:
           </p>
         </div>
@@ -71,7 +71,7 @@ const EarlyAdopters = () => {
         </div>
 
         <div className="text-center space-y-6">
-          <div className="inline-flex items-center gap-4 bg-cogintech-orange/10 text-cogintech-orange px-8 py-4 rounded-full text-lg font-semibold border border-cogintech-orange/20">
+          <div className="inline-flex items-center gap-4 bg-cogintech-orange/20 text-white px-8 py-4 rounded-full text-lg font-semibold border border-cogintech-orange/30">
             <Rocket className="w-6 h-6" />
             Limited slots available.
           </div>
@@ -79,7 +79,7 @@ const EarlyAdopters = () => {
           <div className="max-w-md mx-auto">
             <Button 
               size="lg"
-              className="w-full bg-cogintech-dark/10 hover:bg-cogintech-dark/20 text-cogintech-dark font-semibold border border-cogintech-dark/30"
+              className="w-full bg-white/10 hover:bg-white/20 text-white font-semibold border border-white/30"
               onClick={() => document.getElementById('ask-question')?.scrollIntoView({ behavior: 'smooth' })}
             >
               <Mail className="mr-2 h-5 w-5" />
