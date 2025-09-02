@@ -165,6 +165,7 @@ const SecurityAndIntegration = () => {
               variant="outline"
               size="lg"
               className="border-cogintech-blue text-cogintech-blue hover:bg-cogintech-blue/5 font-medium px-8 py-6"
+              onClick={() => window.open('/security-note', '_blank')}
             >
               Read the 1-page Security Note
             </Button>
