@@ -269,7 +269,7 @@ const BookDemo = () => {
                 </div>
 
                 <Button 
-                  variant="cogintech-orange"
+                  variant="accent"
                   type="submit"
                   className="w-full disabled:opacity-50 disabled:cursor-not-allowed"
                   disabled={isSubmitting || !isFormValid || !emailValidation.isValid || !csrfToken}

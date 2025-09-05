@@ -5,20 +5,20 @@ const NewHero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return <section className="py-16 md:py-24 relative overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute -top-24 -right-24 w-96 h-96 bg-cogintech-teal/10 rounded-full blur-3xl"></div>
-      <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-cogintech-blue/10 rounded-full blur-3xl"></div>
+      <div className="absolute -top-24 -right-24 w-96 h-96 bg-secondary/10 rounded-full blur-3xl"></div>
+      <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
       
       <div className="container relative">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div className="space-y-8 max-w-2xl">
             <div className="space-y-6">
               <div className="flex items-center gap-2 mb-4">
-                <div className="px-3 py-1 bg-cogintech-teal/10 text-cogintech-teal text-sm font-medium rounded-full border border-cogintech-teal/20">
+                <div className="px-3 py-1 bg-accent/10 text-accent text-sm font-medium rounded-full border border-accent/20">
                   MVP · Limited early-adopter slots this quarter
                 </div>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold leading-tight lg:text-5xl">
-                <span className="bg-gradient-to-r from-cogintech-blue to-cogintech-teal bg-clip-text text-transparent">Double Your Engineering Productivity with AI</span>
+                <span className="gradient-text">Double Your Engineering Productivity with AI</span>
               </h1>
               <p className="text-xl text-foreground/80">
                 <span className="font-semibold text-stone-600">Turn scattered technical files into a structured database and get AI assistants for search, analysis and client-ready reporting.</span>
@@ -26,13 +26,13 @@ const NewHero = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="cogintech-orange" size="lg" className="font-medium px-8 py-6" onClick={() => document.getElementById('pricing')?.scrollIntoView({
+              <Button variant="accent" size="lg" className="font-medium px-8 py-6" onClick={() => document.getElementById('pricing')?.scrollIntoView({
               behavior: 'smooth'
             })}>
                 Get Test Access
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
-              <Button variant="cogintech-blue-outline" size="lg" className="font-medium px-8 py-6" onClick={() => document.getElementById('book-demo')?.scrollIntoView({
+              <Button variant="outline" size="lg" className="font-medium px-8 py-6" onClick={() => document.getElementById('book-demo')?.scrollIntoView({
               behavior: 'smooth'
             })}>
                 Book a 15-min Demo
@@ -53,24 +53,24 @@ const NewHero = () => {
         {/* Statistics row spanning full width */}
         <div className="mt-20 grid grid-cols-1 sm:grid-cols-3 gap-6">
           <div className="bg-white/60 backdrop-blur-sm border border-gray-200/50 rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300">
-            <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-cogintech-orange/20 flex items-center justify-center">
-              <span className="text-cogintech-orange font-bold text-3xl">30%</span>
+            <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-accent/20 flex items-center justify-center">
+              <span className="text-accent font-bold text-3xl">30%</span>
             </div>
-            <div className="text-2xl font-bold text-cogintech-orange mb-1">Less effort</div>
+            <div className="text-2xl font-bold text-accent mb-1">Less effort</div>
             <div className="text-base font-bold text-foreground/70">engineering effort</div>
           </div>
           <div className="bg-white/60 backdrop-blur-sm border border-gray-200/50 rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300">
-            <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-cogintech-teal/20 flex items-center justify-center">
-              <span className="text-cogintech-teal font-bold text-3xl">10×</span>
+            <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-secondary/20 flex items-center justify-center">
+              <span className="text-secondary font-bold text-3xl">10×</span>
             </div>
-            <div className="text-2xl font-bold text-cogintech-teal mb-1">Faster</div>
+            <div className="text-2xl font-bold text-secondary mb-1">Faster</div>
             <div className="text-base font-bold text-foreground/70">information access</div>
           </div>
           <div className="bg-white/60 backdrop-blur-sm border border-gray-200/50 rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300">
-            <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-cogintech-blue/20 flex items-center justify-center">
-              <span className="text-cogintech-blue font-bold text-2xl">Higher</span>
+            <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-primary/20 flex items-center justify-center">
+              <span className="text-primary font-bold text-2xl">Higher</span>
             </div>
-            <div className="text-2xl font-bold text-cogintech-blue mb-1">Consistency</div>
+            <div className="text-2xl font-bold text-primary mb-1">Consistency</div>
             <div className="text-base font-bold text-foreground/70">and accuracy of reports</div>
           </div>
         </div>

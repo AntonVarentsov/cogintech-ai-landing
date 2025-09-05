@@ -9,18 +9,14 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-white border-primary hover:bg-transparent hover:text-primary",
-        destructive: "bg-destructive text-white border-destructive hover:bg-transparent hover:text-destructive",
-        outline: "border-primary bg-transparent text-primary hover:bg-primary hover:text-white",
-        secondary: "bg-secondary text-white border-secondary hover:bg-transparent hover:text-secondary",
-        ghost: "border-transparent hover:bg-accent hover:text-accent-foreground",
+        default: "bg-primary text-primary-foreground border-primary hover:bg-primary/90",
+        destructive: "bg-destructive text-destructive-foreground border-destructive hover:bg-destructive/90",
+        outline: "border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground",
+        secondary: "bg-secondary text-secondary-foreground border-secondary hover:bg-secondary/90",
+        ghost: "border-transparent hover:bg-accent/10 hover:text-accent",
         link: "text-primary underline-offset-4 hover:underline border-transparent",
-        "cogintech-orange": "bg-cogintech-orange text-white border-cogintech-orange hover:bg-transparent hover:text-cogintech-orange",
-        "cogintech-orange-outline": "border-cogintech-orange bg-transparent text-cogintech-orange hover:bg-cogintech-orange hover:text-white",
-        "cogintech-blue": "bg-cogintech-blue text-white border-cogintech-blue hover:bg-transparent hover:text-cogintech-blue",
-        "cogintech-blue-outline": "border-cogintech-blue bg-transparent text-cogintech-blue hover:bg-cogintech-blue hover:text-white",
-        "cogintech-teal": "bg-cogintech-teal text-white border-cogintech-teal hover:bg-transparent hover:text-cogintech-teal",
-        "cogintech-teal-outline": "border-cogintech-teal bg-transparent text-cogintech-teal hover:bg-cogintech-teal hover:text-white",
+        accent: "bg-accent text-accent-foreground border-accent hover:bg-accent/90 shadow-lg",
+        "accent-outline": "border-accent bg-transparent text-accent hover:bg-accent hover:text-accent-foreground",
       },
       size: {
         default: "h-10 px-4 py-2",

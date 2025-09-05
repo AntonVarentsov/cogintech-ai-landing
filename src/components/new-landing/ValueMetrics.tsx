@@ -29,7 +29,7 @@ const ValueMetrics = () => {
   ];
 
   return (
-    <section id="results" className="py-16 bg-gradient-to-b from-cogintech-blue/5 to-background">
+    <section id="results" className="py-16 bg-muted">
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">
@@ -48,7 +48,7 @@ const ValueMetrics = () => {
                   <metric.icon className="h-6 w-6 text-green-600" />
                 </div>
               </div>
-              <div className="text-4xl font-bold text-cogintech-orange mb-2">
+              <div className="text-4xl font-bold text-accent mb-2">
                 {metric.value}
               </div>
               <h3 className="text-lg font-semibold mb-3 text-foreground">
@@ -63,7 +63,7 @@ const ValueMetrics = () => {
         
         {/* Benchmarks link */}
         <div className="text-center mt-8">
-          <button className="text-sm text-cogintech-blue hover:text-cogintech-blue/80 underline">
+          <button className="text-sm text-primary hover:text-primary/80 underline">
             See how we calculate these benchmarks
           </button>
         </div>

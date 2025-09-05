@@ -123,7 +123,7 @@ const Alternatives = () => {
               Ready to see the difference AI can make for your engineering team?
             </p>
             <div className="flex justify-center gap-4">
-              <Button variant="cogintech-teal" className="px-6 py-3 font-semibold">
+              <Button variant="accent" className="px-6 py-3 font-semibold">
                 Get Test Access
               </Button>
               <Button variant="outline" className="px-6 py-3 font-semibold">
