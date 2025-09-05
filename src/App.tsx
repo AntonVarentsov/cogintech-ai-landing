@@ -21,6 +21,7 @@ import TermsOfService from "./pages/TermsOfService";
 import CookiePolicy from "./pages/CookiePolicy";
 import SecurityNote from "./pages/SecurityNote";
 import NewLanding from "./pages/NewLanding";
+import NewLandingVariantB from "./pages/NewLandingVariantB";
 import Unauthorized from "./pages/Unauthorized";
 
 const queryClient = new QueryClient();
@@ -48,6 +49,7 @@ const App = () => {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<NewLanding />} />
+          <Route path="/variant-b" element={<NewLandingVariantB />} />
           <Route path="/old-landing" element={<Index />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/our-team" element={<OurTeam />} />
