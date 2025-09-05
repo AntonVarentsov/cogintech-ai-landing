@@ -27,14 +27,14 @@ const StickyHeader = () => {
         <div className="flex items-center gap-3">
           <Button
             size="sm"
-            variant="outline"
+            variant="cogintech-blue-outline"
             onClick={() => document.getElementById('book-demo')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Book Demo
           </Button>
           <Button
             size="sm"
-            variant="accent"
+            variant="cogintech-orange"
             onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Get Test Access

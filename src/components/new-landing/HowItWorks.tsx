@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const HowItWorks = () => {
   return (
-    <section className="py-20 bg-muted">
+    <section className="py-20 bg-gradient-to-br from-background to-cogintech-light/20">
       <div className="container">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
@@ -18,11 +18,11 @@ const HowItWorks = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {/* Step 1 */}
           <div className="relative">
-            <div className="bg-card backdrop-blur-sm border border-primary/20 rounded-xl p-8 text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-              <div className="w-20 h-20 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center mx-auto mb-6">
+            <div className="bg-card/50 backdrop-blur-sm border border-cogintech-blue/20 rounded-xl p-8 text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <div className="w-20 h-20 bg-gradient-to-br from-cogintech-blue to-cogintech-blue/80 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Upload className="w-10 h-10 text-white" />
               </div>
-              <div className="absolute -top-4 -left-4 w-8 h-8 bg-accent rounded-full flex items-center justify-center text-white font-bold text-sm">
+              <div className="absolute -top-4 -left-4 w-8 h-8 bg-cogintech-orange rounded-full flex items-center justify-center text-white font-bold text-sm">
                 1
               </div>
               <h3 className="text-2xl font-bold mb-4 text-foreground">Upload & Connect</h3>
@@ -32,17 +32,17 @@ const HowItWorks = () => {
             </div>
             {/* Arrow for desktop */}
             <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2">
-              <ArrowRight className="w-8 h-8 text-primary" />
+              <ArrowRight className="w-8 h-8 text-cogintech-teal" />
             </div>
           </div>
 
           {/* Step 2 */}
           <div className="relative">
-            <div className="bg-card backdrop-blur-sm border border-primary/20 rounded-xl p-8 text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-              <div className="w-20 h-20 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center mx-auto mb-6">
+            <div className="bg-card/50 backdrop-blur-sm border border-cogintech-teal/20 rounded-xl p-8 text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <div className="w-20 h-20 bg-gradient-to-br from-cogintech-teal to-cogintech-teal/80 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Brain className="w-10 h-10 text-white" />
               </div>
-              <div className="absolute -top-4 -left-4 w-8 h-8 bg-accent rounded-full flex items-center justify-center text-white font-bold text-sm">
+              <div className="absolute -top-4 -left-4 w-8 h-8 bg-cogintech-orange rounded-full flex items-center justify-center text-white font-bold text-sm">
                 2
               </div>
               <h3 className="text-2xl font-bold mb-4 text-foreground">AI Organizes & Analyzes</h3>
@@ -52,17 +52,17 @@ const HowItWorks = () => {
             </div>
             {/* Arrow for desktop */}
             <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2">
-              <ArrowRight className="w-8 h-8 text-primary" />
+              <ArrowRight className="w-8 h-8 text-cogintech-teal" />
             </div>
           </div>
 
           {/* Step 3 */}
           <div className="relative">
-            <div className="bg-card backdrop-blur-sm border border-primary/20 rounded-xl p-8 text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-              <div className="w-20 h-20 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center mx-auto mb-6">
+            <div className="bg-card/50 backdrop-blur-sm border border-cogintech-blue/20 rounded-xl p-8 text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <div className="w-20 h-20 bg-gradient-to-br from-cogintech-blue to-cogintech-blue/80 rounded-full flex items-center justify-center mx-auto mb-6">
                 <MessageSquare className="w-10 h-10 text-white" />
               </div>
-              <div className="absolute -top-4 -left-4 w-8 h-8 bg-accent rounded-full flex items-center justify-center text-white font-bold text-sm">
+              <div className="absolute -top-4 -left-4 w-8 h-8 bg-cogintech-orange rounded-full flex items-center justify-center text-white font-bold text-sm">
                 3
               </div>
               <h3 className="text-2xl font-bold mb-4 text-foreground">Ask & Report</h3>
@@ -74,7 +74,7 @@ const HowItWorks = () => {
         </div>
 
         {/* Video Demo Section */}
-        <div className="bg-card rounded-2xl p-8 mb-12 border border-border">
+        <div className="bg-gradient-to-br from-cogintech-blue/10 to-cogintech-teal/10 rounded-2xl p-8 mb-12">
           <div className="text-center mb-8">
             <h3 className="text-3xl font-bold mb-4 text-foreground">See It in Action</h3>
             <p className="text-lg text-foreground/70">
@@ -99,7 +99,7 @@ const HowItWorks = () => {
         {/* CTA Section */}
         <div className="text-center">
           <Button 
-            variant="accent"
+            variant="cogintech-teal"
             size="lg"
             className="px-12 py-4 text-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
             onClick={() => window.open('https://sandbox.cogintech.com', '_blank')}
