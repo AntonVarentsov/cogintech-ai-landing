@@ -66,16 +66,16 @@ const Careers = () => {
                   <div key={index} className="border border-border rounded-lg p-6 hover:shadow-md transition-shadow">
                     <div className="flex flex-col md:flex-row md:justify-between md:items-center">
                       <div>
-                        <h3 className="text-xl font-semibold text-cogintech-blue">{position.title}</h3>
+                        <h3 className="text-xl font-semibold text-primary">{position.title}</h3>
                         <p className="text-foreground/80 mt-1">{position.department}</p>
                       </div>
                       <div className="mt-3 md:mt-0">
                         <span className="inline-block bg-muted px-3 py-1 rounded-full text-sm mr-2">{position.location}</span>
-                        <span className="inline-block bg-cogintech-blue/10 text-cogintech-blue px-3 py-1 rounded-full text-sm">{position.type}</span>
+                        <span className="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">{position.type}</span>
                       </div>
                     </div>
                     <div className="mt-4 flex justify-end">
-                      <button className="text-cogintech-blue hover:text-cogintech-blue/80 font-medium">
+                      <button className="text-primary hover:text-primary/80 font-medium">
                         View Details →
                       </button>
                     </div>

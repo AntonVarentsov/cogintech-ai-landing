@@ -240,7 +240,7 @@ const Contact = () => {
                         I agree to the{' '}
                         <Link 
                           to="/privacy-policy" 
-                          className="text-cogintech-blue hover:underline"
+                          className="text-primary hover:underline"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
@@ -260,7 +260,7 @@ const Contact = () => {
                         I agree to the{' '}
                         <Link 
                           to="/terms-of-service" 
-                          className="text-cogintech-blue hover:underline"
+                          className="text-primary hover:underline"
                           target="_blank"
                           rel="noopener noreferrer"
                         >

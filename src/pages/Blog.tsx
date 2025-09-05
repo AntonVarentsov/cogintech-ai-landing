@@ -91,7 +91,7 @@ const Blog = () => {
                             </span>
                           ))}
                         </div>
-                        <button className="text-cogintech-blue hover:text-cogintech-blue/80 font-medium">
+                        <button className="text-primary hover:text-primary/80 font-medium">
                           Read More →
                         </button>
                       </div>

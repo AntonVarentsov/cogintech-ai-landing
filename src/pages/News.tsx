@@ -63,7 +63,7 @@ const News = () => {
                     <div className="mb-2 text-sm text-foreground/60">{news.date}</div>
                     <h3 className="text-xl font-bold mb-3">{news.title}</h3>
                     <p className="text-foreground/80 mb-4 flex-1">{news.summary}</p>
-                    <button className="text-cogintech-blue hover:text-cogintech-blue/80 font-medium self-start">
+                    <button className="text-primary hover:text-primary/80 font-medium self-start">
                       Read More →
                     </button>
                   </div>

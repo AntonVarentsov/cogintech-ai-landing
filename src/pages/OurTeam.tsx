@@ -50,7 +50,7 @@ const OurTeam = () => {
             <p className="text-lg text-center max-w-4xl mx-auto mb-8">
               Combined, our team has over 50 years of experience in oil and gas engineering and more than 20 years in AI.
             </p>
-            <p className="text-lg text-center max-w-4xl mx-auto mb-12 italic text-cogintech-blue">
+            <p className="text-lg text-center max-w-4xl mx-auto mb-12 italic text-primary">
               The unique combination of domain expertise and data science skills enables Cogintech to transform the market.
             </p>
             
@@ -67,7 +67,7 @@ const OurTeam = () => {
                     </div>
                     <div className="flex-1 text-center sm:text-left">
                       <h3 className="text-xl font-bold mb-1">{member.name}</h3>
-                      <p className="text-cogintech-blue mb-3 font-medium">{member.position}</p>
+                      <p className="text-primary mb-3 font-medium">{member.position}</p>
                       <p className="text-foreground/80 text-sm leading-relaxed">{member.bio}</p>
                     </div>
                   </div>

@@ -36,7 +36,7 @@ const CaseStudies = () => {
               <h1 className="text-5xl md:text-6xl font-bold gradient-text">
                 Coming Soon
               </h1>
-              <Sparkles className="w-6 h-6 text-cogintech-blue" />
+              <Sparkles className="w-6 h-6 text-primary" />
             </div>
             
             <p className="text-xl md:text-2xl text-muted-foreground mb-8">
@@ -64,7 +64,7 @@ const CaseStudies = () => {
             <div className="mt-8">
               <p className="text-sm text-muted-foreground">
                 Want to be notified when our case studies are published?{" "}
-                <a href="/contact" className="text-cogintech-blue hover:underline font-medium">
+                <a href="/contact" className="text-primary hover:underline font-medium">
                   Contact us
                 </a>
               </p>
