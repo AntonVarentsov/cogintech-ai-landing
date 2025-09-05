@@ -72,7 +72,7 @@ const News = () => {
             </div>
             
             <div className="mt-12 flex justify-center">
-              <Button variant="cogintech-blue" className="font-medium px-8 py-3">
+              <Button variant="default" className="font-medium px-8 py-3">
                 View All News
               </Button>
             </div>

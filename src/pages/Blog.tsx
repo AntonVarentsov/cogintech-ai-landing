@@ -100,7 +100,7 @@ const Blog = () => {
                 </div>
                 
                 <div className="mt-8 flex justify-center">
-                  <Button variant="cogintech-blue" className="font-medium px-8 py-3">
+                  <Button variant="default" className="font-medium px-8 py-3">
                     Load More Articles
                   </Button>
                 </div>
@@ -128,7 +128,7 @@ const Blog = () => {
                       placeholder="Your email address" 
                       className="w-full p-2 border border-border rounded-md"
                     />
-                    <Button variant="cogintech-orange" type="submit" className="w-full font-medium py-2">
+                    <Button variant="accent" type="submit" className="w-full font-medium py-2">
                       Subscribe
                     </Button>
                   </form>

@@ -86,7 +86,7 @@ const Careers = () => {
               <div className="mt-12 bg-muted p-6 rounded-lg">
                 <h3 className="text-xl font-bold mb-4">Don't see a position that matches your skills?</h3>
                 <p className="mb-4">We're always looking for talented individuals to join our team. Send us your resume and tell us how you can contribute to our mission.</p>
-                <Button variant="cogintech-orange" className="font-medium px-6 py-2">
+                <Button variant="accent" className="font-medium px-6 py-2">
                   Submit Your Resume
                 </Button>
               </div>

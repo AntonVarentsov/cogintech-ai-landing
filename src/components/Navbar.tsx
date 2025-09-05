@@ -195,7 +195,7 @@ const Navbar = () => {
             </>
           )}
           <Button 
-            variant="cogintech-orange"
+            variant="accent"
             className="text-base px-4 py-2"
             onClick={handleTryFree}
           >
@@ -566,7 +566,7 @@ const Navbar = () => {
               </>
             )}
             <Button 
-              variant="cogintech-orange"
+              variant="accent"
               className="w-full text-base mt-3"
               onClick={() => {
                 setIsMenuOpen(false);
