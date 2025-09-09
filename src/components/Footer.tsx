@@ -34,13 +34,13 @@ const Footer = () => {
   };
   
   return (
-    <footer className="bg-primary text-white/70 py-12 border-t border-white/10">
+    <footer className="bg-cogintech-dark text-white/70 py-12 border-t border-white/10">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <div className="flex items-center mb-4">
               <span className="text-xl font-bold text-white">Cogintech</span>
-              <span className="ml-1 text-secondary font-medium">Ltd.</span>
+              <span className="ml-1 text-cogintech-teal font-medium">Ltd.</span>
             </div>
             <p className="mb-6 max-w-md text-lg">
               Cogintech – AI-native document intelligence for engineering services.
@@ -61,7 +61,7 @@ const Footer = () => {
                 <Button 
                   type="submit" 
                   disabled={isLoading}
-                  variant="secondary"
+                  className="bg-cogintech-teal hover:bg-cogintech-teal/90 text-white"
                 >
                   {isLoading ? "..." : "Subscribe"}
                 </Button>
@@ -76,21 +76,21 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
-              <li><Link to="/about-us" className="hover:text-secondary transition-colors">About</Link></li>
-              <li><Link to="/blog" className="hover:text-secondary transition-colors">Blog</Link></li>
-              <li><Link to="/careers" className="hover:text-secondary transition-colors">Careers</Link></li>
-              <li><Link to="/contact" className="hover:text-secondary transition-colors">Contact</Link></li>
+              <li><Link to="/about-us" className="hover:text-cogintech-teal transition-colors">About</Link></li>
+              <li><Link to="/blog" className="hover:text-cogintech-teal transition-colors">Blog</Link></li>
+              <li><Link to="/careers" className="hover:text-cogintech-teal transition-colors">Careers</Link></li>
+              <li><Link to="/contact" className="hover:text-cogintech-teal transition-colors">Contact</Link></li>
             </ul>
           </div>
           
           <div>
             <h3 className="text-white font-semibold mb-4">Resources</h3>
             <ul className="space-y-2">
-              <li><Link to="/security-note" className="hover:text-secondary transition-colors">Security Note</Link></li>
-              <li><Link to="/privacy-policy" className="hover:text-secondary transition-colors">Privacy Policy</Link></li>
-              <li><Link to="/terms-of-service" className="hover:text-secondary transition-colors">Terms of Service</Link></li>
-              <li><Link to="/cookie-policy" className="hover:text-secondary transition-colors">Cookie Policy</Link></li>
-              <li><a href="https://linkedin.com/company/cogintech" target="_blank" className="hover:text-secondary transition-colors">LinkedIn</a></li>
+              <li><Link to="/security-note" className="hover:text-cogintech-teal transition-colors">Security Note</Link></li>
+              <li><Link to="/privacy-policy" className="hover:text-cogintech-teal transition-colors">Privacy Policy</Link></li>
+              <li><Link to="/terms-of-service" className="hover:text-cogintech-teal transition-colors">Terms of Service</Link></li>
+              <li><Link to="/cookie-policy" className="hover:text-cogintech-teal transition-colors">Cookie Policy</Link></li>
+              <li><a href="https://linkedin.com/company/cogintech" target="_blank" className="hover:text-cogintech-teal transition-colors">LinkedIn</a></li>
             </ul>
           </div>
         </div>

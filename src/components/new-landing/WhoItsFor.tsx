@@ -23,7 +23,7 @@ const WhoItsFor = () => {
   ];
 
   return (
-    <section className="py-16 bg-muted">
+    <section className="py-16 bg-gray-50/50">
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
@@ -40,11 +40,11 @@ const WhoItsFor = () => {
             const IconComponent = audience.icon;
             return (
               <div key={index} className="bg-white rounded-2xl p-8 text-center hover:shadow-lg transition-all duration-300 border border-gray-200/50">
-                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <IconComponent className="w-8 h-8 text-primary" />
+                <div className="w-16 h-16 bg-cogintech-teal/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <IconComponent className="w-8 h-8 text-cogintech-teal" />
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-foreground">{audience.title}</h3>
-                <div className="text-lg font-semibold text-accent mb-3">{audience.benefit}</div>
+                <div className="text-lg font-semibold text-cogintech-orange mb-3">{audience.benefit}</div>
                 <p className="text-foreground/70">{audience.description}</p>
               </div>
             );

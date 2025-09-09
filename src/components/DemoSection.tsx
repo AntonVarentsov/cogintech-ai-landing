@@ -19,11 +19,11 @@ const DemoSection = () => {
   };
 
   return (
-    <section id="demo" className="section bg-primary text-white">
+    <section id="demo" className="section bg-cogintech-dark text-white">
       <div className="container px-0 sm:px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center mb-12 px-4 sm:px-0">
           <h2 className="section-title">
-            See <span className="text-secondary">Cogintech AI</span> in Action
+            See <span className="text-cogintech-teal">Cogintech AI</span> in Action
           </h2>
           <p className="text-lg text-white/80">
             Interact with inspection data using natural language queries and get instant, accurate insights.
@@ -33,9 +33,9 @@ const DemoSection = () => {
         <div className="bg-black/30 backdrop-blur-sm rounded-xl overflow-hidden border border-white/10 max-w-4xl mx-auto px-0 mx-0 sm:mx-4">
           <div className="border-b border-white/10 p-4 flex items-center">
             <div className="flex space-x-2">
-              <div className="w-3 h-3 rounded-full bg-accent"></div>
-              <div className="w-3 h-3 rounded-full bg-accent/70"></div>
-              <div className="w-3 h-3 rounded-full bg-secondary"></div>
+              <div className="w-3 h-3 rounded-full bg-red-500"></div>
+              <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+              <div className="w-3 h-3 rounded-full bg-green-500"></div>
             </div>
             <div className="ml-4 text-white/60 text-sm">Cogintech AI Interface</div>
           </div>
@@ -48,12 +48,11 @@ const DemoSection = () => {
                   type="text"
                   value={currentQuery}
                   onChange={(e) => setCurrentQuery(e.target.value)}
-                  className="flex-1 bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-secondary/50 w-full"
+                  className="flex-1 bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-cogintech-teal/50 w-full"
                 />
                 <Button 
                   onClick={handleDemo}
-                  variant="secondary"
-                  className="w-full sm:w-auto mt-2 sm:mt-0"
+                  className="bg-cogintech-teal hover:bg-cogintech-teal/90 text-white w-full sm:w-auto mt-2 sm:mt-0"
                   disabled={isGenerating}
                 >
                   {isGenerating ? "Processing..." : "Run Query"}
@@ -64,13 +63,13 @@ const DemoSection = () => {
             <div className="bg-white/5 rounded-lg p-6 min-h-[300px] border border-white/10">
               {isGenerating ? (
                 <div className="flex flex-col items-center justify-center h-[300px]">
-                  <div className="w-10 h-10 border-t-2 border-secondary rounded-full animate-spin mb-4"></div>
+                  <div className="w-10 h-10 border-t-2 border-cogintech-teal rounded-full animate-spin mb-4"></div>
                   <div className="text-white/80">Analyzing inspection data...</div>
                 </div>
               ) : showResponse ? (
                 <div className="space-y-6 animate-fade-in">
                   <div>
-                    <h3 className="text-xl font-semibold mb-2 text-secondary">Column FC-101 Corrosion History Summary</h3>
+                    <h3 className="text-xl font-semibold mb-2 text-cogintech-teal">Column FC-101 Corrosion History Summary</h3>
                     <p className="text-white/80 mb-4">
                       Analysis of 12 inspection records from 2018-2025 shows accelerating corrosion rates in the lower section.
                     </p>
@@ -80,19 +79,19 @@ const DemoSection = () => {
                         <h4 className="font-semibold mb-2">Key Findings:</h4>
                         <ul className="space-y-2 text-sm text-white/80">
                           <li className="flex items-start">
-                            <span className="text-accent mr-2">⚠</span>
+                            <span className="text-red-400 mr-2">⚠</span>
                             <span>Corrosion rate increased by 47% since last inspection</span>
                           </li>
                           <li className="flex items-start">
-                            <span className="text-accent mr-2">⚠</span>
+                            <span className="text-red-400 mr-2">⚠</span>
                             <span>Wall thickness at point LC-3 below minimum threshold</span>
                           </li>
                           <li className="flex items-start">
-                            <span className="text-accent/70 mr-2">!</span>
+                            <span className="text-yellow-400 mr-2">!</span>
                             <span>Three inspection points approaching critical values</span>
                           </li>
                           <li className="flex items-start">
-                            <span className="text-secondary mr-2">✓</span>
+                            <span className="text-green-400 mr-2">✓</span>
                             <span>Upper section remains within acceptable parameters</span>
                           </li>
                         </ul>
@@ -102,19 +101,19 @@ const DemoSection = () => {
                         <h4 className="font-semibold mb-2">Recommendations:</h4>
                         <ul className="space-y-2 text-sm text-white/80">
                           <li className="flex items-start">
-                            <span className="text-secondary mr-2">1.</span>
+                            <span className="text-cogintech-teal mr-2">1.</span>
                             <span>Schedule immediate inspection of lower section</span>
                           </li>
                           <li className="flex items-start">
-                            <span className="text-secondary mr-2">2.</span>
+                            <span className="text-cogintech-teal mr-2">2.</span>
                             <span>Replace insulation at points LC-3 through LC-7</span>
                           </li>
                           <li className="flex items-start">
-                            <span className="text-secondary mr-2">3.</span>
+                            <span className="text-cogintech-teal mr-2">3.</span>
                             <span>Update maintenance schedule to 6-month intervals</span>
                           </li>
                           <li className="flex items-start">
-                            <span className="text-secondary mr-2">4.</span>
+                            <span className="text-cogintech-teal mr-2">4.</span>
                             <span>Plan for possible section replacement in Q4 2025</span>
                           </li>
                         </ul>

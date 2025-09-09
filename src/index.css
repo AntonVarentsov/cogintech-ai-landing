@@ -5,7 +5,7 @@
 
 @layer base {
   :root {
-    --background: 214 33% 98%;
+    --background: 210 50% 98%;
     --foreground: 220 40% 15%;
 
     --card: 0 0% 100%;
@@ -14,24 +14,24 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 40% 15%;
 
-    --primary: 207 65% 28%;
+    --primary: 202 68% 28%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 168 42% 39%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary-foreground: 220 40% 15%;
 
-    --muted: 214 33% 98%;
-    --muted-foreground: 220 40% 45%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 25 95% 53%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 168 42% 39%;
+    --accent-foreground: 220 40% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 25 95% 53%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 202 68% 28%;
 
     --radius: 0.5rem;
   }
@@ -40,30 +40,30 @@
     --background: 220 40% 15%;
     --foreground: 210 40% 98%;
 
-    --card: 220 40% 17%;
+    --card: 220 40% 15%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 220 40% 17%;
+    --popover: 220 40% 15%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 207 65% 35%;
+    --primary: 202 68% 28%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 168 42% 45%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 168 42% 39%;
+    --secondary-foreground: 220 40% 15%;
 
-    --muted: 220 40% 20%;
+    --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 25 95% 60%;
-    --accent-foreground: 220 40% 15%;
+    --accent: 168 42% 39%;
+    --accent-foreground: 210 40% 98%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 40% 25%;
-    --input: 220 40% 25%;
-    --ring: 25 95% 60%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 202 68% 28%;
   }
 }
 
@@ -99,7 +99,7 @@
   }
 
   .gradient-text {
-    @apply bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text;
+    @apply bg-gradient-to-r from-cogintech-blue to-cogintech-teal text-transparent bg-clip-text;
     /* Force GPU acceleration */
     will-change: transform;
     transform: translateZ(0);
@@ -124,7 +124,7 @@
 
 @layer components {
   .highlight-number {
-    @apply text-4xl md:text-5xl font-bold text-accent mb-2;
+    @apply text-4xl md:text-5xl font-bold text-cogintech-teal mb-2;
     /* Prevent layout shifts */
     contain: layout style;
     line-height: 1.1;
