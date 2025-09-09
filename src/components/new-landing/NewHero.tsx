@@ -21,7 +21,7 @@ const NewHero = () => {
                 <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Double Your Engineering Team Productivity</span>
               </h1>
               <p className="text-xl text-foreground/80">
-                <span className="font-semibold text-stone-600">Boost your team's efficiency 2x through rapid information search and automated routine operations.</span>
+                <span className="font-semibold text-stone-600">Transform your scattered technical documents into instant-access knowledge and automate routine tasks with AI agents</span>
               </p>
             </div>
             
