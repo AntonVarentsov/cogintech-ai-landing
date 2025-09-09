@@ -22,7 +22,7 @@ const HowItWorks = () => {
               <div className="w-20 h-20 bg-gradient-to-br from-cogintech-blue to-cogintech-blue/80 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Upload className="w-10 h-10 text-white" />
               </div>
-              <div className="absolute -top-4 -left-4 w-8 h-8 bg-cogintech-orange rounded-full flex items-center justify-center text-white font-bold text-sm">
+              <div className="absolute -top-4 -left-4 w-8 h-8 bg-cogintech-teal rounded-full flex items-center justify-center text-white font-bold text-sm">
                 1
               </div>
               <h3 className="text-2xl font-bold mb-4 text-foreground">Upload & Connect</h3>
@@ -39,10 +39,10 @@ const HowItWorks = () => {
           {/* Step 2 */}
           <div className="relative">
             <div className="bg-card/50 backdrop-blur-sm border border-cogintech-teal/20 rounded-xl p-8 text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-              <div className="w-20 h-20 bg-gradient-to-br from-cogintech-teal to-cogintech-teal/80 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-20 h-20 bg-gradient-to-br from-cogintech-blue to-cogintech-blue/80 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Brain className="w-10 h-10 text-white" />
               </div>
-              <div className="absolute -top-4 -left-4 w-8 h-8 bg-cogintech-orange rounded-full flex items-center justify-center text-white font-bold text-sm">
+              <div className="absolute -top-4 -left-4 w-8 h-8 bg-cogintech-teal rounded-full flex items-center justify-center text-white font-bold text-sm">
                 2
               </div>
               <h3 className="text-2xl font-bold mb-4 text-foreground">AI Organizes & Analyzes</h3>
@@ -62,7 +62,7 @@ const HowItWorks = () => {
               <div className="w-20 h-20 bg-gradient-to-br from-cogintech-blue to-cogintech-blue/80 rounded-full flex items-center justify-center mx-auto mb-6">
                 <MessageSquare className="w-10 h-10 text-white" />
               </div>
-              <div className="absolute -top-4 -left-4 w-8 h-8 bg-cogintech-orange rounded-full flex items-center justify-center text-white font-bold text-sm">
+              <div className="absolute -top-4 -left-4 w-8 h-8 bg-cogintech-teal rounded-full flex items-center justify-center text-white font-bold text-sm">
                 3
               </div>
               <h3 className="text-2xl font-bold mb-4 text-foreground">Ask & Report</h3>
