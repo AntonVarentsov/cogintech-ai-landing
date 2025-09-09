@@ -39,8 +39,8 @@ const PainAmplifier = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {painPoints.map((point, index) => (
             <div key={index} className="text-center p-6 rounded-xl bg-white shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <point.icon className="h-8 w-8 text-red-600" />
+              <div className="w-16 h-16 bg-cogintech-blue/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <point.icon className="h-8 w-8 text-cogintech-blue" />
               </div>
               <h3 className="text-xl font-semibold mb-3">{point.title}</h3>
               <p className="text-foreground/70">{point.description}</p>
