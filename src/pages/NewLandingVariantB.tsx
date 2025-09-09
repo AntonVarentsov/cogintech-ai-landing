@@ -31,9 +31,9 @@ const NewLandingVariantB = () => {
       <Navbar />
         <NewHero />
         <PainAmplifier />
+        <HowItWorks />
         <ValueMetrics />
         <WhoItsFor />
-        <HowItWorks />
         <MCPSection />
         <EarlyAdopters />
         <Alternatives />
