@@ -18,10 +18,10 @@ const NewHero = () => {
                 </div>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold leading-tight lg:text-5xl">
-                <span className="bg-gradient-to-r from-cogintech-blue to-cogintech-teal bg-clip-text text-transparent">Double Your Engineering Productivity with AI</span>
+                <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Double Your Engineering Team Productivity</span>
               </h1>
               <p className="text-xl text-foreground/80">
-                <span className="font-semibold text-stone-600">Turn scattered technical files into a structured database and get AI assistants for search, analysis and client-ready reporting.</span>
+                <span className="font-semibold text-stone-600">Boost your team's efficiency 2x through rapid information search and automated routine operations.</span>
               </p>
             </div>
             
