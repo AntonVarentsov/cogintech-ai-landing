@@ -27,7 +27,7 @@ const HowItWorks = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4 text-foreground">Upload & Connect</h3>
               <p className="text-foreground/70 text-lg leading-relaxed">
-                PDFs, drawings, Excel —<br />no IT overhaul.
+                PDFs, drawings, Excel — <br />no IT overhaul.
               </p>
             </div>
             {/* Arrow for desktop */}
@@ -47,7 +47,7 @@ const HowItWorks = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4 text-foreground">AI Organizes & Analyzes</h3>
               <p className="text-foreground/70 text-lg leading-relaxed">
-                Auto-classification, linking, and prep for instant use.
+                Auto-classification, linking, <br />and prep for instant use.
               </p>
             </div>
             {/* Arrow for desktop */}
@@ -67,7 +67,7 @@ const HowItWorks = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4 text-foreground">Ask & Report</h3>
               <p className="text-foreground/70 text-lg leading-relaxed">
-                Plain-English answers and client-ready reports.
+                Plain-English answers <br />and client-ready reports.
               </p>
             </div>
           </div>
