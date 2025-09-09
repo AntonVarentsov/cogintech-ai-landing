@@ -27,8 +27,7 @@ const HowItWorks = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4 text-foreground">Upload & Connect</h3>
               <p className="text-foreground/70 text-lg leading-relaxed">
-                PDFs, drawings, Excel — 
-                no IT overhaul.
+                PDFs, drawings, Excel —</p>no IT overhaul.
               </p>
             </div>
             {/* Arrow for desktop */}
