@@ -10,8 +10,12 @@ const corsHeaders = {
 async function createBitrix24Contact(formData: any, formType: string) {
   const bitrix24WebhookUrl = Deno.env.get('BITRIX24_WEBHOOK_URL');
   
+  console.log('🔗 Bitrix24 Webhook URL configured:', bitrix24WebhookUrl ? 'YES' : 'NO');
+  console.log('📝 Form type:', formType);
+  console.log('📋 Form data keys:', Object.keys(formData));
+  
   if (!bitrix24WebhookUrl) {
-    console.log('Bitrix24 Webhook URL not configured, skipping Bitrix24 integration');
+    console.log('❌ Bitrix24 Webhook URL not configured, skipping Bitrix24 integration');
     return null;
   }
 
@@ -121,12 +125,34 @@ async function createBitrix24Contact(formData: any, formType: string) {
         body: JSON.stringify(contactData),
       });
 
+      console.log('Bitrix24 newsletter contact response status:', contactResponse.status);
+      console.log('Bitrix24 newsletter contact response headers:', Object.fromEntries(contactResponse.headers.entries()));
+
       if (contactResponse.ok) {
         const contactResult = await contactResponse.json();
-        console.log('Bitrix24 newsletter contact created:', contactResult.result);
-        return { contact: contactResult.result, lead: null, company: null };
+        console.log('Bitrix24 newsletter contact full response:', JSON.stringify(contactResult, null, 2));
+        
+        // Проверяем есть ли ошибки в ответе Bitrix24
+        if (contactResult.error) {
+          console.error('Bitrix24 API returned error:', contactResult.error);
+          console.error('Bitrix24 error description:', contactResult.error_description);
+          return null;
+        }
+        
+        if (contactResult.result) {
+          console.log('✅ Bitrix24 newsletter contact successfully created with ID:', contactResult.result);
+          return { contact: contactResult.result, lead: null, company: null };
+        } else {
+          console.error('❌ Bitrix24 response OK but no result ID returned:', contactResult);
+          return null;
+        }
       } else {
-        console.error('Bitrix24 newsletter contact creation failed:', await contactResponse.text());
+        const errorText = await contactResponse.text();
+        console.error('❌ Bitrix24 newsletter contact creation failed:', {
+          status: contactResponse.status,
+          statusText: contactResponse.statusText,
+          body: errorText
+        });
         return null;
       }
     }
