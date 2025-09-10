@@ -19,7 +19,15 @@ async function createBitrix24Contact(formData: any, formType: string) {
     return null;
   }
 
+  // Тестируем подключение к Bitrix24
   try {
+    console.log('🧪 Testing Bitrix24 connection...');
+    const testResponse = await fetch(`${bitrix24WebhookUrl}/profile.json`);
+    const testResult = await testResponse.json();
+    console.log('🧪 Bitrix24 connection test result:', JSON.stringify(testResult, null, 2));
+  } catch (error) {
+    console.error('🧪 Bitrix24 connection test failed:', error);
+  }
     let companyId = null;
     
     // Determine source based on form type
