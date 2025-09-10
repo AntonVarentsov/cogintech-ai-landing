@@ -35,11 +35,11 @@ const News = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <SEOHead 
-        title="Latest AI & Oil Gas Industry News | Cogintech"
-        description="Stay updated with Cogintech's latest developments, partnerships, and industry insights in AI-powered equipment integrity management for oil & gas sector."
-        keywords="Cogintech news, AI oil gas news, equipment integrity news, industrial AI updates, NDT technology news"
-        ogTitle="Latest AI & Oil Gas Industry News"
-        ogDescription="Stay updated with Cogintech's latest developments and industry insights in AI-powered equipment integrity."
+        title="AI Equipment Integrity News - Oil & Gas Industry Updates | Cogintech"
+        description="Latest AI equipment integrity news: Cogintech partnerships, industrial AI breakthroughs, oil & gas automation updates, NDT technology advances."
+        keywords="AI equipment integrity news, oil gas AI updates, industrial automation news, NDT AI technology, equipment management innovation, Cogintech announcements"
+        ogTitle="AI Equipment Integrity News - Oil & Gas Industry Updates"
+        ogDescription="Latest AI equipment integrity news: Cogintech partnerships, industrial AI breakthroughs, NDT technology advances."
         ogImage="/lovable-uploads/22fc09d7-63fe-4527-885a-d78c38ec2e86.png"
       />
       <Navbar />

@@ -1,10 +1,19 @@
 
 import Navbar from "@/components/Navbar";
+import SEOHead from "@/components/SEOHead";
 import Footer from "@/components/Footer";
 
 const TermsOfService = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEOHead 
+        title="Terms of Service - AI Equipment Integrity Platform | Cogintech"
+        description="Cogintech Terms of Service for AI-powered oil & gas equipment integrity management platform. Legal terms for industrial AI NDT solutions and services."
+        keywords="AI equipment integrity terms, oil gas AI platform terms, industrial AI service agreement, NDT AI legal terms, equipment management ToS"
+        ogTitle="Terms of Service - AI Equipment Integrity Platform"
+        ogDescription="Cogintech Terms of Service for AI-powered oil & gas equipment integrity management platform."
+        ogImage="/lovable-uploads/22fc09d7-63fe-4527-885a-d78c38ec2e86.png"
+      />
       <Navbar />
       
       <main className="flex-1">
