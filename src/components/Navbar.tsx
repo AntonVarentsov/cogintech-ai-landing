@@ -28,6 +28,17 @@ const Navbar = () => {
     }
   };
 
+  const handleScheduleDemo = () => {
+    if (isHomePage) {
+      document.getElementById('book-demo')?.scrollIntoView({
+        behavior: 'smooth'
+      });
+    } else {
+      // Navigate to home page and then scroll to demo
+      window.location.href = '/#book-demo';
+    }
+  };
+
   const handleTryFree = () => {
     if (isHomePage) {
       document.getElementById('pricing')?.scrollIntoView({
@@ -59,10 +70,11 @@ const Navbar = () => {
         <div className="hidden lg:flex items-center space-x-6">
           {isHomePage ? (
             <>
-              <a href="#solution" className="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Solution</a>
-              <a href="#solution" className="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Demo</a>
+              <a href="#automation-tasks" className="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Solution</a>
+              <a href="#how-it-works" className="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">How it works</a>
               <a href="#results" className="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Results</a>
-              <a href="#pricing" className="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Pricing</a>
+              <a href="#book-demo" className="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Demo</a>
+              <a href="#faq" className="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">FAQ</a>
               
               {/* Company Dropdown */}
               <DropdownMenu>
@@ -197,9 +209,9 @@ const Navbar = () => {
           <Button 
             variant="cogintech-orange"
             className="text-base px-4 py-2"
-            onClick={handleTryFree}
+            onClick={isHomePage ? handleScheduleDemo : handleTryFree}
           >
-            Get Test Access
+            {isHomePage ? 'Schedule a Demo' : 'Get Test Access'}
           </Button>
         </div>
 
@@ -220,18 +232,18 @@ const Navbar = () => {
             {isHomePage ? (
               <>
                 <a 
-                  href="#solution" 
+                  href="#automation-tasks" 
                   className="py-1 text-base text-foreground/80 hover:text-cogintech-blue transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Solution
                 </a>
                 <a 
-                  href="#solution" 
+                  href="#how-it-works" 
                   className="py-1 text-base text-foreground/80 hover:text-cogintech-blue transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Demo
+                  How it works
                 </a>
                 <a 
                   href="#results" 
@@ -241,11 +253,18 @@ const Navbar = () => {
                   Results
                 </a>
                 <a 
-                  href="#pricing" 
+                  href="#book-demo" 
                   className="py-1 text-base text-foreground/80 hover:text-cogintech-blue transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Pricing
+                  Demo
+                </a>
+                <a 
+                  href="#faq" 
+                  className="py-1 text-base text-foreground/80 hover:text-cogintech-blue transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  FAQ
                 </a>
                 
                 {/* Company Section in Mobile */}
@@ -565,16 +584,23 @@ const Navbar = () => {
                 </Link>
               </>
             )}
-            <Button 
-              variant="cogintech-orange"
-              className="w-full text-base mt-3"
-              onClick={() => {
-                setIsMenuOpen(false);
-                handleTryFree();
-              }}
-            >
-              Get Test Access
-            </Button>
+            <div className="pt-3">
+              <Button 
+                variant="cogintech-orange"
+                className="text-base px-4 py-2 w-full"
+                onClick={() => {
+                  if (isHomePage) {
+                    handleScheduleDemo();
+                    setIsMenuOpen(false);
+                  } else {
+                    setIsMenuOpen(false);
+                    handleTryFree();
+                  }
+                }}
+              >
+                {isHomePage ? 'Schedule a Demo' : 'Get Test Access'}
+              </Button>
+            </div>
           </div>
         </div>
       )}
