@@ -7,11 +7,11 @@ const AboutUs = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <SEOHead 
-        title="About Cogintech - AI-Powered Industrial Inspection | Cogintech"
-        description="Learn about Cogintech's mission to revolutionize equipment integrity management in oil & gas through AI. Pioneering industrial inspection technology since 2018."
-        keywords="Cogintech, industrial AI, equipment integrity, oil and gas inspection, NDT technology, company history"
-        ogTitle="About Cogintech - AI-Powered Industrial Inspection"
-        ogDescription="Learn about Cogintech's mission to revolutionize equipment integrity management in oil & gas through AI."
+        title="About Cogintech - AI Equipment Integrity for Oil & Gas | Cogintech"
+        description="Cogintech revolutionizes oil & gas equipment integrity through AI. 95%+ accuracy in NDT analysis, 30% cost reduction. Pioneering AI industrial inspection since 2018."
+        keywords="AI equipment integrity, oil gas AI inspection, industrial NDT automation, equipment management AI, Cogintech company, AI oil gas solutions"
+        ogTitle="About Cogintech - AI Equipment Integrity for Oil & Gas"
+        ogDescription="Cogintech revolutionizes oil & gas equipment integrity through AI. 95%+ accuracy, 30% cost reduction since 2018."
         ogImage="/lovable-uploads/22fc09d7-63fe-4527-885a-d78c38ec2e86.png"
       />
       <Navbar />
