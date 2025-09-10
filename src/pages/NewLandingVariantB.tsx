@@ -13,11 +13,10 @@ import Alternatives from "@/components/new-landing/Alternatives";
 import SecurityAndIntegration from "@/components/new-landing/SecurityAndIntegration";
 import BookDemo from "@/components/new-landing/BookDemo";
 import FAQ from "@/components/new-landing/FAQ";
-
-import AutomationTasks from "@/components/new-landing/AutomationTasks";
+import AskQuestion from "@/components/new-landing/AskQuestion";
 import Footer from "@/components/Footer";
 
-const NewLanding = () => {
+const NewLandingVariantB = () => {
   return (
     <div className="min-h-screen flex flex-col w-full">
       <SEOHead 
@@ -32,20 +31,19 @@ const NewLanding = () => {
       <Navbar />
         <NewHero />
         <PainAmplifier />
-        <AutomationTasks />
         <HowItWorks />
         <ValueMetrics />
         <WhoItsFor />
+        <MCPSection />
         <EarlyAdopters />
-        
+        <Alternatives />
         <SecurityAndIntegration />
         <BookDemo />
         <FAQ />
-        
-        <Alternatives />
+        <AskQuestion />
       <Footer />
     </div>
   );
 };
 
-export default NewLanding;
+export default NewLandingVariantB;
