@@ -4,18 +4,18 @@ import { Button } from "@/components/ui/button";
 
 const HowItWorks = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-background to-cogintech-light/20">
+    <section id="how-it-works" className="py-24 bg-gradient-to-br from-gray-50 via-cogintech-light/10 to-gray-100/60 border-t border-gray-200/50">
       <div className="container">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Three Simple Steps to Transform Your Workflow
+            How does it work?
           </h2>
-          <p className="text-xl text-foreground/70 max-w-3xl mx-auto">
+          <p className="text-xl text-foreground/70 max-w-4xl mx-auto">
             Get from raw project data to client-ready reports in record time
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-3 gap-8 mb-16 max-w-6xl mx-auto">
           {/* Step 1 */}
           <div className="relative">
             <div className="bg-card/50 backdrop-blur-sm border border-cogintech-blue/20 rounded-xl p-8 text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
@@ -27,7 +27,7 @@ const HowItWorks = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4 text-foreground">Upload & Connect</h3>
               <p className="text-foreground/70 text-lg leading-relaxed">
-                PDFs, drawings, Excel — <br />no IT overhaul.
+                Put all your project files (PDFs, Excel, drawings) in one secure place. Connect with your existing systems seamlessly.
               </p>
             </div>
             {/* Arrow for desktop */}
@@ -47,7 +47,7 @@ const HowItWorks = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4 text-foreground">AI Organizes & Analyzes</h3>
               <p className="text-foreground/70 text-lg leading-relaxed">
-                Auto-classification, linking, <br />and prep for instant use.
+                Our AI automatically classifies and prepares your data for instant use. No manual sorting required.
               </p>
             </div>
             {/* Arrow for desktop */}
@@ -67,7 +67,7 @@ const HowItWorks = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4 text-foreground">Ask & Report</h3>
               <p className="text-foreground/70 text-lg leading-relaxed">
-                Plain-English answers <br />and client-ready reports.
+                Get answers in plain English, generate reports in a click. From question to client-ready document in minutes.
               </p>
             </div>
           </div>
@@ -102,9 +102,12 @@ const HowItWorks = () => {
             variant="cogintech-teal"
             size="lg"
             className="px-12 py-4 text-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
-            onClick={() => window.open('https://sandbox.cogintech.com', '_blank')}
+            onClick={() => {
+              const element = document.getElementById('book-demo');
+              element?.scrollIntoView({ behavior: 'smooth' });
+            }}
           >
-            Try the Sandbox →
+            Schedule a Demo →
           </Button>
           <p className="text-sm text-foreground/60 mt-2 mb-2">
             No setup required • Sample data included

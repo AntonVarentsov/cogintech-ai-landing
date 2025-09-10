@@ -25,11 +25,11 @@ const PainAmplifier = () => {
   ];
 
   return (
-    <section id="problem" className="py-16 bg-gradient-to-b from-background to-gray-50/50">
+    <section id="problem" className="py-20 bg-gradient-to-br from-gray-50 via-gray-50 to-gray-100/80 border-t border-gray-200/50">
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">
-            Why Enineering Teams Lose Time and Efficiency
+            Why Engineering Teams Lose Time and Efficiency
           </h2>
           <p className="text-xl text-foreground/70 max-w-3xl mx-auto">
             Four critical gaps are eating into your engineering team productivity

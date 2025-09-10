@@ -1,42 +1,46 @@
-import { Calendar, Zap, Shield, DollarSign } from "lucide-react";
+import { Zap, Target, Clock, Shield } from "lucide-react";
 
 const ValueMetrics = () => {
   const metrics = [
     {
-      value: "Up to 30%",
-      label: "less engineering effort",
-      description: "Reduce manual work with automated data processing and report generation",
-      icon: Calendar
-    },
-    {
       value: "10×",
-      label: "faster finding nessesary information",
-      description: "Find critical documents and data in seconds, not hours",
+      label: "FASTER",
+      subtitle: "10× Faster Information Retrieval",
+      description: "Find the exact information you need from thousands of technical documents in seconds, not hours.",
       icon: Zap
     },
     {
-      value: "Higher",
-      label: "accuracy of reports",
-      description: "AI-powered standardization ensures reliable, client-ready outputs",
-      icon: Shield
+      value: "0%",
+      label: "MANUAL WORK",
+      subtitle: "No Time Wasted on Data Preparation",
+      description: "Forget about Ctrl-C & Ctrl-V. Our AI automatically extracts and structures data from your documents.",
+      icon: Target
     },
     {
-      value: "Shorter",
-      label: "delivery cycles",
-      description: "Get from raw data to professional reports in days, not weeks",
-      icon: DollarSign
+      value: "30%",
+      label: "TIME SAVED",
+      subtitle: "30% Less Time on Repetitive Tasks",
+      description: "Automate routine engineering tasks and focus on high-value work that drives your projects forward.",
+      icon: Clock
+    },
+    {
+      value: "95%",
+      label: "FEWER ERRORS",
+      subtitle: "95% Fewer Mistakes",
+      description: "Automated QA/QC processes ensure high accuracy and eliminate human errors in data processing.",
+      icon: Shield
     }
   ];
 
   return (
-    <section id="results" className="py-16 bg-gradient-to-b from-cogintech-blue/5 to-background">
+    <section id="results" className="py-20 bg-gradient-to-br from-background via-background to-cogintech-teal/5 border-t border-gray-200/30">
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">
-            Outcomes You Can Aim for from Day One
+            Results You Can Achieve with CogInTech
           </h2>
           <p className="text-xl text-foreground/70 max-w-3xl mx-auto">
-            Based on internal benchmarks and early user feedback.
+            CogInTech Integrity AI delivers measurable improvements to engineering teams productivity and accuracy
           </p>
         </div>
         
@@ -48,11 +52,14 @@ const ValueMetrics = () => {
                  <metric.icon className="h-6 w-6 text-cogintech-teal" />
                </div>
              </div>
-             <div className="text-4xl font-bold text-cogintech-teal mb-2">
+             <div className="text-4xl font-bold text-cogintech-blue mb-1">
                 {metric.value}
               </div>
-              <h3 className="text-lg font-semibold mb-3 text-foreground">
+              <div className="text-sm font-semibold text-orange-500 mb-3 uppercase tracking-wide">
                 {metric.label}
+              </div>
+              <h3 className="text-lg font-semibold mb-3 text-foreground">
+                {metric.subtitle}
               </h3>
               <p className="text-sm text-foreground/70">
                 {metric.description}
@@ -63,9 +70,9 @@ const ValueMetrics = () => {
         
         {/* Benchmarks link */}
         <div className="text-center mt-8">
-          <button className="text-sm text-cogintech-blue hover:text-cogintech-blue/80 underline">
+          <a href="#alternatives" className="text-sm text-cogintech-blue hover:text-cogintech-blue/80 underline">
             See how we calculate these benchmarks
-          </button>
+          </a>
         </div>
       </div>
     </section>

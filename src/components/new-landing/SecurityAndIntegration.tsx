@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const SecurityAndIntegration = () => {
   return (
-    <section className="py-16 bg-gradient-to-br from-cogintech-blue/5 to-background">
+    <section className="py-20 bg-gradient-to-br from-gray-50 via-gray-50 to-gray-100/80 border-t border-gray-200/50">
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">

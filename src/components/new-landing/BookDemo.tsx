@@ -88,7 +88,7 @@ const BookDemo = () => {
   const isFormValid = agreements.privacyPolicy && agreements.termsOfService;
 
   return (
-    <section id="book-demo" className="py-16 bg-gradient-to-br from-cogintech-dark/85 via-cogintech-dark/75 to-cogintech-teal/60">
+    <section id="book-demo" className="py-16 bg-cogintech-dark">
       <div className="container">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
@@ -100,10 +100,10 @@ const BookDemo = () => {
             </p>
           </div>
           
-          <Card className="bg-white/90 border-white/20 shadow-lg">
+          <Card className="bg-white/5 border-white/10">
             <CardHeader>
-              <CardTitle className="text-xl text-cogintech-dark">Schedule Your Demo</CardTitle>
-              <CardDescription className="text-cogintech-dark/70">
+              <CardTitle className="text-xl text-white">Schedule Your Demo</CardTitle>
+              <CardDescription className="text-white/70">
                 Get a personalized demonstration of our AI-powered analysis platform
               </CardDescription>
             </CardHeader>
@@ -125,7 +125,9 @@ const BookDemo = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="demo-name" className="text-cogintech-dark">Full Name</Label>
+                    <Label htmlFor="demo-name" className="text-white">
+                      Full Name <span className="text-red-400">*</span>
+                    </Label>
                     <Input 
                       id="demo-name" 
                       name="name"
@@ -134,12 +136,14 @@ const BookDemo = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="bg-white/50 border-cogintech-dark/20 text-cogintech-dark placeholder:text-cogintech-dark/50 focus-visible:ring-cogintech-teal"
+                      className="bg-white/10 border-white/20 text-white placeholder:text-white/50 focus-visible:ring-cogintech-teal"
                     />
                   </div>
                   
                   <div className="space-y-2">
-                    <Label htmlFor="demo-email" className="text-cogintech-dark">Work Email</Label>
+                    <Label htmlFor="demo-email" className="text-white">
+                      Work Email <span className="text-red-400">*</span>
+                    </Label>
                     <Input 
                       id="demo-email" 
                       name="email"
@@ -148,7 +152,7 @@ const BookDemo = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className={`bg-white/50 border-cogintech-dark/20 text-cogintech-dark placeholder:text-cogintech-dark/50 focus-visible:ring-cogintech-teal ${
+                      className={`bg-white/10 border-white/20 text-white placeholder:text-white/50 focus-visible:ring-cogintech-teal ${
                         !emailValidation.isValid ? 'border-red-500' : ''
                       }`}
                     />
@@ -160,7 +164,7 @@ const BookDemo = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="demo-company" className="text-cogintech-dark">Company</Label>
+                    <Label htmlFor="demo-company" className="text-white">Company Name</Label>
                     <Input 
                       id="demo-company" 
                       name="company"
@@ -168,62 +172,22 @@ const BookDemo = () => {
                       placeholder="Your Company"
                       value={formData.company}
                       onChange={handleChange}
-                      required
-                      className="bg-white/50 border-cogintech-dark/20 text-cogintech-dark placeholder:text-cogintech-dark/50 focus-visible:ring-cogintech-teal"
+                      className="bg-white/10 border-white/20 text-white placeholder:text-white/50 focus-visible:ring-cogintech-teal"
                     />
                   </div>
                   
                   <div className="space-y-2">
-                    <Label htmlFor="demo-role" className="text-cogintech-dark">Role</Label>
+                    <Label htmlFor="demo-role" className="text-white">Your Role</Label>
                     <Input 
                       id="demo-role" 
                       name="role"
                       type="text" 
-                      placeholder="e.g., Head of Engineering"
+                      placeholder="e.g., Integrity Engineer"
                       value={formData.role}
                       onChange={handleChange}
-                      required
-                      className="bg-white/50 border-cogintech-dark/20 text-cogintech-dark placeholder:text-cogintech-dark/50 focus-visible:ring-cogintech-teal"
+                      className="bg-white/10 border-white/20 text-white placeholder:text-white/50 focus-visible:ring-cogintech-teal"
                     />
                   </div>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="demo-industry" className="text-cogintech-dark">Industry (optional)</Label>
-                    <Input 
-                      id="demo-industry" 
-                      name="industry"
-                      type="text" 
-                      placeholder="e.g., Oil & Gas"
-                      className="bg-white/50 border-cogintech-dark/20 text-cogintech-dark placeholder:text-cogintech-dark/50 focus-visible:ring-cogintech-teal"
-                    />
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <Label htmlFor="demo-goal" className="text-cogintech-dark">Primary Goal (optional)</Label>
-                    <select 
-                      id="demo-goal" 
-                      name="goal"
-                      className="bg-white/50 border border-cogintech-dark/20 text-cogintech-dark rounded-md px-3 py-2 h-10 w-full focus-visible:ring-2 focus-visible:ring-cogintech-teal"
-                    >
-                      <option value="">Select goal</option>
-                      <option value="faster-reporting">Faster reporting</option>
-                      <option value="consistent-quality">Consistent quality</option>
-                      <option value="lower-costs">Lower costs</option>
-                      <option value="other">Other</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-3">
-                  <Checkbox 
-                    id="sandbox-access"
-                    className="mt-1"
-                  />
-                  <label htmlFor="sandbox-access" className="text-sm text-cogintech-dark/80 leading-relaxed">
-                    I want a sandbox account as well
-                  </label>
                 </div>
                 
                 <div className="space-y-3">
@@ -234,7 +198,7 @@ const BookDemo = () => {
                       onCheckedChange={handleAgreementChange('privacyPolicy')}
                       className="mt-1"
                     />
-                    <label htmlFor="privacy-policy-demo" className="text-sm text-cogintech-dark/80 leading-relaxed">
+                    <label htmlFor="privacy-policy-demo" className="text-sm text-white/80 leading-relaxed">
                       I agree to the{' '}
                       <Link 
                         to="/privacy-policy" 
@@ -254,7 +218,7 @@ const BookDemo = () => {
                       onCheckedChange={handleAgreementChange('termsOfService')}
                       className="mt-1"
                     />
-                    <label htmlFor="terms-of-service-demo" className="text-sm text-cogintech-dark/80 leading-relaxed">
+                    <label htmlFor="terms-of-service-demo" className="text-sm text-white/80 leading-relaxed">
                       I agree to the{' '}
                       <Link 
                         to="/terms-of-service" 
@@ -269,9 +233,8 @@ const BookDemo = () => {
                 </div>
 
                 <Button 
-                  variant="cogintech-orange"
                   type="submit"
-                  className="w-full disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full bg-cogintech-orange hover:bg-cogintech-orange/90 text-white disabled:opacity-50 disabled:cursor-not-allowed"
                   disabled={isSubmitting || !isFormValid || !emailValidation.isValid || !csrfToken}
                 >
                   {isSubmitting ? "Booking Demo..." : "Book 15-Min Demo"}

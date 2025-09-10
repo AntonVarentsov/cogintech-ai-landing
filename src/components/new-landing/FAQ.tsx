@@ -35,7 +35,7 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-b from-gray-50/50 to-background">
+    <section id="faq" className="py-20 bg-gradient-to-br from-background via-background to-cogintech-teal/5 border-t border-gray-200/30">
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">
@@ -68,8 +68,9 @@ const FAQ = () => {
         <div id="demo-form" className="text-center mt-12">
           <p className="text-foreground/70 mb-4">Still have questions?</p>
           <Button 
+            variant="cogintech-orange"
             size="lg"
-            className="bg-cogintech-orange hover:bg-cogintech-orange/90 text-white font-medium px-8 py-6"
+            className="font-medium px-8 py-6"
             onClick={() => {
               document.getElementById('book-demo')?.scrollIntoView({
                 behavior: 'smooth'

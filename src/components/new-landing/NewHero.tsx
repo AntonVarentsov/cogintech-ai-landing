@@ -1,9 +1,8 @@
-import React, { useState } from "react";
-import { ArrowRight, X } from "lucide-react";
+import React from "react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 const NewHero = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  return <section className="py-16 md:py-24 relative overflow-hidden">
+  return <section className="py-16 md:py-24 relative overflow-hidden bg-gradient-to-br from-background via-background to-cogintech-teal/5">
       {/* Background decoration */}
       <div className="absolute -top-24 -right-24 w-96 h-96 bg-cogintech-teal/10 rounded-full blur-3xl"></div>
       <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-cogintech-blue/10 rounded-full blur-3xl"></div>
@@ -17,84 +16,70 @@ const NewHero = () => {
                   MVP · Limited early-adopter slots this quarter
                 </div>
               </div>
-              <h1 className="text-4xl md:text-5xl font-bold leading-tight lg:text-5xl">
-                <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Double Your Engineering Team Productivity</span>
+              <h1 className="text-4xl md:text-5xl font-bold leading-tight lg:text-5xl text-cogintech-blue">
+                Double Your Engineering Team Productivity
               </h1>
-              <p className="text-xl text-foreground/80">
-                <span className="font-semibold text-stone-600">Transform your scattered technical documents into instant-access knowledge and automate routine tasks with AI agents</span>
-              </p>
+              <h2 className="text-4xl md:text-5xl font-semibold leading-tight lg:text-5xl text-cogintech-teal">
+                Let Your Engineers Build, Not Search
+              </h2>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="cogintech-orange" size="lg" className="font-medium px-8 py-6" onClick={() => document.getElementById('pricing')?.scrollIntoView({
+              <Button variant="cogintech-orange" size="lg" className="font-medium px-8 py-6" onClick={() => document.getElementById('book-demo')?.scrollIntoView({
               behavior: 'smooth'
             })}>
-                Get Test Access
+                Schedule a Demo
                 <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-              <Button variant="cogintech-blue-outline" size="lg" className="font-medium px-8 py-6" onClick={() => document.getElementById('book-demo')?.scrollIntoView({
-              behavior: 'smooth'
-            })}>
-                Book a 15-min Demo
               </Button>
             </div>
           </div>
           
-          <div className="relative aspect-[2/1] rounded-xl overflow-hidden bg-white border border-gray-200 cursor-pointer hover:opacity-90 transition-opacity shadow-sm" onClick={() => setIsModalOpen(true)} role="button" tabIndex={0} aria-label="Open data extraction process demonstration" onKeyDown={e => {
-          if (e.key === 'Enter' || e.key === ' ') {
-            e.preventDefault();
-            setIsModalOpen(true);
-          }
-        }}>
-            <img src="/lovable-uploads/8779f590-9e4c-43b9-abf7-8e951aa8db60.png" alt="Document Chaos → Structured Database → AI Assistant" className="w-full h-full object-contain" />
+          <div className="space-y-2">
+            <div className="relative aspect-[2/1] rounded-xl overflow-hidden bg-white border border-gray-200 shadow-sm" style={{ height: '300px', width: '650px' }}>
+              <img src="/lovable-uploads/8779f590-9e4c-43b9-abf7-8e951aa8db60.png" alt="Document Chaos → Structured Database → AI Assistant" className="w-full h-full object-contain" style={{
+                objectPosition: 'center',
+                transform: 'scale(0.9)'
+              }} />
+            </div>
+            <p className="text-lg text-foreground/80 text-center">
+              <span className="font-semibold">Transform your scattered technical docs into instant-access knowledge and deploy AI assistants to automate routine tasks</span>
+            </p>
           </div>
         </div>
         
-        {/* Statistics row spanning full width */}
-        <div className="mt-20 grid grid-cols-1 sm:grid-cols-3 gap-6">
-          <div className="bg-white/60 backdrop-blur-sm border border-gray-200/50 rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300">
-            <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-cogintech-orange/20 flex items-center justify-center">
-              <span className="text-cogintech-orange font-bold text-3xl">30%</span>
+        {/* Benefits grid */}
+        <div className="mt-20 space-y-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="bg-white/60 backdrop-blur-sm border border-gray-200/50 rounded-xl p-4 text-center hover:shadow-lg transition-all duration-300">
+              <div className="text-2xl font-bold text-cogintech-teal mb-1">10× faster</div>
+              <div className="text-sm font-medium text-foreground/70">information retrieval</div>
             </div>
-            <div className="text-2xl font-bold text-cogintech-orange mb-1">Less effort</div>
-            <div className="text-base font-bold text-foreground/70">engineering effort</div>
-          </div>
-          <div className="bg-white/60 backdrop-blur-sm border border-gray-200/50 rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300">
-            <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-cogintech-teal/20 flex items-center justify-center">
-              <span className="text-cogintech-teal font-bold text-3xl">10×</span>
+            <div className="bg-white/60 backdrop-blur-sm border border-gray-200/50 rounded-xl p-4 text-center hover:shadow-lg transition-all duration-300">
+              <div className="text-2xl font-bold text-cogintech-orange mb-1">95% fewer</div>
+              <div className="text-sm font-medium text-foreground/70">mistakes</div>
             </div>
-            <div className="text-2xl font-bold text-cogintech-teal mb-1">Faster</div>
-            <div className="text-base font-bold text-foreground/70">information access</div>
-          </div>
-          <div className="bg-white/60 backdrop-blur-sm border border-gray-200/50 rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300">
-            <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-cogintech-blue/20 flex items-center justify-center">
-              <span className="text-cogintech-blue font-bold text-2xl">Higher</span>
+            <div className="bg-white/60 backdrop-blur-sm border border-gray-200/50 rounded-xl p-4 text-center hover:shadow-lg transition-all duration-300">
+              <div className="text-2xl font-bold text-cogintech-blue mb-1">No change</div>
+              <div className="text-sm font-medium text-foreground/70">to existing infrastructure</div>
             </div>
-            <div className="text-2xl font-bold text-cogintech-blue mb-1">Consistency</div>
-            <div className="text-base font-bold text-foreground/70">and accuracy of reports</div>
           </div>
-        </div>
-        
-        {/* Disclaimer */}
-        <div className="mt-6 text-center">
-          <p className="text-sm text-foreground/60 italic">Based on internal benchmarks and early user feedback.</p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="bg-white/60 backdrop-blur-sm border border-gray-200/50 rounded-xl p-4 text-center hover:shadow-lg transition-all duration-300">
+              <div className="text-2xl font-bold text-cogintech-teal mb-1">Zero</div>
+              <div className="text-sm font-medium text-foreground/70">Manual Data Preparation</div>
+            </div>
+            <div className="bg-white/60 backdrop-blur-sm border border-gray-200/50 rounded-xl p-4 text-center hover:shadow-lg transition-all duration-300">
+              <div className="text-2xl font-bold text-cogintech-orange mb-1">30% less time</div>
+              <div className="text-sm font-medium text-foreground/70">on repetitive tasks</div>
+            </div>
+            <div className="bg-white/60 backdrop-blur-sm border border-gray-200/50 rounded-xl p-4 text-center hover:shadow-lg transition-all duration-300">
+              <div className="text-2xl font-bold text-cogintech-blue mb-1">No training</div>
+              <div className="text-sm font-medium text-foreground/70">required</div>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Modal */}
-      {isModalOpen && <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-50" onClick={() => setIsModalOpen(false)}>
-          <div className="relative w-full h-full flex items-center justify-center p-4">
-            <button onClick={() => setIsModalOpen(false)} className="absolute top-4 right-4 z-10 bg-white/20 hover:bg-white/40 text-white rounded-full p-3 transition-colors" aria-label="Close image" title="Close image">
-              <X className="h-6 w-6" aria-hidden="true" />
-            </button>
-            <div className="w-full h-full flex items-center justify-center">
-              <img src="/lovable-uploads/8779f590-9e4c-43b9-abf7-8e951aa8db60.png" alt="Document Chaos → Structured Database → AI Assistant" className="w-auto h-auto max-w-full max-h-full object-contain" style={{
-            maxWidth: '95vw',
-            maxHeight: '95vh'
-          }} />
-            </div>
-          </div>
-        </div>}
     </section>;
 };
 export default NewHero;
