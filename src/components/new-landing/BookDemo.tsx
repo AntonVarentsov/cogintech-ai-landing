@@ -125,7 +125,9 @@ const BookDemo = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="demo-name" className="text-white">Full Name</Label>
+                    <Label htmlFor="demo-name" className="text-white">
+                      Full Name <span className="text-red-400">*</span>
+                    </Label>
                     <Input 
                       id="demo-name" 
                       name="name"
@@ -139,7 +141,9 @@ const BookDemo = () => {
                   </div>
                   
                   <div className="space-y-2">
-                    <Label htmlFor="demo-email" className="text-white">Work Email</Label>
+                    <Label htmlFor="demo-email" className="text-white">
+                      Work Email <span className="text-red-400">*</span>
+                    </Label>
                     <Input 
                       id="demo-email" 
                       name="email"
@@ -168,7 +172,6 @@ const BookDemo = () => {
                       placeholder="Your Company"
                       value={formData.company}
                       onChange={handleChange}
-                      required
                       className="bg-white/10 border-white/20 text-white placeholder:text-white/50 focus-visible:ring-cogintech-teal"
                     />
                   </div>
@@ -182,7 +185,6 @@ const BookDemo = () => {
                       placeholder="e.g., Integrity Engineer"
                       value={formData.role}
                       onChange={handleChange}
-                      required
                       className="bg-white/10 border-white/20 text-white placeholder:text-white/50 focus-visible:ring-cogintech-teal"
                     />
                   </div>

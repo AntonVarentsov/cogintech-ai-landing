@@ -1,6 +1,7 @@
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Button } from "@/components/ui/button";
 
 const Blog = () => {
   const blogPosts = [
@@ -99,9 +100,9 @@ const Blog = () => {
                 </div>
                 
                 <div className="mt-8 flex justify-center">
-                  <button className="bg-cogintech-blue hover:bg-cogintech-blue/90 text-white font-medium px-8 py-3 rounded-md">
+                  <Button variant="cogintech-blue" className="font-medium px-8 py-3">
                     Load More Articles
-                  </button>
+                  </Button>
                 </div>
               </div>
               
@@ -127,9 +128,9 @@ const Blog = () => {
                       placeholder="Your email address" 
                       className="w-full p-2 border border-border rounded-md"
                     />
-                    <button type="submit" className="w-full bg-cogintech-orange hover:bg-cogintech-orange/90 text-white font-medium py-2 rounded-md">
+                    <Button variant="cogintech-orange" type="submit" className="w-full font-medium py-2">
                       Subscribe
-                    </button>
+                    </Button>
                   </form>
                 </div>
               </div>

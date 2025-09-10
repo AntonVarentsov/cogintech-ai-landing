@@ -20,13 +20,13 @@ const Hero = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-cogintech-orange hover:bg-cogintech-orange/90 text-white font-medium px-8 py-6" onClick={() => document.getElementById('lead-form')?.scrollIntoView({
+              <Button variant="cogintech-orange" size="lg" className="font-medium px-8 py-6" onClick={() => document.getElementById('lead-form')?.scrollIntoView({
               behavior: 'smooth'
             })}>
                 Request a Free Consultation
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
-              <Button variant="outline" size="lg" className="border-cogintech-blue text-cogintech-blue hover:bg-cogintech-blue/5 font-medium px-8 py-6" onClick={() => document.getElementById('demo')?.scrollIntoView({
+              <Button variant="cogintech-blue-outline" size="lg" className="font-medium px-8 py-6" onClick={() => document.getElementById('demo')?.scrollIntoView({
               behavior: 'smooth'
             })}>
                 See How It Works

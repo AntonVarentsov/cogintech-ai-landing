@@ -157,7 +157,9 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <label htmlFor="name" className="block mb-1 font-medium">Full Name</label>
+                    <label htmlFor="name" className="block mb-1 font-medium">
+                      Full Name <span className="text-red-500">*</span>
+                    </label>
                     <input 
                       type="text" 
                       id="name" 
@@ -184,7 +186,9 @@ const Contact = () => {
                   </div>
                   
                   <div>
-                    <label htmlFor="email" className="block mb-1 font-medium">Email</label>
+                    <label htmlFor="email" className="block mb-1 font-medium">
+                      Email <span className="text-red-500">*</span>
+                    </label>
                     <input 
                       type="email" 
                       id="email"
