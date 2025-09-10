@@ -45,6 +45,12 @@ async function createBitrix24Contact(formData: any, formType: string) {
             sourceDescription: 'API news subscription',
             formName: 'API Documentation Updates'
           };
+        case 'newsletter':
+          return {
+            sourceId: 'WEBSITE',
+            sourceDescription: 'Website Newsletter Subscription',
+            formName: 'AI Engineering Tools Newsletter'
+          };
         default:
           return {
             sourceId: 'WEB',
@@ -89,6 +95,41 @@ async function createBitrix24Contact(formData: any, formType: string) {
     // Create contact in Bitrix24 using proper field mapping
     const formMessage = formData.comments || formData.message || '';
     const finalMessage = formMessage || `Отправлено через ${sourceInfo.formName}`;
+    
+    // Handle newsletter subscription differently
+    if (formType === 'newsletter') {
+      const contactData = {
+        FIELDS: {
+          TITLE: `Newsletter Subscriber - ${formData.email}`,
+          NAME: formData.email.split('@')[0], // Use email prefix as name for newsletter
+          EMAIL: [{ VALUE: formData.email, VALUE_TYPE: 'WORK' }],
+          SOURCE_ID: sourceInfo.sourceId,
+          SOURCE_DESCRIPTION: sourceInfo.sourceDescription,
+          POST: 'Newsletter Subscriber'
+        },
+        REQUEST_MESSAGE: `Newsletter subscription: ${formData.newsletterType || 'AI Engineering Tools Updates'}`,
+        REQUEST_FORM: sourceInfo.formName
+      };
+      
+      console.log('Creating Bitrix24 newsletter contact with data:', JSON.stringify(contactData, null, 2));
+      
+      const contactResponse = await fetch(`${bitrix24WebhookUrl}/crm.contact.add.json`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(contactData),
+      });
+
+      if (contactResponse.ok) {
+        const contactResult = await contactResponse.json();
+        console.log('Bitrix24 newsletter contact created:', contactResult.result);
+        return { contact: contactResult.result, lead: null, company: null };
+      } else {
+        console.error('Bitrix24 newsletter contact creation failed:', await contactResponse.text());
+        return null;
+      }
+    }
     
     const contactData = {
       FIELDS: {
@@ -165,7 +206,7 @@ async function createBitrix24Contact(formData: any, formType: string) {
 }
 
 interface FormSubmission {
-  formType: 'contact' | 'lead' | 'sandbox' | 'api-subscription';
+  formType: 'contact' | 'lead' | 'sandbox' | 'api-subscription' | 'newsletter';
   csrfToken: string;
   formData: any;
   honeypot: string;
