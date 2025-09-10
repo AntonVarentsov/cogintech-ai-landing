@@ -34,11 +34,11 @@ const OurTeam = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <SEOHead 
-        title="Our Expert Team - AI & Oil Gas Professionals | Cogintech"
-        description="Meet Cogintech's leadership team: 50+ years oil & gas experience, 20+ years AI expertise. Anton Varentsov, Vlad Romashov, Anton Voskresenskiy, Nikita Varentsov."
-        keywords="Cogintech team, AI experts, oil gas professionals, Anton Varentsov, Vlad Romashov, integrity management, machine learning"
-        ogTitle="Our Expert Team - AI & Oil Gas Professionals"
-        ogDescription="Meet Cogintech's leadership team: 50+ years oil & gas experience, 20+ years AI expertise."
+        title="AI Equipment Integrity Experts - Cogintech Leadership Team | Oil & Gas AI"
+        description="Meet Cogintech's AI equipment integrity experts: 50+ years oil & gas experience, 20+ years AI expertise. Anton Varentsov, Vlad Romashov, leading NDT AI innovation."
+        keywords="AI equipment integrity experts, oil gas AI team, NDT AI specialists, equipment management experts, Anton Varentsov, Vlad Romashov, industrial AI leaders"
+        ogTitle="AI Equipment Integrity Experts - Cogintech Leadership Team"
+        ogDescription="Meet Cogintech's AI equipment integrity experts: 50+ years oil & gas experience, 20+ years AI expertise."
         ogImage="/lovable-uploads/22fc09d7-63fe-4527-885a-d78c38ec2e86.png"
       />
       <Navbar />

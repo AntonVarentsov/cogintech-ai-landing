@@ -7,11 +7,11 @@ const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <SEOHead 
-        title="Privacy Policy - Data Protection & GDPR Compliance | Cogintech"
-        description="Cogintech's privacy policy: How we collect, use, and protect your personal data. GDPR compliant data processing for industrial AI platform users."
-        keywords="privacy policy, data protection, GDPR compliance, personal data, Cogintech privacy, industrial AI data security"
-        ogTitle="Privacy Policy - Data Protection & GDPR Compliance"
-        ogDescription="Cogintech's privacy policy: How we collect, use, and protect your personal data. GDPR compliant."
+        title="Privacy Policy - AI Equipment Integrity Data Protection | Cogintech"
+        description="Cogintech's privacy policy for AI equipment integrity platform: GDPR compliant data protection, secure industrial data processing, oil & gas privacy standards."
+        keywords="AI equipment integrity privacy, industrial data protection, oil gas data security, GDPR compliance AI, NDT data privacy, equipment management security"
+        ogTitle="Privacy Policy - AI Equipment Integrity Data Protection"
+        ogDescription="Cogintech's privacy policy for AI equipment integrity platform: GDPR compliant data protection, secure industrial data processing."
         ogImage="/lovable-uploads/22fc09d7-63fe-4527-885a-d78c38ec2e86.png"
       />
       <Navbar />

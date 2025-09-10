@@ -15,8 +15,8 @@ const NotFound = () => {
   return (
     <>
       <Helmet>
-        <title>404 Page Not Found - Cogintech</title>
-        <meta name="description" content="The page you're looking for doesn't exist." />
+        <title>404 Page Not Found - AI Oil & Gas Solutions | Cogintech</title>
+        <meta name="description" content="The AI equipment integrity management page you're looking for doesn't exist. Explore our oil & gas AI solutions." />
         <meta name="robots" content="noindex" />
       </Helmet>
       <div className="min-h-screen flex items-center justify-center bg-gray-50">

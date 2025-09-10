@@ -5,8 +5,8 @@ const Unauthorized: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>401 Unauthorized - Cogintech</title>
-        <meta name="description" content="Access denied. You don't have permission to access this resource." />
+        <title>401 Unauthorized - AI Equipment Integrity Solutions | Cogintech</title>
+        <meta name="description" content="Access denied. You don't have permission to access this AI-powered oil & gas equipment integrity management resource." />
         <meta name="robots" content="noindex" />
       </Helmet>
       <div className="min-h-screen flex items-center justify-center bg-gray-50">
