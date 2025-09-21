@@ -1,29 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { createPortal } from "react-dom";
+import React from "react";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
 const NewHero = () => {
-  const [isDocked, setIsDocked] = useState(false);
-
-  useEffect(() => {
-    const update = () => {
-      const navEl = document.getElementById('site-navbar');
-      const heroButton = document.getElementById('hero-demo-button');
-      if (!heroButton) return setIsDocked(false);
-
-      const navH = navEl ? navEl.offsetHeight : 60;
-      const rect = heroButton.getBoundingClientRect();
-      setIsDocked(rect.top <= navH + 4);
-    };
-
-    update();
-    window.addEventListener('scroll', update);
-    window.addEventListener('resize', update);
-    return () => {
-      window.removeEventListener('scroll', update);
-      window.removeEventListener('resize', update);
-    };
-  }, []);
   return <section className="py-8 sm:py-16 md:py-24 relative overflow-hidden bg-gradient-to-br from-background via-background to-cogintech-teal/5">
       {/* Background decoration */}
       <div className="absolute -top-24 -right-24 w-96 h-96 bg-cogintech-teal/10 rounded-full blur-3xl"></div>
@@ -48,10 +27,9 @@ const NewHero = () => {
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
-                id="hero-demo-button"
                 variant="cogintech-orange" 
                 size="lg" 
-                className={`font-medium px-8 py-6 ${isDocked ? 'invisible' : ''}`}
+                className="font-medium px-8 py-6"
                 onClick={() => document.getElementById('book-demo')?.scrollIntoView({
                   behavior: 'smooth'
                 })}
@@ -60,23 +38,6 @@ const NewHero = () => {
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </div>
-            
-            {/* Прикрепление кнопки к навбару через портал */}
-            {isDocked && (() => {
-              const target = document.getElementById('navbar-cta-slot-desktop') || document.getElementById('navbar-cta-slot-mobile');
-              return target ? createPortal(
-                <Button 
-                  variant="cogintech-orange" 
-                  size="sm" 
-                  className="font-medium"
-                  onClick={() => document.getElementById('book-demo')?.scrollIntoView({ behavior: 'smooth' })}
-                >
-                  Schedule a Demo
-                  <ArrowRight className="ml-2 h-3 w-3" />
-                </Button>,
-                target
-              ) : null;
-            })()}
 
 
           </div>

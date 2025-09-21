@@ -52,22 +52,35 @@ const Navbar = () => {
 
   return (
     <nav id="site-navbar" className="py-3 border-b border-border sticky top-0 bg-background/95 backdrop-blur-sm z-50">
-      <div className="container flex justify-between items-center">
+      <div className="container flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
           <Link to="/" onClick={handleLogoClick}>
             <img 
               src="/lovable-uploads/ad840850-7ba3-4ea9-94b2-bcc7d798cc9b.png" 
               alt="Cognitive Industrial Technologies Logo" 
-              className="h-10 mr-2 w-auto object-contain"
+              className="h-10 w-auto object-contain"
               width="140"
               height="40"
             />
           </Link>
         </div>
 
+        {/* Schedule Demo Button - центральное место */}
+        {isHomePage && (
+          <div className="hidden lg:flex">
+            <Button 
+              variant="cogintech-orange"
+              className="text-base px-4 py-2"
+              onClick={handleScheduleDemo}
+            >
+              Schedule a Demo
+            </Button>
+          </div>
+        )}
+
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex items-center space-x-6">
+        <div className="hidden lg:flex items-center space-x-4">
           {isHomePage ? (
             <>
               <a href="#automation-tasks" className="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Solution</a>
@@ -206,9 +219,7 @@ const Navbar = () => {
               <Link to="/contact" className="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Contact</Link>
             </>
           )}
-          {isHomePage ? (
-            <div id="navbar-cta-slot-desktop" className="flex items-center" />
-          ) : (
+          {!isHomePage && (
             <Button 
               variant="cogintech-orange"
               className="text-base px-4 py-2"
@@ -219,9 +230,8 @@ const Navbar = () => {
           )}
         </div>
 
-        {/* Mobile CTA slot + Menu Button */}
-        <div id="navbar-cta-slot-mobile" className="lg:hidden mr-2" />
-        <button 
+        {/* Mobile Menu Button */}
+        <button
           className="lg:hidden" 
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
