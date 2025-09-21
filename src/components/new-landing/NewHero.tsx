@@ -35,16 +35,11 @@ const NewHero = () => {
           </div>
           
           <div className="space-y-2">
-            <div
-              className="relative w-screen h-44 sm:h-[300px] sm:w-[650px] overflow-hidden sm:aspect-[2/1] sm:rounded-xl sm:bg-white sm:border sm:border-gray-200 sm:shadow-sm"
-              style={{ marginLeft: 'calc(50% - 50vw)', marginRight: 'calc(50% - 50vw)' }}
-            >
-              <img
-                src="/lovable-uploads/8779f590-9e4c-43b9-abf7-8e951aa8db60.png"
-                alt="Document Chaos → Structured Database → AI Assistant"
-                className="w-full h-full object-contain"
-                style={{ objectPosition: 'center', transform: 'scale(0.9)' }}
-              />
+            <div className="relative aspect-[2/1] rounded-xl overflow-hidden bg-white border border-gray-200 shadow-sm" style={{ height: '300px', width: '650px' }}>
+              <img src="/lovable-uploads/8779f590-9e4c-43b9-abf7-8e951aa8db60.png" alt="Document Chaos → Structured Database → AI Assistant" className="w-full h-full object-contain" style={{
+                objectPosition: 'center',
+                transform: 'scale(0.9)'
+              }} />
             </div>
             <p className="text-lg text-foreground/80 text-center">
               <span className="font-semibold">Transform your scattered technical docs into instant-access knowledge and deploy AI assistants to automate routine tasks</span>
