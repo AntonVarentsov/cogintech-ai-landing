@@ -2,7 +2,7 @@ import React from "react";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 const NewHero = () => {
-  return <section className="py-16 md:py-24 relative overflow-hidden bg-gradient-to-br from-background via-background to-cogintech-teal/5">
+  return <section className="py-8 sm:py-16 md:py-24 relative overflow-hidden bg-gradient-to-br from-background via-background to-cogintech-teal/5">
       {/* Background decoration */}
       <div className="absolute -top-24 -right-24 w-96 h-96 bg-cogintech-teal/10 rounded-full blur-3xl"></div>
       <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-cogintech-blue/10 rounded-full blur-3xl"></div>
@@ -64,33 +64,33 @@ const NewHero = () => {
         </div>
         
         {/* Benefits grid */}
-        <div className="mt-20 space-y-4">
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <div className="bg-white/60 backdrop-blur-sm border border-gray-200/50 rounded-xl p-4 text-center hover:shadow-lg transition-all duration-300">
-              <div className="text-2xl font-bold text-cogintech-teal mb-1">10× faster</div>
-              <div className="text-sm font-medium text-foreground/70">information retrieval</div>
+        <div className="mt-8 sm:mt-20 space-y-2 sm:space-y-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 -mx-1 sm:mx-0">
+            <div className="bg-white/60 backdrop-blur-sm border border-gray-200/50 rounded-xl p-3 sm:p-4 text-center hover:shadow-lg transition-all duration-300">
+              <div className="text-xl sm:text-2xl font-bold text-cogintech-teal mb-1">10× faster</div>
+              <div className="text-xs sm:text-sm font-medium text-foreground/70">information retrieval</div>
             </div>
-            <div className="bg-white/60 backdrop-blur-sm border border-gray-200/50 rounded-xl p-4 text-center hover:shadow-lg transition-all duration-300">
-              <div className="text-2xl font-bold text-cogintech-orange mb-1">95% fewer</div>
-              <div className="text-sm font-medium text-foreground/70">mistakes</div>
+            <div className="bg-white/60 backdrop-blur-sm border border-gray-200/50 rounded-xl p-3 sm:p-4 text-center hover:shadow-lg transition-all duration-300">
+              <div className="text-xl sm:text-2xl font-bold text-cogintech-orange mb-1">95% fewer</div>
+              <div className="text-xs sm:text-sm font-medium text-foreground/70">mistakes</div>
             </div>
-            <div className="bg-white/60 backdrop-blur-sm border border-gray-200/50 rounded-xl p-4 text-center hover:shadow-lg transition-all duration-300">
-              <div className="text-2xl font-bold text-cogintech-blue mb-1">No change</div>
-              <div className="text-sm font-medium text-foreground/70">to existing infrastructure</div>
+            <div className="bg-white/60 backdrop-blur-sm border border-gray-200/50 rounded-xl p-3 sm:p-4 text-center hover:shadow-lg transition-all duration-300">
+              <div className="text-xl sm:text-2xl font-bold text-cogintech-blue mb-1">No change</div>
+              <div className="text-xs sm:text-sm font-medium text-foreground/70">to existing infrastructure</div>
             </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <div className="bg-white/60 backdrop-blur-sm border border-gray-200/50 rounded-xl p-4 text-center hover:shadow-lg transition-all duration-300">
-              <div className="text-2xl font-bold text-cogintech-teal mb-1">Zero</div>
-              <div className="text-sm font-medium text-foreground/70">Manual Data Preparation</div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 -mx-1 sm:mx-0">
+            <div className="bg-white/60 backdrop-blur-sm border border-gray-200/50 rounded-xl p-3 sm:p-4 text-center hover:shadow-lg transition-all duration-300">
+              <div className="text-xl sm:text-2xl font-bold text-cogintech-teal mb-1">Zero</div>
+              <div className="text-xs sm:text-sm font-medium text-foreground/70">Manual Data Preparation</div>
             </div>
-            <div className="bg-white/60 backdrop-blur-sm border border-gray-200/50 rounded-xl p-4 text-center hover:shadow-lg transition-all duration-300">
-              <div className="text-2xl font-bold text-cogintech-orange mb-1">30% less time</div>
-              <div className="text-sm font-medium text-foreground/70">on repetitive tasks</div>
+            <div className="bg-white/60 backdrop-blur-sm border border-gray-200/50 rounded-xl p-3 sm:p-4 text-center hover:shadow-lg transition-all duration-300">
+              <div className="text-xl sm:text-2xl font-bold text-cogintech-orange mb-1">30% less time</div>
+              <div className="text-xs sm:text-sm font-medium text-foreground/70">on repetitive tasks</div>
             </div>
-            <div className="bg-white/60 backdrop-blur-sm border border-gray-200/50 rounded-xl p-4 text-center hover:shadow-lg transition-all duration-300">
-              <div className="text-2xl font-bold text-cogintech-blue mb-1">No training</div>
-              <div className="text-sm font-medium text-foreground/70">required</div>
+            <div className="bg-white/60 backdrop-blur-sm border border-gray-200/50 rounded-xl p-3 sm:p-4 text-center hover:shadow-lg transition-all duration-300">
+              <div className="text-xl sm:text-2xl font-bold text-cogintech-blue mb-1">No training</div>
+              <div className="text-xs sm:text-sm font-medium text-foreground/70">required</div>
             </div>
           </div>
         </div>
