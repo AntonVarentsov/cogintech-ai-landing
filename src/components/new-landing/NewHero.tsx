@@ -36,7 +36,7 @@ const NewHero = () => {
           
           <div className="space-y-2 lg:space-y-2">
             {/* Desktop version */}
-            <div className="hidden lg:block relative aspect-[2/1] rounded-xl overflow-hidden bg-white border border-gray-200 shadow-sm" style={{ height: '300px', width: '650px' }}>
+            <div className="hidden lg:block relative aspect-[2/1] rounded-xl overflow-hidden bg-gradient-to-br from-background via-background to-cogintech-teal/5 border border-gray-200/50 shadow-sm" style={{ height: '300px', width: '650px' }}>
               <img src="/lovable-uploads/8779f590-9e4c-43b9-abf7-8e951aa8db60.png" alt="Document Chaos → Structured Database → AI Assistant" className="w-full h-full object-contain" style={{
                 objectPosition: 'center',
                 transform: 'scale(0.9)'
@@ -49,11 +49,11 @@ const NewHero = () => {
         </div>
         
         {/* Mobile version - full width */}
-        <div className="lg:hidden mt-8">
-          <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-64 bg-gradient-to-br from-background via-background to-cogintech-teal/5">
+        <div className="lg:hidden mt-8 -mx-4">
+          <div className="w-full h-64 bg-gradient-to-br from-background via-background to-cogintech-teal/5">
             <img src="/lovable-uploads/8779f590-9e4c-43b9-abf7-8e951aa8db60.png" alt="Document Chaos → Structured Database → AI Assistant" className="w-full h-full object-contain" style={{
               objectPosition: 'center',
-              transform: 'scale(1.1)'
+              transform: 'scale(1.0)'
             }} />
           </div>
           <div className="px-4 sm:px-6 mt-4">
