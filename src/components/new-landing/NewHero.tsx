@@ -49,11 +49,11 @@ const NewHero = () => {
         </div>
         
         {/* Mobile version - full width */}
-        <div className="lg:hidden mt-8 -mx-4 sm:-mx-6">
-          <div className="relative h-48 bg-white border-t border-b border-gray-200">
+        <div className="lg:hidden mt-8">
+          <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-64 bg-gradient-to-br from-background via-background to-cogintech-teal/5">
             <img src="/lovable-uploads/8779f590-9e4c-43b9-abf7-8e951aa8db60.png" alt="Document Chaos → Structured Database → AI Assistant" className="w-full h-full object-contain" style={{
               objectPosition: 'center',
-              transform: 'scale(0.9)'
+              transform: 'scale(1.1)'
             }} />
           </div>
           <div className="px-4 sm:px-6 mt-4">
