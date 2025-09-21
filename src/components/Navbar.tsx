@@ -230,14 +230,26 @@ const Navbar = () => {
           )}
         </div>
 
-        {/* Mobile Menu Button */}
-        <button
-          className="lg:hidden" 
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label="Toggle menu"
-        >
-          {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
-        </button>
+        {/* Mobile Schedule Demo Button + Menu Button */}
+        <div className="lg:hidden flex items-center gap-3">
+          {isHomePage && (
+            <Button 
+              variant="cogintech-orange"
+              size="sm"
+              className="text-sm px-3 py-2"
+              onClick={handleScheduleDemo}
+            >
+              Schedule a Demo
+            </Button>
+          )}
+          
+          <button 
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}
