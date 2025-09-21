@@ -18,22 +18,7 @@ const StickyHeader = () => {
 
   return (
     <div className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-200/50 py-3 px-4 shadow-sm z-40 transition-all duration-300">
-      <div className="container flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <span className="font-bold text-cogintech-blue">Cogintech</span>
-          <span className="text-sm text-foreground/60">Double Your Engineering Productivity</span>
-        </div>
-        
-        <div className="flex items-center gap-3">
-          <Button
-            size="sm"
-            variant="cogintech-orange"
-            onClick={() => document.getElementById('book-demo')?.scrollIntoView({ behavior: 'smooth' })}
-          >
-            Schedule a Demo
-          </Button>
-        </div>
-      </div>
+      {/* Пустая плашка для будущей фиксированной кнопки */}
     </div>
   );
 };

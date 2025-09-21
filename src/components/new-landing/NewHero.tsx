@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 const NewHero = () => {
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const heroButton = document.getElementById('hero-demo-button');
+      if (heroButton) {
+        const rect = heroButton.getBoundingClientRect();
+        setIsSticky(rect.top <= 60); // когда кнопка доходит до верха
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   return <section className="py-8 sm:py-16 md:py-24 relative overflow-hidden bg-gradient-to-br from-background via-background to-cogintech-teal/5">
       {/* Background decoration */}
       <div className="absolute -top-24 -right-24 w-96 h-96 bg-cogintech-teal/10 rounded-full blur-3xl"></div>
@@ -25,13 +39,34 @@ const NewHero = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="cogintech-orange" size="lg" className="font-medium px-8 py-6" onClick={() => document.getElementById('book-demo')?.scrollIntoView({
-              behavior: 'smooth'
-            })}>
+              <Button 
+                id="hero-demo-button"
+                variant="cogintech-orange" 
+                size="lg" 
+                className="font-medium px-8 py-6" 
+                onClick={() => document.getElementById('book-demo')?.scrollIntoView({
+                  behavior: 'smooth'
+                })}
+              >
                 Schedule a Demo
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </div>
+            
+            {/* Фиксированная кнопка при прокрутке */}
+            {isSticky && (
+              <Button 
+                variant="cogintech-orange" 
+                size="sm" 
+                className="fixed top-4 right-4 z-50 font-medium" 
+                onClick={() => document.getElementById('book-demo')?.scrollIntoView({
+                  behavior: 'smooth'
+                })}
+              >
+                Schedule a Demo
+                <ArrowRight className="ml-2 h-3 w-3" />
+              </Button>
+            )}
           </div>
           
           <div className="space-y-2 lg:space-y-2">
