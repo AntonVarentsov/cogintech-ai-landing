@@ -65,11 +65,11 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				cogintech: {
-					blue: '202 68% 28%',
-					teal: '168 42% 39%',
-					orange: '25 95% 53%',
-					dark: '220 40% 15%',
-					light: '240 100% 98%'
+					blue: '#0f4c81',
+					teal: '#2a9d8f',
+					orange: '#f97316',
+					dark: '#1A1F2C',
+					light: '#F1F0FB'
 				}
 			},
 			borderRadius: {
