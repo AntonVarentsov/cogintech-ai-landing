@@ -51,7 +51,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="py-3 border-b border-border sticky top-0 bg-background/95 backdrop-blur-sm z-50">
+    <nav id="site-navbar" className="py-3 border-b border-border sticky top-0 bg-background/95 backdrop-blur-sm z-50">
       <div className="container flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center">
@@ -206,16 +206,21 @@ const Navbar = () => {
               <Link to="/contact" className="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Contact</Link>
             </>
           )}
-          <Button 
-            variant="cogintech-orange"
-            className="text-base px-4 py-2"
-            onClick={isHomePage ? handleScheduleDemo : handleTryFree}
-          >
-            {isHomePage ? 'Schedule a Demo' : 'Get Test Access'}
-          </Button>
+          {isHomePage ? (
+            <div id="navbar-cta-slot-desktop" className="flex items-center" />
+          ) : (
+            <Button 
+              variant="cogintech-orange"
+              className="text-base px-4 py-2"
+              onClick={handleTryFree}
+            >
+              Get Test Access
+            </Button>
+          )}
         </div>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile CTA slot + Menu Button */}
+        <div id="navbar-cta-slot-mobile" className="lg:hidden mr-2" />
         <button 
           className="lg:hidden" 
           onClick={() => setIsMenuOpen(!isMenuOpen)}

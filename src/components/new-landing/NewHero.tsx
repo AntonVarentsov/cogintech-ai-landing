@@ -7,14 +7,13 @@ const NewHero = () => {
 
   useEffect(() => {
     const update = () => {
-      const headerEl = document.getElementById('sticky-header');
-      const headerVisible = window.scrollY > 300;
+      const navEl = document.getElementById('site-navbar');
       const heroButton = document.getElementById('hero-demo-button');
       if (!heroButton) return setIsDocked(false);
 
-      const hdrH = headerEl ? headerEl.offsetHeight : 56;
+      const navH = navEl ? navEl.offsetHeight : 60;
       const rect = heroButton.getBoundingClientRect();
-      setIsDocked(headerVisible && rect.top <= hdrH + 4);
+      setIsDocked(rect.top <= navH + 4);
     };
 
     update();
@@ -62,21 +61,23 @@ const NewHero = () => {
               </Button>
             </div>
             
-            {/* Прикрепление кнопки к верхней плашке через портал */}
-            {isDocked && document.getElementById('sticky-cta-slot') && createPortal(
-              <Button 
-                variant="cogintech-orange" 
-                size="sm" 
-                className="font-medium"
-                onClick={() => document.getElementById('book-demo')?.scrollIntoView({
-                  behavior: 'smooth'
-                })}
-              >
-                Schedule a Demo
-                <ArrowRight className="ml-2 h-3 w-3" />
-              </Button>,
-              document.getElementById('sticky-cta-slot') as HTMLElement
-            )}
+            {/* Прикрепление кнопки к навбару через портал */}
+            {isDocked && (() => {
+              const target = document.getElementById('navbar-cta-slot-desktop') || document.getElementById('navbar-cta-slot-mobile');
+              return target ? createPortal(
+                <Button 
+                  variant="cogintech-orange" 
+                  size="sm" 
+                  className="font-medium"
+                  onClick={() => document.getElementById('book-demo')?.scrollIntoView({ behavior: 'smooth' })}
+                >
+                  Schedule a Demo
+                  <ArrowRight className="ml-2 h-3 w-3" />
+                </Button>,
+                target
+              ) : null;
+            })()}
+
 
           </div>
           
