@@ -1,20 +1,29 @@
 import React, { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 const NewHero = () => {
-  const [isSticky, setIsSticky] = useState(false);
+  const [isDocked, setIsDocked] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
+    const update = () => {
+      const headerEl = document.getElementById('sticky-header');
+      const headerVisible = window.scrollY > 300;
       const heroButton = document.getElementById('hero-demo-button');
-      if (heroButton) {
-        const rect = heroButton.getBoundingClientRect();
-        setIsSticky(rect.top <= 60); // когда кнопка доходит до верха
-      }
+      if (!heroButton) return setIsDocked(false);
+
+      const hdrH = headerEl ? headerEl.offsetHeight : 56;
+      const rect = heroButton.getBoundingClientRect();
+      setIsDocked(headerVisible && rect.top <= hdrH + 4);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    update();
+    window.addEventListener('scroll', update);
+    window.addEventListener('resize', update);
+    return () => {
+      window.removeEventListener('scroll', update);
+      window.removeEventListener('resize', update);
+    };
   }, []);
   return <section className="py-8 sm:py-16 md:py-24 relative overflow-hidden bg-gradient-to-br from-background via-background to-cogintech-teal/5">
       {/* Background decoration */}
@@ -43,7 +52,7 @@ const NewHero = () => {
                 id="hero-demo-button"
                 variant="cogintech-orange" 
                 size="lg" 
-                className="font-medium px-8 py-6" 
+                className={`font-medium px-8 py-6 ${isDocked ? 'invisible' : ''}`}
                 onClick={() => document.getElementById('book-demo')?.scrollIntoView({
                   behavior: 'smooth'
                 })}
@@ -53,20 +62,22 @@ const NewHero = () => {
               </Button>
             </div>
             
-            {/* Фиксированная кнопка при прокрутке */}
-            {isSticky && (
+            {/* Прикрепление кнопки к верхней плашке через портал */}
+            {isDocked && document.getElementById('sticky-cta-slot') && createPortal(
               <Button 
                 variant="cogintech-orange" 
                 size="sm" 
-                className="fixed top-4 right-4 z-50 font-medium" 
+                className="font-medium"
                 onClick={() => document.getElementById('book-demo')?.scrollIntoView({
                   behavior: 'smooth'
                 })}
               >
                 Schedule a Demo
                 <ArrowRight className="ml-2 h-3 w-3" />
-              </Button>
+              </Button>,
+              document.getElementById('sticky-cta-slot') as HTMLElement
             )}
+
           </div>
           
           <div className="space-y-2 lg:space-y-2">
