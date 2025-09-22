@@ -111,10 +111,10 @@ const Alternatives = () => {
                     <h3 className="font-bold text-lg text-foreground">{alt.name}</h3>
                   </div>
                   
-                  <div className="grid grid-cols-2 gap-3">
+                  <div className="space-y-3">
                     {Object.entries(alt.features).map(([feature, value]) => (
-                      <div key={feature} className="flex flex-col">
-                        <span className="font-medium text-foreground/80 text-sm mb-1">{feature}:</span>
+                      <div key={feature} className="grid grid-cols-2 gap-3 items-center">
+                        <span className="font-medium text-foreground/80 text-sm">{feature}</span>
                         <div className="flex items-center gap-2">
                           {getStatusIcon(alt.name, feature)}
                           <span className={`text-sm font-medium ${
