@@ -29,10 +29,10 @@ const CookieConsent = () => {
       <div className="container flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 py-4">
         <div className="flex-1">
           <p className="text-sm text-muted-foreground">
-            We use cookies to improve our website performance, analyze traffic, and personalize content. 
-            By continuing to use our site, you agree to our{" "}
+Мы используем cookies для улучшения производительности нашего сайта, анализа трафика и персонализации контента. 
+            Продолжая использовать наш сайт, вы соглашаетесь с нашей{" "}
             <a href="/cookie-policy" className="text-primary hover:underline">
-              cookie policy
+              политикой cookies
             </a>.
           </p>
         </div>
@@ -43,14 +43,14 @@ const CookieConsent = () => {
             onClick={declineAll}
             className="text-sm"
           >
-            Decline
+Отклонить
           </Button>
           <Button
             size="sm"
             onClick={acceptCookies}
             className="text-sm"
           >
-            Accept All
+Принять всё
           </Button>
           <Button
             variant="ghost"
