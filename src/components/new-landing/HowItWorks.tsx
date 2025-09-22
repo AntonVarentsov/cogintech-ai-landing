@@ -101,7 +101,7 @@ const HowItWorks = () => {
           <Button 
             variant="cogintech-teal"
             size="lg"
-            className="px-12 py-4 text-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+            className="px-12 py-4 text-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto"
             onClick={() => {
               const element = document.getElementById('book-demo');
               element?.scrollIntoView({ behavior: 'smooth' });

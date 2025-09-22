@@ -58,8 +58,8 @@ const Alternatives = () => {
         </div>
         
         <div className="max-w-6xl mx-auto">
-          {/* Header Cards */}
-          <div className="grid grid-cols-4 gap-6 mb-8">
+          {/* Header Cards - Mobile Stack */}
+          <div className="hidden md:grid md:grid-cols-4 gap-6 mb-8">
             <div className=""></div>
             {alternatives.map((alt, index) => {
               const IconComponent = alt.icon;
@@ -85,9 +85,56 @@ const Alternatives = () => {
               );
             })}
           </div>
+
+          {/* Mobile Alternative Cards */}
+          <div className="md:hidden space-y-6 mb-8">
+            {alternatives.map((alt, index) => {
+              const IconComponent = alt.icon;
+              return (
+                <div key={index} className={`${
+                  alt.name === 'Cogintech AI' 
+                    ? 'bg-gradient-to-br from-cogintech-teal/10 to-cogintech-teal/5 border-2 border-cogintech-teal/20' 
+                    : 'bg-white border border-gray-200'
+                } rounded-2xl p-6 shadow-lg`}>
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className={`w-12 h-12 ${
+                      alt.name === 'Cogintech AI' 
+                        ? 'bg-cogintech-teal/20' 
+                        : 'bg-gray-100'
+                    } rounded-full flex items-center justify-center`}>
+                      <IconComponent className={`w-6 h-6 ${
+                        alt.name === 'Cogintech AI' 
+                          ? 'text-cogintech-teal' 
+                          : 'text-gray-600'
+                      }`} />
+                    </div>
+                    <h3 className="font-bold text-lg text-foreground">{alt.name}</h3>
+                  </div>
+                  
+                  <div className="space-y-3">
+                    {Object.entries(alt.features).map(([feature, value]) => (
+                      <div key={feature} className="grid grid-cols-2 gap-3 items-center">
+                        <span className="font-medium text-foreground/80 text-sm">{feature}</span>
+                        <div className="flex items-center gap-2">
+                          {getStatusIcon(alt.name, feature)}
+                          <span className={`text-sm font-medium ${
+                            alt.name === 'Cogintech AI' 
+                              ? 'text-cogintech-teal font-semibold' 
+                              : 'text-foreground/80'
+                          }`}>
+                            {value}
+                          </span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
           
-          {/* Comparison Table */}
-          <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+          {/* Desktop Comparison Table */}
+          <div className="hidden md:block bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
             {Object.keys(alternatives[0].features).map((feature, featureIndex) => (
               <div key={feature} className={`grid grid-cols-4 gap-6 ${
                 featureIndex !== Object.keys(alternatives[0].features).length - 1 
