@@ -7,10 +7,10 @@ const SecurityAndIntegration = () => {
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
-            Security, Privacy & IT (MVP)
+Безопасность, Конфиденциальность и IT (MVP)
           </h2>
           <p className="text-xl text-foreground/70 max-w-3xl mx-auto">
-            We take data protection seriously. Below is what's available today, what's enabled during pilot, and what's next on our roadmap.
+Мы серьёзно относимся к защите данных. Ниже представлено, что доступно сегодня, что включено в пилотной версии и что планируется в нашей дорожной карте.
           </p>
         </div>
 
@@ -21,27 +21,27 @@ const SecurityAndIntegration = () => {
             <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-6">
               <Shield className="w-6 h-6 text-green-600" />
             </div>
-            <h3 className="text-xl font-bold mb-4 text-center text-foreground">Available Now (MVP)</h3>
+            <h3 className="text-xl font-bold mb-4 text-center text-foreground">Доступно Сейчас (MVP)</h3>
             <ul className="space-y-3 text-foreground/70">
               <li className="flex items-start gap-2">
                 <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                <span>Encryption in transit (TLS)</span>
+                <span>Шифрование при передаче (TLS)</span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                <span>Secure cloud hosting (provider-managed)</span>
+                <span>Безопасный облачный хостинг (управляемый провайдером)</span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                <span>Access controls (per account), activity logs (basic)</span>
+                <span>Контроль доступа (на аккаунт), журналы активности (базовые)</span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                <span>Data deletion on request</span>
+                <span>Удаление данных по запросу</span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                <span>We don't train foundation models on your data</span>
+                <span>Мы не обучаем базовые модели на ваших данных</span>
               </li>
             </ul>
           </div>
@@ -51,23 +51,23 @@ const SecurityAndIntegration = () => {
             <div className="w-12 h-12 bg-cogintech-teal/20 rounded-lg flex items-center justify-center mx-auto mb-6">
               <Users className="w-6 h-6 text-cogintech-teal" />
             </div>
-            <h3 className="text-xl font-bold mb-4 text-center text-foreground">Available in Pilot</h3>
+            <h3 className="text-xl font-bold mb-4 text-center text-foreground">Доступно в Пилоте</h3>
             <ul className="space-y-3 text-foreground/70">
               <li className="flex items-start gap-2">
                 <div className="w-2 h-2 bg-cogintech-teal rounded-full mt-2"></div>
-                <span>Private project spaces & role-based access (RBAC)</span>
+                <span>Приватные проектные пространства и доступ на основе ролей (RBAC)</span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="w-2 h-2 bg-cogintech-teal rounded-full mt-2"></div>
-                <span>Guided data upload (no IT overhaul)</span>
+                <span>Направляемая загрузка данных (без капитального ремонта IT)</span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="w-2 h-2 bg-cogintech-teal rounded-full mt-2"></div>
-                <span>Optional NDA + DPA before any data is shared</span>
+                <span>Опциональное СН и СОД перед любым обменом данными</span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="w-2 h-2 bg-cogintech-teal rounded-full mt-2"></div>
-                <span>EU data residency option (subject to pilot setup)</span>
+                <span>Опция резидентности данных в ЕС (в зависимости от настройки пилота)</span>
               </li>
             </ul>
           </div>
@@ -77,23 +77,23 @@ const SecurityAndIntegration = () => {
             <div className="w-12 h-12 bg-cogintech-blue/20 rounded-lg flex items-center justify-center mx-auto mb-6">
               <Server className="w-6 h-6 text-cogintech-blue" />
             </div>
-            <h3 className="text-xl font-bold mb-4 text-center text-foreground">Planned Next (Roadmap)</h3>
+            <h3 className="text-xl font-bold mb-4 text-center text-foreground">Планируется Дальше (Дорожная Карта)</h3>
             <ul className="space-y-3 text-foreground/70">
               <li className="flex items-start gap-2">
                 <div className="w-2 h-2 bg-cogintech-blue rounded-full mt-2"></div>
-                <span>SSO (SAML/OIDC) & granular RBAC</span>
+                <span>SSO (SAML/OIDC) и детализированный RBAC</span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="w-2 h-2 bg-cogintech-blue rounded-full mt-2"></div>
-                <span>Audit trails & retention policies</span>
+                <span>Аудиторские журналы и политики хранения</span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="w-2 h-2 bg-cogintech-blue rounded-full mt-2"></div>
-                <span>On-prem / VPC deployment option</span>
+                <span>Опция развёртывания на локальных серверах / VPC</span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="w-2 h-2 bg-cogintech-blue rounded-full mt-2"></div>
-                <span>Connectors: SharePoint, SAP/Maximo, AVEVA, REST API</span>
+                <span>Коннекторы: SharePoint, SAP/Maximo, AVEVA, REST API</span>
               </li>
             </ul>
           </div>
@@ -101,58 +101,58 @@ const SecurityAndIntegration = () => {
 
         {/* Security Standards - Updated */}
         <div className="bg-gray-50 rounded-2xl p-8 mb-12">
-          <h3 className="text-xl font-bold mb-6 text-center text-foreground">Security Framework Approach</h3>
+          <h3 className="text-xl font-bold mb-6 text-center text-foreground">Подход к Каркасу Безопасности</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <ul className="space-y-3 text-foreground/70">
               <li className="flex items-start gap-2">
                 <div className="w-2 h-2 bg-cogintech-orange rounded-full mt-2"></div>
-                <span>Designed to meet SOC 2 Type II practices</span>
+                <span>Разработано для соответствия практикам SOC 2 Type II</span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="w-2 h-2 bg-cogintech-orange rounded-full mt-2"></div>
-                <span>Aligned with ISO/IEC 27001 controls</span>
+                <span>Соответствует контролям ISO/IEC 27001</span>
               </li>
             </ul>
             <ul className="space-y-3 text-foreground/70">
               <li className="flex items-start gap-2">
                 <div className="w-2 h-2 bg-cogintech-orange rounded-full mt-2"></div>
-                <span>GDPR-ready data processing features</span>
+                <span>Готовые к GDPR функции обработки данных</span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="w-2 h-2 bg-cogintech-orange rounded-full mt-2"></div>
-                <span>API-first architecture for secure integrations</span>
+                <span>Архитектура API-first для безопасных интеграций</span>
               </li>
             </ul>
           </div>
-          <p className="text-sm text-foreground/60 italic mt-6 text-center">Planned certifications on the roadmap.</p>
+          <p className="text-sm text-foreground/60 italic mt-6 text-center">Планируемые сертификации в дорожной карте.</p>
         </div>
 
         {/* Mini-FAQ */}
         <div className="bg-white rounded-2xl p-8 mb-12 shadow-sm border border-gray-200">
-          <h3 className="text-xl font-bold mb-6 text-center text-foreground">Quick Security & IT Questions</h3>
+          <h3 className="text-xl font-bold mb-6 text-center text-foreground">Краткие Вопросы о Безопасности и IT</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-4">
               <div>
-                <h4 className="font-semibold text-foreground mb-2">Is this production-ready?</h4>
-                <p className="text-sm text-foreground/70">We're in MVP with limited early adopters. Start with a demo or sandbox; a guided pilot takes ~2 weeks.</p>
+                <h4 className="font-semibold text-foreground mb-2">Готово ли это к промышленному использованию?</h4>
+                <p className="text-sm text-foreground/70">Мы находимся в стадии MVP с ограниченным количеством ранних пользователей. Начните с демо или песочницы; направляемый пилот занимает ~2 недели.</p>
               </div>
               <div>
-                <h4 className="font-semibold text-foreground mb-2">Can we test without sharing sensitive data?</h4>
-                <p className="text-sm text-foreground/70">Yes. Use our sandbox with sample data. For pilots, we sign NDA/DPA and isolate your project space.</p>
+                <h4 className="font-semibold text-foreground mb-2">Можно ли тестировать без передачи конфиденциальных данных?</h4>
+                <p className="text-sm text-foreground/70">Да. Используйте нашу песочницу с образцами данных. Для пилотов мы подписываем СН/СОД и изолируем ваше проектное пространство.</p>
               </div>
               <div>
-                <h4 className="font-semibold text-foreground mb-2">Do you store or use our data to train models?</h4>
-                <p className="text-sm text-foreground/70">No. Your data stays within your tenant; we don't use it to train foundation models.</p>
+                <h4 className="font-semibold text-foreground mb-2">Храните ли вы наши данные или используете их для обучения моделей?</h4>
+                <p className="text-sm text-foreground/70">Нет. Ваши данные остаются в вашем тенанте; мы не используем их для обучения базовых моделей.</p>
               </div>
             </div>
             <div className="space-y-4">
               <div>
-                <h4 className="font-semibold text-foreground mb-2">What about on-prem or private cloud?</h4>
-                <p className="text-sm text-foreground/70">Planned. During pilot we evaluate deployment constraints and agree the path (VPC / on-prem).</p>
+                <h4 className="font-semibold text-foreground mb-2">Как насчёт локальных серверов или приватного облака?</h4>
+                <p className="text-sm text-foreground/70">Планируется. Во время пилота мы оцениваем ограничения развёртывания и согласовываем путь (VPC / локальные серверы).</p>
               </div>
               <div>
-                <h4 className="font-semibold text-foreground mb-2">How do integrations work?</h4>
-                <p className="text-sm text-foreground/70">API-first approach. SharePoint / SAP / Maximo / AVEVA connectors are on the roadmap; during pilot we provide guided export/import.</p>
+                <h4 className="font-semibold text-foreground mb-2">Как работают интеграции?</h4>
+                <p className="text-sm text-foreground/70">Подход API-first. Коннекторы SharePoint / SAP / Maximo / AVEVA находятся в дорожной карте; во время пилота мы обеспечиваем направляемый экспорт/импорт.</p>
               </div>
             </div>
           </div>
@@ -167,7 +167,7 @@ const SecurityAndIntegration = () => {
               className="border-cogintech-blue text-cogintech-blue hover:bg-cogintech-blue/5 font-medium px-8 py-6"
               onClick={() => window.open('/security-note', '_blank')}
             >
-              Read the 1-page Security Note
+Прочитать 1-страничную Заметку о Безопасности
             </Button>
             <Button 
               variant="outline"
@@ -175,7 +175,7 @@ const SecurityAndIntegration = () => {
               className="border-cogintech-teal text-cogintech-teal hover:bg-cogintech-teal/5 font-medium px-8 py-6"
               onClick={() => document.getElementById('ask-question')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              Ask a Security Question
+Задать Вопрос о Безопасности
             </Button>
           </div>
         </div>

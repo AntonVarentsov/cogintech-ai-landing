@@ -14,27 +14,27 @@ const EarlyAdopters = () => {
             
             {/* Main Heading */}
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-              Join Early Adopters
+Присоединяйтесь к Ранним Пользователям
             </h2>
             
             {/* Subtitle */}
             <p className="text-lg text-foreground/70 max-w-2xl mx-auto mb-10">
-              Be among the first to experience revolutionary AI-driven integrity management with leading enterprises.
+Станьте одними из первых, кто опытает революционное ИИ-управление целостностью вместе с ведущими предприятиями.
             </p>
             
             {/* Benefits List */}
             <div className="flex flex-wrap justify-center gap-8 mb-10">
               <div className="flex items-center gap-3">
                 <CheckCircle className="w-5 h-5 text-green-600" />
-                <span className="text-foreground font-medium">Exclusive pilot access</span>
+                <span className="text-foreground font-medium">Эксклюзивный пилотный доступ</span>
               </div>
               <div className="flex items-center gap-3">
                 <Users className="w-5 h-5 text-blue-600" />
-                <span className="text-foreground font-medium">Direct expert support</span>
+                <span className="text-foreground font-medium">Прямая поддержка экспертов</span>
               </div>
               <div className="flex items-center gap-3">
                 <Zap className="w-5 h-5 text-orange-500" />
-                <span className="text-foreground font-medium">Early bird benefits</span>
+                <span className="text-foreground font-medium">Преимущества ранних пользователей</span>
               </div>
             </div>
             
@@ -44,12 +44,12 @@ const EarlyAdopters = () => {
               className="bg-cogintech-blue hover:bg-cogintech-blue/90 text-white font-semibold px-12 py-6 text-lg mb-4 w-full sm:w-auto"
               onClick={() => document.getElementById('book-demo')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              Join the Program
+Присоединиться к Программе
             </Button>
             
             {/* Limited Slots */}
             <p className="text-sm text-cogintech-blue font-medium">
-              Limited slots available
+Ограниченное количество мест
             </p>
           </div>
         </div>

@@ -161,7 +161,7 @@ const PricingSandbox = () => {
                     id="sandbox-email" 
                     name="email"
                     type="email" 
-                    placeholder="your.email@company.com"
+                    placeholder="ваш.email@компания.ru"
                     value={formData.email}
                     onChange={handleChange}
                     required
@@ -172,12 +172,12 @@ const PricingSandbox = () => {
                   )}
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="sandbox-company">Company Name</Label>
+                  <Label htmlFor="sandbox-company">Название Компании</Label>
                   <Input 
                     id="sandbox-company" 
                     name="company"
                     type="text" 
-                    placeholder="Your Company"
+                    placeholder="Ваша Компания"
                     value={formData.company}
                     onChange={handleChange}
                     required 
@@ -212,7 +212,7 @@ const PricingSandbox = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Privacy Policy
+                        Политикой конфиденциальности
                       </Link>
                     </label>
                   </div>
@@ -232,7 +232,7 @@ const PricingSandbox = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Terms of Service
+                        Условиями обслуживания
                       </Link>
                     </label>
                   </div>
@@ -250,7 +250,7 @@ const PricingSandbox = () => {
                 <input type="hidden" name="csrf_token" value={csrfToken} />
               </form>
               <p className="text-xs text-foreground/60 text-center">
-                You'll receive login credentials within 2 minutes
+                Вы получите учётные данные для входа в течение 2 минут
               </p>
             </CardContent>
           </Card>

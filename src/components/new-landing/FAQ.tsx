@@ -9,28 +9,28 @@ import { Button } from "@/components/ui/button";
 const FAQ = () => {
   const faqs = [
     {
-      question: "How long does deployment take?",
-      answer: "Typical deployment takes 2-4 weeks for cloud installations and 4-6 weeks for on-premises. This includes data migration, system integration, and team training."
+      question: "Сколько времени занимает развёртывание?",
+      answer: "Обычно развёртывание занимает 2-4 недели для облачных установок и 4-6 недель для локальных. Это включает миграцию данных, системную интеграцию и обучение команды."
     },
     {
-      question: "Who owns the data and insights?",
-      answer: "You maintain complete ownership of all your data and insights. We provide the AI platform and tools, but all outputs and analysis results belong to your organization."
+      question: "Кто владеет данными и аналитикой?",
+      answer: "Вы сохраняете полное право собственности на все ваши данные и аналитику. Мы предоставляем ИИ-платформу и инструменты, но все результаты и результаты анализа принадлежат вашей организации."
     },
     {
-      question: "What kind of support do you provide?",
-      answer: "All customers receive 24/7 technical support, a dedicated customer success manager, quarterly business reviews, and access to our engineering team for custom integrations."
+      question: "Какую поддержку вы предоставляете?",
+      answer: "Все клиенты получают круглосуточную техническую поддержку, выделенного менеджера по успеху клиентов, ежеквартальные бизнес-обзоры и доступ к нашей инженерной команде для кастомных интеграций."
     },
     {
-      question: "Can you integrate with our existing systems?",
-      answer: "Yes, our platform includes comprehensive REST APIs and pre-built connectors for common systems like SAP, Maximo, and other CMMS platforms. Custom integrations are included in all plans."
+      question: "Можете ли вы интегрироваться с нашими существующими системами?",
+      answer: "Да, наша платформа включает комплексные REST API и готовые коннекторы для распространённых систем, таких как SAP, Maximo и другие CMMS платформы. Кастомные интеграции включены во все планы."
     },
     {
-      question: "What's included in the sandbox environment?",
-      answer: "The sandbox includes sample integrity data, full access to AI analysis tools, dashboard functionality, and document management features. It's read-only to protect sample data integrity."
+      question: "Что включено в песочницу?",
+      answer: "Песочница включает образцы данных о целостности, полный доступ к ИИ-инструментам анализа, функционал панели управления и возможности управления документами. Она работает только на чтение для защиты целостности образцов данных."
     },
     {
-      question: "How do you ensure data security?",
-      answer: "We use enterprise-grade encryption (AES-256), SOC-2 compliance processes, and offer flexible deployment options including on-premises installation for maximum security control."
+      question: "Как вы обеспечиваете безопасность данных?",
+      answer: "Мы используем шифрование корпоративного уровня (AES-256), процессы соответствия SOC-2 и предлагаем гибкие варианты развёртывания, включая локальную установку для максимального контроля безопасности."
     }
   ];
 
@@ -39,10 +39,10 @@ const FAQ = () => {
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">
-            Frequently Asked Questions
+Часто Задаваемые Вопросы
           </h2>
           <p className="text-xl text-foreground/70 max-w-3xl mx-auto">
-            Common questions from integrity engineers and IT decision makers.
+Общие вопросы от инженеров по целостности и лиц, принимающих IT-решения.
           </p>
         </div>
         
@@ -66,7 +66,7 @@ const FAQ = () => {
         </div>
         
         <div id="demo-form" className="text-center mt-12">
-          <p className="text-foreground/70 mb-4">Still have questions?</p>
+          <p className="text-foreground/70 mb-4">Остались вопросы?</p>
           <Button 
             variant="cogintech-orange"
             size="lg"
@@ -77,7 +77,7 @@ const FAQ = () => {
               });
             }}
           >
-            Book a 15-minute demo call
+Забронировать 15-минутный демо-звонок
           </Button>
         </div>
       </div>

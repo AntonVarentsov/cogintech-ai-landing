@@ -4,33 +4,33 @@ import { Button } from "@/components/ui/button";
 const Alternatives = () => {
   const alternatives = [
     {
-      name: "Folders & SharePoint",
+      name: "Папки и SharePoint",
       icon: FolderOpen,
       features: {
-        "Time to find": "Hours of searching",
-        "Report consistency": "Manual templates",
-        "Structured analytics": "Not available",
-        "Setup time": "Immediate"
+        "Время поиска": "Часы поиска",
+        "Консистентность отчётов": "Ручные шаблоны",
+        "Структурированная аналитика": "Недоступно",
+        "Время настройки": "Немедленно"
       }
     },
     {
-      name: "Generic DMS",
+      name: "Обычная СУД",
       icon: Database,
       features: {
-        "Time to find": "Tag-based search",
-        "Report consistency": "Basic templates",
-        "Structured analytics": "Limited queries",
-        "Setup time": "Weeks of config"
+        "Время поиска": "Поиск по тегам",
+        "Консистентность отчётов": "Основные шаблоны",
+        "Структурированная аналитика": "Ограниченные запросы",
+        "Время настройки": "Недели конфигурации"
       }
     },
     {
       name: "Cogintech AI",
       icon: Brain,
       features: {
-        "Time to find": "Instant AI search",
-        "Report consistency": "AI-standardized",
-        "Structured analytics": "Full AI analysis",
-        "Setup time": "2-week pilot"
+        "Время поиска": "Мгновенный ИИ-поиск",
+        "Консистентность отчётов": "ИИ-стандартизированно",
+        "Структурированная аналитика": "Полный ИИ-анализ",
+        "Время настройки": "2-недельный пилот"
       }
     }
   ];
@@ -50,10 +50,10 @@ const Alternatives = () => {
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
-            How We Compare
+Как Мы Сравниваемся
           </h2>
           <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
-            See the difference between traditional file management and AI-powered engineering intelligence.
+Посмотрите разницу между традиционным управлением файлами и ИИ-интеллектом для инженерных решений.
           </p>
         </div>
         
@@ -167,11 +167,11 @@ const Alternatives = () => {
           {/* Call to Action */}
           <div className="text-center mt-8">
             <p className="text-sm text-foreground/60 mb-4">
-              Ready to see the difference AI can make for your engineering team?
+Готовы увидеть, какую разницу ИИ может сделать для вашей инженерной команды?
             </p>
             <div className="flex justify-center">
               <Button asChild variant="cogintech-teal" className="px-6 py-3 font-semibold">
-                <a href="#book-demo">Book Demo</a>
+                <a href="#book-demo">Забронировать Демо</a>
               </Button>
             </div>
           </div>

@@ -93,25 +93,25 @@ const BookDemo = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4 text-white">
-              Book a 15-Minute Demo
+Забронировать 15-Минутное Демо
             </h2>
             <p className="text-xl text-white/70 max-w-2xl mx-auto">
-              See how Cogintech can transform your inspection process in just 15 minutes
+Посмотрите, как Cogintech может трансформировать ваш процесс инспекции всего за 15 минут
             </p>
           </div>
           
           <Card className="bg-white/5 border-white/10">
             <CardHeader>
-              <CardTitle className="text-xl text-white">Schedule Your Demo</CardTitle>
+              <CardTitle className="text-xl text-white">Запланируйте Ваше Демо</CardTitle>
               <CardDescription className="text-white/70">
-                Get a personalized demonstration of our AI-powered analysis platform
+                Получите персонализированную демонстрацию нашей ИИ-платформы анализа
               </CardDescription>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-4">
                 {/* Honeypot field - скрытое поле для защиты от ботов */}
                 <div style={{ position: 'absolute', left: '-9999px', opacity: 0, pointerEvents: 'none' }}>
-                  <label htmlFor="website-demo">Website (do not fill this out)</label>
+                  <label htmlFor="website-demo">Веб-сайт (не заполняйте это поле)</label>
                   <input
                     type="text"
                     id="website-demo"
@@ -126,13 +126,13 @@ const BookDemo = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="demo-name" className="text-white">
-                      Full Name <span className="text-red-400">*</span>
+Полное Имя <span className="text-red-400">*</span>
                     </Label>
                     <Input 
                       id="demo-name" 
                       name="name"
                       type="text" 
-                      placeholder="John Smith"
+                      placeholder="Иван Иванов"
                       value={formData.name}
                       onChange={handleChange}
                       required
@@ -142,13 +142,13 @@ const BookDemo = () => {
                   
                   <div className="space-y-2">
                     <Label htmlFor="demo-email" className="text-white">
-                      Work Email <span className="text-red-400">*</span>
+Рабочий Email <span className="text-red-400">*</span>
                     </Label>
                     <Input 
                       id="demo-email" 
                       name="email"
                       type="email" 
-                      placeholder="your.email@company.com"
+                      placeholder="ваш.email@компания.ru"
                       value={formData.email}
                       onChange={handleChange}
                       required
@@ -164,12 +164,12 @@ const BookDemo = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="demo-company" className="text-white">Company Name</Label>
+                    <Label htmlFor="demo-company" className="text-white">Название Компании</Label>
                     <Input 
                       id="demo-company" 
                       name="company"
                       type="text" 
-                      placeholder="Your Company"
+                      placeholder="Ваша Компания"
                       value={formData.company}
                       onChange={handleChange}
                       className="bg-white/10 border-white/20 text-white placeholder:text-white/50 focus-visible:ring-cogintech-teal"
@@ -177,12 +177,12 @@ const BookDemo = () => {
                   </div>
                   
                   <div className="space-y-2">
-                    <Label htmlFor="demo-role" className="text-white">Your Role</Label>
+                    <Label htmlFor="demo-role" className="text-white">Ваша Должность</Label>
                     <Input 
                       id="demo-role" 
                       name="role"
                       type="text" 
-                      placeholder="e.g., Integrity Engineer"
+                      placeholder="напр., Инженер по Целостности"
                       value={formData.role}
                       onChange={handleChange}
                       className="bg-white/10 border-white/20 text-white placeholder:text-white/50 focus-visible:ring-cogintech-teal"
@@ -199,14 +199,14 @@ const BookDemo = () => {
                       className="mt-1"
                     />
                     <label htmlFor="privacy-policy-demo" className="text-sm text-white/80 leading-relaxed">
-                      I agree to the{' '}
+                      Я соглашаюсь с{' '}
                       <Link 
                         to="/privacy-policy" 
                         className="text-cogintech-teal hover:underline"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Privacy Policy
+                        Политикой конфиденциальности
                       </Link>
                     </label>
                   </div>
@@ -219,14 +219,14 @@ const BookDemo = () => {
                       className="mt-1"
                     />
                     <label htmlFor="terms-of-service-demo" className="text-sm text-white/80 leading-relaxed">
-                      I agree to the{' '}
+                      Я соглашаюсь с{' '}
                       <Link 
                         to="/terms-of-service" 
                         className="text-cogintech-teal hover:underline"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Terms of Service
+                        Условиями обслуживания
                       </Link>
                     </label>
                   </div>
@@ -237,7 +237,7 @@ const BookDemo = () => {
                   className="w-full bg-cogintech-orange hover:bg-cogintech-orange/90 text-white disabled:opacity-50 disabled:cursor-not-allowed"
                   disabled={isSubmitting || !isFormValid || !emailValidation.isValid || !csrfToken}
                 >
-                  {isSubmitting ? "Booking Demo..." : "Book 15-Min Demo"}
+                  {isSubmitting ? "Бронирование демо..." : "Забронировать 15-минутное демо"}
                 </Button>
                 
                 {/* CSRF токен (скрытое поле) */}

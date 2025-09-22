@@ -4,30 +4,30 @@ const ValueMetrics = () => {
   const metrics = [
     {
       value: "10×",
-      label: "FASTER",
-      subtitle: "10× Faster Information Retrieval",
-      description: "Find the exact information you need from thousands of technical documents in seconds, not hours.",
+      label: "БЫСТРЕЕ",
+      subtitle: "в 10 раз Быстрее Поиск Информации",
+      description: "Находите нужную информацию среди тысяч технических документов за секунды, а не часы.",
       icon: Zap
     },
     {
       value: "0%",
-      label: "MANUAL WORK",
-      subtitle: "No Time Wasted on Data Preparation",
-      description: "Forget about Ctrl-C & Ctrl-V. Our AI automatically extracts and structures data from your documents.",
+      label: "РУЧНОЙ РАБОТЫ",
+      subtitle: "Никакого Времени на Подготовку Данных",
+      description: "Забудьте о Ctrl-C и Ctrl-V. Наш ИИ автоматически извлекает и структурирует данные из ваших документов.",
       icon: Target
     },
     {
       value: "30%",
-      label: "TIME SAVED",
-      subtitle: "30% Less Time on Repetitive Tasks",
-      description: "Automate routine engineering tasks and focus on high-value work that drives your projects forward.",
+      label: "ЭКОНОМИЯ ВРЕМЕНИ",
+      subtitle: "на 30% Меньше Времени на Повторяющиеся Задачи",
+      description: "Автоматизируйте рутинные инженерные задачи и сосредоточьтесь на высокоценной работе, которая продвигает ваши проекты.",
       icon: Clock
     },
     {
       value: "95%",
-      label: "FEWER ERRORS",
-      subtitle: "95% Fewer Mistakes",
-      description: "Automated QA/QC processes ensure high accuracy and eliminate human errors in data processing.",
+      label: "МЕНЬШЕ ОШИБОК",
+      subtitle: "на 95% Меньше Ошибок",
+      description: "Автоматизированные процессы КК/КК обеспечивают высокую точность и исключают человеческие ошибки при обработке данных.",
       icon: Shield
     }
   ];
@@ -37,10 +37,10 @@ const ValueMetrics = () => {
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">
-            Results You Can Achieve with CogInTech
+Результаты, Которых Вы Можете Достичь с CogInTech
           </h2>
           <p className="text-xl text-foreground/70 max-w-3xl mx-auto">
-            CogInTech Integrity AI delivers measurable improvements to engineering teams productivity and accuracy
+CogInTech Integrity AI обеспечивает измеримые улучшения продуктивности и точности инженерных команд
           </p>
         </div>
         
@@ -71,7 +71,7 @@ const ValueMetrics = () => {
         {/* Benchmarks link */}
         <div className="text-center mt-8">
           <a href="#alternatives" className="text-sm text-cogintech-blue hover:text-cogintech-blue/80 underline">
-            See how we calculate these benchmarks
+Посмотрите, как мы рассчитываем эти показатели
           </a>
         </div>
       </div>

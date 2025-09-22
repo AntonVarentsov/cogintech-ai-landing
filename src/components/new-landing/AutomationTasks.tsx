@@ -7,55 +7,55 @@ const AutomationTasks = () => {
   const tasks = [
     {
       id: 1,
-      title: "Corrosion Loop Creation and Management",
+      title: "Создание и Управление Коррозионными Контурами",
       icon: Cog,
       timeSavings: "75-85%",
       whatWeAutomate: [
-        "Eliminate 90% of manual data extraction and preparation time",
-        "Automated corrosion loops creation based on your rules",
-        "Automated outlier identification and flagging",
-        "Automated trending with confidence intervals"
+        "Устранение 90% времени на ручное извлечение и подготовку данных",
+        "Автоматическое создание коррозионных контуров на основе ваших правил",
+        "Автоматическое обнаружение и отметка выбросов",
+        "Автоматическое построение трендов с доверительными интервалами"
       ],
-      whatEngineersNo: "Review and final decision-making"
+      whatEngineersNo: "Проверка и принятие окончательных решений"
     },
     {
       id: 2,
-      title: "Inspection Report Analysis & Interpretation",
+      title: "Анализ и Интерпретация Отчётов о Контроле",
       icon: FileText,
       timeSavings: "60-70%",
       whatWeAutomate: [
-        "Extract 80-90% of data automatically",
-        "Automated photo analysis and defect identification",
-        "Automated anomaly identification and flagging",
-        "Quality flags: Automated identification of incomplete/inconsistent data"
+        "Автоматическое извлечение 80-90% данных",
+        "Автоматический анализ фотографий и обнаружение дефектов",
+        "Автоматическое обнаружение и отметка аномалий",
+        "Маркеры качества: Автоматическое обнаружение неполных/несогласованных данных"
       ],
-      whatEngineersNo: "Decision-making and complex assessments"
+      whatEngineersNo: "Принятие решений и сложные оценки"
     },
     {
       id: 3,
-      title: "Risk-Based Inspection Data Preparation",
+      title: "Подготовка Данных для Риск-Ориентированного Контроля",
       icon: Shield,
       timeSavings: "50-60%",
       whatWeAutomate: [
-        "Automated data extraction from multiple source systems",
-        "AI extraction from PDF/paper records",
-        "Damage mechanism AI for initial damage mechanism screening",
-        "Automated consistency checking and gap identification"
+        "Автоматическое извлечение данных из множественных источников",
+        "ИИ-извлечение из PDF/бумажных документов",
+        "ИИ механизмов повреждения для первичного скрининга",
+        "Автоматическая проверка согласованности и обнаружение пробелов"
       ],
-      whatEngineersNo: "Apply engineering judgment, complex damage mechanism assessment"
+      whatEngineersNo: "Применение инженерного суждения, сложная оценка механизмов повреждения"
     },
     {
       id: 4,
-      title: "Inspection Workpack Preparation & Planning",
+      title: "Подготовка и Планирование Контрольных Пакетов",
       icon: Calendar,
       timeSavings: "50-60%",
       whatWeAutomate: [
-        "Drawing compilation – locating current P&IDs, isometrics, equipment drawings",
-        "Previous repair history – excavating maintenance records to understand modification history",
-        "Inspection method selection",
-        "Resource allocation – crew scheduling with skills requirements"
+        "Компиляция чертежей – поиск актуальных P&ID, изометрических схем, чертежей оборудования",
+        "История предыдущих ремонтов – изучение записей о техобслуживании для понимания истории модификаций",
+        "Выбор методов контроля",
+        "Распределение ресурсов – планирование бригад с учётом требований к квалификации"
       ],
-      whatEngineersNo: "Review and final decision-making"
+      whatEngineersNo: "Проверка и принятие окончательных решений"
     }
   ];
 
@@ -64,10 +64,10 @@ const AutomationTasks = () => {
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-cogintech-blue to-cogintech-orange bg-clip-text text-transparent">
-            Typical Engineering Tasks You Can Automate
+Типичные Инженерные Задачи, Которые Вы Можете Автоматизировать
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            See how CogInTech Integrity AI transforms time-consuming manual data handling into automated workflows
+Посмотрите, как CogInTech Integrity AI превращает трудоёмкую ручную обработку данных в автоматизированные рабочие процессы
           </p>
         </div>
 
@@ -83,14 +83,14 @@ const AutomationTasks = () => {
                   <div className="flex-1">
                     <h3 className="text-xl font-semibold mb-2 text-foreground">{task.title}</h3>
                     <Badge variant="secondary" className="bg-cogintech-orange/10 text-cogintech-orange border-cogintech-orange/20">
-                      Time Savings: {task.timeSavings}
+                      Экономия времени: {task.timeSavings}
                     </Badge>
                   </div>
                 </div>
 
                 <div className="space-y-4">
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">What We Automate:</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Что Мы Автоматизируем:</h4>
                     <ul className="space-y-1 text-sm text-muted-foreground">
                       {task.whatWeAutomate.map((item, index) => (
                         <li key={index} className="flex items-start gap-2">
@@ -102,7 +102,7 @@ const AutomationTasks = () => {
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">What Engineers Do:</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Что Делают Инженеры:</h4>
                     <p className="text-sm text-muted-foreground italic">{task.whatEngineersNo}</p>
                   </div>
                 </div>

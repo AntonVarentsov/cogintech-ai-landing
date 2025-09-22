@@ -23,14 +23,14 @@ const Footer = () => {
     e.preventDefault();
     
     if (!email.trim()) {
-      setEmailError("Email is required");
+      setEmailError("Необходим указать email");
       return;
     }
 
     if (!consentChecked) {
       toast({
-        title: "Consent Required",
-        description: "Please agree to receive updates to continue.",
+        title: "Необходимо согласие",
+        description: "Пожалуйста, согласитесь получать обновления, чтобы продолжить.",
         variant: "destructive",
       });
       return;
@@ -39,7 +39,7 @@ const Footer = () => {
     // Validate email
     const emailValidation = await validateEmail(email);
     if (!emailValidation.isValid) {
-      setEmailError(emailValidation.error || "Invalid email");
+      setEmailError(emailValidation.error || "Неверный email");
       return;
     }
 
@@ -48,15 +48,15 @@ const Footer = () => {
     const success = await submitForm({
       email: email.trim(),
       consent: consentChecked,
-      newsletterType: "AI Engineering Tools Updates"
+      newsletterType: "Обновления ИИ-инструментов для инженеров"
     });
 
     if (success) {
       setEmail("");
       setConsentChecked(false);
       toast({
-        title: "Successfully Subscribed!",
-        description: "You'll receive updates on new AI engineering features.",
+        title: "Успешно подписаны!",
+        description: "Вы будете получать обновления о новых ИИ-функциях для инженеров.",
       });
     }
   };
@@ -71,12 +71,12 @@ const Footer = () => {
               <span className="ml-1 text-cogintech-teal font-medium">Ltd.</span>
             </div>
             <p className="mb-6 max-w-md text-lg">
-              Cogintech – AI-native document intelligence for engineering services.
+              Cogintech – нативная ИИ-аналитика документов для инженерных услуг.
             </p>
             
             {/* Newsletter Subscription */}
             <div id="newsletter-signup" className="mb-6">
-              <h4 className="text-white font-semibold mb-3">Subscribe for Updates on AI Engineering Tools</h4>
+              <h4 className="text-white font-semibold mb-3">Подпишитесь на обновления о ИИ-инструментах для инженеров</h4>
               <form onSubmit={handleNewsletterSignup} className="space-y-3 max-w-sm">
                 {/* Honeypot field - hidden from users */}
                 <input
@@ -91,7 +91,7 @@ const Footer = () => {
                 <div>
                   <Input
                     type="email"
-                    placeholder="Enter your email"
+                    placeholder="Введите ваш email"
                     value={email}
                     onChange={(e) => {
                       setEmail(e.target.value);
@@ -117,13 +117,13 @@ const Footer = () => {
                     htmlFor="newsletter-consent" 
                     className="text-sm text-white/70 leading-relaxed cursor-pointer"
                   >
-                    I agree to receive updates about AI engineering tools and have read the{" "}
+                    Я соглашаюсь получать обновления о ИИ-инструментах для инженеров и ознакомился с{" "}
                     <Link 
                       to="/privacy-policy" 
                       className="text-cogintech-teal hover:underline"
                       target="_blank"
                     >
-                      Privacy Policy
+                      Политику конфиденциальности
                     </Link>
                   </label>
                 </div>
@@ -133,7 +133,7 @@ const Footer = () => {
                   disabled={isSubmitting || !email.trim() || !consentChecked}
                   className="bg-cogintech-teal hover:bg-cogintech-teal/90 text-white disabled:opacity-50"
                 >
-                  {isSubmitting ? "Subscribing..." : "Subscribe"}
+                  {isSubmitting ? "Подписка..." : "Подписаться"}
                 </Button>
               </form>
             </div>
@@ -144,20 +144,20 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-white font-semibold mb-4">Company</h3>
+            <h3 className="text-white font-semibold mb-4">Компания</h3>
             <ul className="space-y-2">
-              <li><Link to="/about-us" className="hover:text-cogintech-teal transition-colors">About</Link></li>
-              <li><Link to="/contact" className="hover:text-cogintech-teal transition-colors">Contact</Link></li>
+              <li><Link to="/about-us" className="hover:text-cogintech-teal transition-colors">О нас</Link></li>
+              <li><Link to="/contact" className="hover:text-cogintech-teal transition-colors">Контакты</Link></li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-white font-semibold mb-4">Resources</h3>
+            <h3 className="text-white font-semibold mb-4">Ресурсы</h3>
             <ul className="space-y-2">
-              <li><Link to="/security-note" className="hover:text-cogintech-teal transition-colors">Security Note</Link></li>
-              <li><Link to="/privacy-policy" className="hover:text-cogintech-teal transition-colors">Privacy Policy</Link></li>
-              <li><Link to="/terms-of-service" className="hover:text-cogintech-teal transition-colors">Terms of Service</Link></li>
-              <li><Link to="/cookie-policy" className="hover:text-cogintech-teal transition-colors">Cookie Policy</Link></li>
+              <li><Link to="/security-note" className="hover:text-cogintech-teal transition-colors">Примечание о безопасности</Link></li>
+              <li><Link to="/privacy-policy" className="hover:text-cogintech-teal transition-colors">Политика конфиденциальности</Link></li>
+              <li><Link to="/terms-of-service" className="hover:text-cogintech-teal transition-colors">Условия обслуживания</Link></li>
+              <li><Link to="/cookie-policy" className="hover:text-cogintech-teal transition-colors">Политика cookies</Link></li>
               <li><a href="https://linkedin.com/company/cogintech" target="_blank" className="hover:text-cogintech-teal transition-colors">LinkedIn</a></li>
             </ul>
           </div>
@@ -166,7 +166,7 @@ const Footer = () => {
         <div className="mt-12 pt-6 border-t border-white/10 text-center text-sm">
           <div className="max-w-3xl mx-auto">
             <p>
-              Our AI platform helps engineering service companies reduce reporting time, improve data reliability, and free engineers from routine tasks to focus on high-value client work.
+Наша ИИ-платформа помогает инженерным сервисным компаниям сократить время отчётности, улучшить надёжность данных и освободить инженеров от рутинных задач, чтобы они могли сосредоточиться на высокоценной работе с клиентами.
             </p>
           </div>
         </div>

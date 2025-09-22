@@ -8,10 +8,10 @@ const HowItWorks = () => {
       <div className="container">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            How does it work?
+Как это работает?
           </h2>
           <p className="text-xl text-foreground/70 max-w-4xl mx-auto">
-            Get from raw project data to client-ready reports in record time
+От сырых проектных данных до готовых отчётов для клиентов за рекордное время
           </p>
         </div>
 
@@ -25,9 +25,9 @@ const HowItWorks = () => {
               <div className="absolute -top-4 -left-4 w-8 h-8 bg-cogintech-teal rounded-full flex items-center justify-center text-white font-bold text-sm">
                 1
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-foreground">Upload & Connect</h3>
+              <h3 className="text-2xl font-bold mb-4 text-foreground">Загрузка и Подключение</h3>
               <p className="text-foreground/70 text-lg leading-relaxed">
-                Put all your project files (PDFs, Excel, drawings) in one secure place. Connect with your existing systems seamlessly.
+                Разместите все файлы проекта (PDF, Excel, чертежи) в одном безопасном месте. Легко подключайтесь к существующим системам.
               </p>
             </div>
             {/* Arrow for desktop */}
@@ -45,9 +45,9 @@ const HowItWorks = () => {
               <div className="absolute -top-4 -left-4 w-8 h-8 bg-cogintech-teal rounded-full flex items-center justify-center text-white font-bold text-sm">
                 2
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-foreground">AI Organizes & Analyzes</h3>
+              <h3 className="text-2xl font-bold mb-4 text-foreground">ИИ Организует и Анализирует</h3>
               <p className="text-foreground/70 text-lg leading-relaxed">
-                Our AI automatically classifies and prepares your data for instant use. No manual sorting required.
+                Наш ИИ автоматически классифицирует и подготавливает ваши данные для мгновенного использования. Ручная сортировка не требуется.
               </p>
             </div>
             {/* Arrow for desktop */}
@@ -65,9 +65,9 @@ const HowItWorks = () => {
               <div className="absolute -top-4 -left-4 w-8 h-8 bg-cogintech-teal rounded-full flex items-center justify-center text-white font-bold text-sm">
                 3
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-foreground">Ask & Report</h3>
+              <h3 className="text-2xl font-bold mb-4 text-foreground">Задавайте Вопросы и Получайте Отчёты</h3>
               <p className="text-foreground/70 text-lg leading-relaxed">
-                Get answers in plain English, generate reports in a click. From question to client-ready document in minutes.
+                Получайте ответы на понятном языке, генерируйте отчёты одним кликом. От вопроса до готового для клиента документа за минуты.
               </p>
             </div>
           </div>
@@ -76,9 +76,9 @@ const HowItWorks = () => {
         {/* Video Demo Section */}
         <div className="bg-gradient-to-br from-cogintech-blue/10 to-cogintech-teal/10 rounded-2xl p-8 mb-12">
           <div className="text-center mb-8">
-            <h3 className="text-3xl font-bold mb-4 text-foreground">See It in Action</h3>
+            <h3 className="text-3xl font-bold mb-4 text-foreground">Посмотрите в Действии</h3>
             <p className="text-lg text-foreground/70">
-              See how your team can turn complex files into client-ready reports
+              Посмотрите, как ваша команда может превращать сложные файлы в готовые отчёты для клиентов
             </p>
           </div>
           
@@ -90,9 +90,9 @@ const HowItWorks = () => {
               poster="/lovable-uploads/dashboard.png"
             >
               <source src="/lovable-uploads/AI_assistant.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
+Ваш браузер не поддерживает видео.
             </video>
-            <p className="text-center text-sm text-foreground/60 mt-4">2-min product tour (no sound needed)</p>
+            <p className="text-center text-sm text-foreground/60 mt-4">2-минутная экскурсия по продукту (звук не требуется)</p>
           </div>
         </div>
 
@@ -107,10 +107,10 @@ const HowItWorks = () => {
               element?.scrollIntoView({ behavior: 'smooth' });
             }}
           >
-            Schedule a Demo →
+            Запланировать демо →
           </Button>
           <p className="text-sm text-foreground/60 mt-2 mb-2">
-            No setup required • Sample data included
+Настройка не требуется • Образцы данных включены
           </p>
         </div>
       </div>

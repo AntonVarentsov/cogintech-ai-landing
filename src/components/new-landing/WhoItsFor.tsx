@@ -4,21 +4,21 @@ const WhoItsFor = () => {
   const audiences = [
     {
       icon: Building,
-      title: "Service Company Owners",
-      benefit: "Increase margins",
-      description: "Standardize deliverables and reduce project overhead with AI-driven reporting consistency."
+      title: "Владельцы Сервисных Компаний",
+      benefit: "Увеличение маржи",
+      description: "Стандартизируйте результаты и сокращайте накладные расходы по проектам с помощью ИИ-отчётности."
     },
     {
       icon: Users,
-      title: "Heads of Engineering",
-      benefit: "Speed up delivery",
-      description: "Cut report preparation time by automating data extraction and analysis workflows."
+      title: "Руководители Инженерных Отделов",
+      benefit: "Ускорение поставки",
+      description: "Сократите время подготовки отчётов, автоматизируя рабочие процессы извлечения данных и анализа."
     },
     {
       icon: Server,
-      title: "IT & Digital",
-      benefit: "Standardize quality",
-      description: "Deploy AI tools without disrupting existing systems or compromising data security."
+      title: "IT и Цифровая Трансформация",
+      benefit: "Стандартизация качества",
+      description: "Внедряйте ИИ-инструменты без нарушения существующих систем или компрометации безопасности данных."
     }
   ];
 
@@ -27,11 +27,11 @@ const WhoItsFor = () => {
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
-            Built for Engineering Service Teams
+Создано для Команд Инженерных Услуг
           </h2>
           <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
-            Whether you manage projects, lead teams, or handle infrastructure — 
-            get the tools you need to deliver better results faster.
+Независимо от того, управляете ли вы проектами, руководите командами или занимаетесь инфраструктурой — 
+            получите инструменты, необходимые для достижения лучших результатов быстрее.
           </p>
         </div>
         

@@ -59,7 +59,7 @@ const AskQuestion = () => {
                 Have a Question?
               </h2>
               <p className="text-lg text-foreground/70">
-                Not ready for a demo? Ask us anything about the platform, implementation, or your specific use case.
+                Не готовы к демо? Спросите нас о чём угодно касательно платформы, внедрения или вашего конкретного случая использования.
               </p>
             </div>
             
@@ -89,7 +89,7 @@ const AskQuestion = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="your.email@company.com"
+                  placeholder="ваш.email@компания.ru"
                   required
                 />
               </div>

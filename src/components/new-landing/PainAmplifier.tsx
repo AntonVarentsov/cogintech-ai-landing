@@ -4,23 +4,23 @@ const PainAmplifier = () => {
   const painPoints = [
     {
       icon: Search,
-      title: "Document Search",
-      description: "Engineers spend up to 30% of their time searching across PDFs, spreadsheets and folders."
+      title: "Поиск Документов",
+      description: "Инженеры тратят до 30% своего времени на поиск по PDF, электронным таблицам и папкам."
     },
     {
       icon: Timer,
-      title: "Slow Delivery",
-      description: "Client reports take weeks, slowing delivery and hurting satisfaction."
+      title: "Медленная Поставка",
+      description: "Отчёты для клиентов готовятся неделями, что замедляет поставку и снижает удовлетворённость."
     },
     {
       icon: Target,
-      title: "Inconsistent Quality",
-      description: "Inconsistent documentation makes quality and compliance hard to guarantee."
+      title: "Нестабильное Качество",
+      description: "Непоследовательная документация затрудняет гарантирование качества и соответствия стандартам."
     },
     {
       icon: Copy,
-      title: "Manual Data Handling",
-      description: "Copy-paste between systems and manual data preparation consume hours of valuable engineering time."
+      title: "Ручная Обработка Данных",
+      description: "Копирование между системами и ручная подготовка данных поглощают часы ценного инженерного времени."
     }
   ];
 
@@ -29,10 +29,10 @@ const PainAmplifier = () => {
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">
-            Why Engineering Teams Lose Time and Efficiency
+Почему Инженерные Команды Теряют Время и Эффективность
           </h2>
           <p className="text-xl text-foreground/70 max-w-3xl mx-auto">
-            Four critical gaps are eating into your engineering team productivity
+Четыре критических пробела съедают продуктивность вашей инженерной команды
           </p>
         </div>
         
@@ -51,8 +51,8 @@ const PainAmplifier = () => {
         {/* Pull quote */}
         <div className="mt-12 text-center">
           <blockquote className="text-lg italic text-foreground/60">
-            "We spend hours just finding past reports."
-            <footer className="mt-2 text-sm text-foreground/50">— Service company owner</footer>
+"Мы тратим часы просто на поиск старых отчётов."
+            <footer className="mt-2 text-sm text-foreground/50">— Владелец сервисной компании</footer>
           </blockquote>
         </div>
       </div>

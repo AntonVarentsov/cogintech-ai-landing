@@ -48,7 +48,7 @@ const SecurityIT = () => {
     if (!agreements.privacyPolicy || !agreements.termsOfService) {
       toast({
         title: "Agreement Required",
-        description: "Please accept both Privacy Policy and Terms of Service",
+        description: "Пожалуйста, примите Политику конфиденциальности и Условия обслуживания",
         variant: "destructive"
       });
       return;
@@ -181,7 +181,7 @@ const SecurityIT = () => {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          Privacy Policy
+                          Политикой конфиденциальности
                         </Link>
                       </label>
                     </div>
@@ -201,7 +201,7 @@ const SecurityIT = () => {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          Terms of Service
+                          Условиями обслуживания
                         </Link>
                       </label>
                     </div>

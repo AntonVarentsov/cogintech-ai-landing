@@ -7,11 +7,11 @@ const AboutUs = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <SEOHead 
-        title="About Cogintech - AI Equipment Integrity for Oil & Gas | Cogintech"
-        description="Cogintech revolutionizes oil & gas equipment integrity through AI. 95%+ accuracy in NDT analysis, 30% cost reduction. Pioneering AI industrial inspection since 2018."
-        keywords="AI equipment integrity, oil gas AI inspection, industrial NDT automation, equipment management AI, Cogintech company, AI oil gas solutions"
-        ogTitle="About Cogintech - AI Equipment Integrity for Oil & Gas"
-        ogDescription="Cogintech revolutionizes oil & gas equipment integrity through AI. 95%+ accuracy, 30% cost reduction since 2018."
+        title="О Cogintech - ИИ для Целостности Оборудования в Нефтегазовой Отрасли | Cogintech"
+        description="Cogintech революционизирует целостность оборудования в нефтегазовой отрасли с помощью ИИ. 95%+ точность в НК-анализе, 30% снижение затрат. Пионеры ИИ-инспекций с 2018 года."
+        keywords="ИИ целостность оборудования, ИИ-инспекция нефть газ, автоматизация промышленного НК, ИИ управление оборудованием, компания Cogintech, ИИ решения нефть газ"
+        ogTitle="О Cogintech - ИИ для Целостности Оборудования в Нефтегазовой Отрасли"
+        ogDescription="Cogintech революционизирует целостность оборудования в нефтегазовой отрасли с помощью ИИ. 95%+ точность, 30% снижение затрат с 2018 года."
         ogImage="/lovable-uploads/22fc09d7-63fe-4527-885a-d78c38ec2e86.png"
       />
       <Navbar />
@@ -22,14 +22,14 @@ const AboutUs = () => {
           <div className="absolute inset-0">
             <img 
               src="/plant.png" 
-              alt="Industrial Plant" 
+              alt="Промышленный Завод" 
               className="w-full h-full object-cover opacity-20"
             />
           </div>
           <div className="container relative z-10">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">About Us</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">О Нас</h1>
             <p className="text-xl text-white/90 max-w-2xl">
-              Pioneering the future of industrial equipment integrity through artificial intelligence
+              Пионеры будущего целостности промышленного оборудования через искусственный интеллект
             </p>
           </div>
         </section>
@@ -38,36 +38,36 @@ const AboutUs = () => {
           <div className="container">
             <div className="prose max-w-none">
               <p className="text-lg mb-6">
-                Cognitive Industrial Technologies (Cogintech) is a pioneering company focused on revolutionizing equipment integrity management in the oil and gas industry through artificial intelligence.
+                Cognitive Industrial Technologies (Cogintech) — это пионерская компания, сосредоточенная на революционизации управления целостностью оборудования в нефтегазовой отрасли с помощью искусственного интеллекта.
               </p>
               
-              <h2 className="text-2xl font-semibold mt-8 mb-4">Our Mission</h2>
+              <h2 className="text-2xl font-semibold mt-8 mb-4">Наша Миссия</h2>
               <p className="mb-6">
-                Our mission is to transform how industrial equipment is monitored, analyzed, and maintained. We aim to reduce costs, improve safety, and extend asset lifespans through intelligent, data-driven technologies.
+                Наша миссия — трансформировать то, как мониторится, анализируется и обслуживается промышленное оборудование. Мы стремимся снизить затраты, повысить безопасность и продлить срок службы активов благодаря интеллектуальным технологиям, основанным на данных.
               </p>
               
-              <h2 className="text-2xl font-semibold mt-8 mb-4">Our Vision</h2>
+              <h2 className="text-2xl font-semibold mt-8 mb-4">Наше Видение</h2>
               <p className="mb-6">
-                We envision a future where industrial operations are safer, more efficient, and more sustainable through the power of artificial intelligence and machine learning.
+                Мы представляем будущее, в котором промышленные операции станут более безопасными, эффективными и устойчивыми благодаря силе искусственного интеллекта и машинного обучения.
               </p>
               
-              <h2 className="text-2xl font-semibold mt-8 mb-4">Our Values</h2>
+              <h2 className="text-2xl font-semibold mt-8 mb-4">Наши Ценности</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
                 <div className="bg-muted p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-2">Innovation</h3>
-                  <p>We continuously push the boundaries of what's possible in industrial technology.</p>
+                  <h3 className="text-xl font-semibold mb-2">Инновации</h3>
+                  <p>Мы постоянно расширяем границы возможного в промышленных технологиях.</p>
                 </div>
                 <div className="bg-muted p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-2">Reliability</h3>
-                  <p>Our solutions are built to be trusted in the most demanding industrial environments.</p>
+                  <h3 className="text-xl font-semibold mb-2">Надёжность</h3>
+                  <p>Наши решения созданы для доверия в самых сложных промышленных условиях.</p>
                 </div>
                 <div className="bg-muted p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-2">Safety</h3>
-                  <p>We prioritize the well-being of people and the environment in everything we do.</p>
+                  <h3 className="text-xl font-semibold mb-2">Безопасность</h3>
+                  <p>Мы ставим благополучие людей и окружающей среды на первое место во всём, что мы делаем.</p>
                 </div>
                 <div className="bg-muted p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-2">Collaboration</h3>
-                  <p>We work closely with our clients to develop solutions that meet their specific needs.</p>
+                  <h3 className="text-xl font-semibold mb-2">Сотрудничество</h3>
+                  <p>Мы тесно сотрудничаем с нашими клиентами, чтобы разрабатывать решения, которые соответствуют их специфическим потребностям.</p>
                 </div>
               </div>
             </div>
