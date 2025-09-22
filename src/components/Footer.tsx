@@ -147,8 +147,6 @@ const Footer = () => {
             <h3 className="text-white font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
               <li><Link to="/about-us" className="hover:text-cogintech-teal transition-colors">About</Link></li>
-              <li><Link to="/blog" className="hover:text-cogintech-teal transition-colors">Blog</Link></li>
-              <li><Link to="/careers" className="hover:text-cogintech-teal transition-colors">Careers</Link></li>
               <li><Link to="/contact" className="hover:text-cogintech-teal transition-colors">Contact</Link></li>
             </ul>
           </div>
