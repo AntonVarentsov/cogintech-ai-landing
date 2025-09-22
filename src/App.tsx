@@ -9,7 +9,7 @@ import DevInfo from "./components/DevInfo";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import AboutUs from "./pages/AboutUs";
-
+import OurTeam from "./pages/OurTeam";
 import Careers from "./pages/Careers";
 import News from "./pages/News";
 import Contact from "./pages/Contact";
@@ -52,6 +52,7 @@ const App = () => {
           <Route path="/variant-b" element={<NewLandingVariantB />} />
           <Route path="/old-landing" element={<Index />} />
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/our-team" element={<OurTeam />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/news" element={<News />} />
           <Route path="/contact" element={<Contact />} />
