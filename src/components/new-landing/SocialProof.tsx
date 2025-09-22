@@ -41,7 +41,7 @@ const EarlyAdopters = () => {
             {/* CTA Button */}
             <Button 
               size="lg"
-              className="bg-cogintech-blue hover:bg-cogintech-blue/90 text-white font-semibold px-12 py-6 text-lg mb-4"
+              className="bg-cogintech-blue hover:bg-cogintech-blue/90 text-white font-semibold px-12 py-6 text-lg mb-4 w-full sm:w-auto"
               onClick={() => document.getElementById('book-demo')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Join the Program

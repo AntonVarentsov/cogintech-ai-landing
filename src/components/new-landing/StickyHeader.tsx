@@ -17,29 +17,9 @@ const StickyHeader = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-200/50 py-3 px-4 shadow-sm z-40 transition-all duration-300">
-      <div className="container flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <span className="font-bold text-cogintech-blue">Cogintech</span>
-          <span className="text-sm text-foreground/60">Double Your Engineering Productivity</span>
-        </div>
-        
-        <div className="flex items-center gap-3">
-          <Button
-            size="sm"
-            variant="cogintech-blue-outline"
-            onClick={() => document.getElementById('book-demo')?.scrollIntoView({ behavior: 'smooth' })}
-          >
-            Book Demo
-          </Button>
-          <Button
-            size="sm"
-            variant="cogintech-orange"
-            onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
-          >
-            Get Test Access
-          </Button>
-        </div>
+    <div id="sticky-header" className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-200/50 py-3 px-4 shadow-sm z-50 transition-all duration-300">
+      <div className="container flex items-center justify-end">
+        <div id="sticky-cta-slot" className="flex items-center gap-2" />
       </div>
     </div>
   );

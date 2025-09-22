@@ -1,7 +1,6 @@
 
 import Navbar from "@/components/Navbar";
 import SEOHead from "@/components/SEOHead";
-import StickyHeader from "@/components/new-landing/StickyHeader";
 import NewHero from "@/components/new-landing/NewHero";
 import PainAmplifier from "@/components/new-landing/PainAmplifier";
 import ValueMetrics from "@/components/new-landing/ValueMetrics";
@@ -28,7 +27,6 @@ const NewLanding = () => {
         ogDescription="Cut reporting time from weeks to days. AI-powered tools for engineering service companies: faster reports, less manual work, higher client trust."
         ogImage="/lovable-uploads/22fc09d7-63fe-4527-885a-d78c38ec2e86.png"
       />
-      <StickyHeader />
       <Navbar />
         <NewHero />
         <PainAmplifier />
