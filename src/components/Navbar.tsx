@@ -84,9 +84,6 @@ const Navbar = () => {
                     <Link to="/about-us" className="cursor-pointer text-base">About Us</Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
-                    <Link to="/our-team" className="cursor-pointer text-base">Our Team</Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem asChild>
                     <Link to="/security-note" className="cursor-pointer text-base">Security Note</Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
@@ -108,7 +105,7 @@ const Navbar = () => {
             <>
               <Link to="/" className="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Home</Link>
               <Link to="/about-us" className="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">About Us</Link>
-              <Link to="/our-team" className="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Our Team</Link>
+              
               <Link to="/security-note" className="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Security Note</Link>
               <Link to="/privacy-policy" className="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Privacy Policy</Link>
               <Link to="/terms-of-service" className="text-base text-foreground/80 hover:text-cogintech-blue transition-colors">Terms of Service</Link>
@@ -127,9 +124,6 @@ const Navbar = () => {
                 <DropdownMenuContent className="bg-background border border-border shadow-lg z-50">
                   <DropdownMenuItem asChild>
                     <Link to="/about-us" className="cursor-pointer text-base">About Us</Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem asChild>
-                    <Link to="/our-team" className="cursor-pointer text-base">Our Team</Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem asChild>
                     <Link to="/security-note" className="cursor-pointer text-base">Security Note</Link>
@@ -244,13 +238,6 @@ const Navbar = () => {
                     About Us
                   </Link>
                   <Link 
-                    to="/our-team" 
-                    className="block py-1 pl-3 text-base text-foreground/80 hover:text-cogintech-blue transition-colors"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Our Team
-                  </Link>
-                  <Link 
                     to="/security-note" 
                     className="block py-1 pl-3 text-base text-foreground/80 hover:text-cogintech-blue transition-colors"
                     onClick={() => setIsMenuOpen(false)}
@@ -302,13 +289,6 @@ const Navbar = () => {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   About Us
-                </Link>
-                <Link 
-                  to="/our-team" 
-                  className="py-1 text-base text-foreground/80 hover:text-cogintech-blue transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Our Team
                 </Link>
                 <Link 
                   to="/security-note" 
@@ -365,13 +345,6 @@ const Navbar = () => {
                     onClick={() => setIsMenuOpen(false)}
                   >
                     About Us
-                  </Link>
-                  <Link 
-                    to="/our-team" 
-                    className="block py-1 pl-3 text-base text-foreground/80 hover:text-cogintech-blue transition-colors"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Our Team
                   </Link>
                   <Link 
                     to="/security-note" 

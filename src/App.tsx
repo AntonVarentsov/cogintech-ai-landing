@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import CookieConsent from "./components/CookieConsent";
 import DevInfo from "./components/DevInfo";
-import Index from "./pages/Index";
+
 import NotFound from "./pages/NotFound";
 import AboutUs from "./pages/AboutUs";
 import OurTeam from "./pages/OurTeam";
@@ -21,7 +21,7 @@ import TermsOfService from "./pages/TermsOfService";
 import CookiePolicy from "./pages/CookiePolicy";
 import SecurityNote from "./pages/SecurityNote";
 import NewLanding from "./pages/NewLanding";
-import NewLandingVariantB from "./pages/NewLandingVariantB";
+
 import Unauthorized from "./pages/Unauthorized";
 
 const queryClient = new QueryClient();
@@ -49,8 +49,6 @@ const App = () => {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<NewLanding />} />
-          <Route path="/variant-b" element={<NewLandingVariantB />} />
-          <Route path="/old-landing" element={<Index />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/our-team" element={<OurTeam />} />
           <Route path="/careers" element={<Careers />} />
