@@ -4,7 +4,7 @@ const PainAmplifier = () => {
   const painPoints = [
     {
       icon: Search,
-      title: "Поиск документов",
+      title: "Бесконечный поиск документов",
       description: "Инженеры тратят до 30% своего времени на поиск по PDF, таблицам и папкам."
     },
     {
