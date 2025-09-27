@@ -7,7 +7,7 @@ const SecurityAndIntegration = () => {
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
-Безопасность, Конфиденциальность и IT (MVP)
+Безопасность, конфиденциальность и IT (MVP)
           </h2>
           <p className="text-xl text-foreground/70 max-w-3xl mx-auto">
 Мы серьёзно относимся к защите данных. Ниже представлено, что доступно сегодня, что включено в пилотной версии и что планируется в нашей дорожной карте.
@@ -21,7 +21,7 @@ const SecurityAndIntegration = () => {
             <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-6">
               <Shield className="w-6 h-6 text-green-600" />
             </div>
-            <h3 className="text-xl font-bold mb-4 text-center text-foreground">Доступно Сейчас (MVP)</h3>
+            <h3 className="text-xl font-bold mb-4 text-center text-foreground">Доступно сейчас (MVP)</h3>
             <ul className="space-y-3 text-foreground/70">
               <li className="flex items-start gap-2">
                 <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
@@ -51,7 +51,7 @@ const SecurityAndIntegration = () => {
             <div className="w-12 h-12 bg-cogintech-teal/20 rounded-lg flex items-center justify-center mx-auto mb-6">
               <Users className="w-6 h-6 text-cogintech-teal" />
             </div>
-            <h3 className="text-xl font-bold mb-4 text-center text-foreground">Доступно в Пилоте</h3>
+            <h3 className="text-xl font-bold mb-4 text-center text-foreground">Доступно в пилоте</h3>
             <ul className="space-y-3 text-foreground/70">
               <li className="flex items-start gap-2">
                 <div className="w-2 h-2 bg-cogintech-teal rounded-full mt-2"></div>
@@ -77,7 +77,7 @@ const SecurityAndIntegration = () => {
             <div className="w-12 h-12 bg-cogintech-blue/20 rounded-lg flex items-center justify-center mx-auto mb-6">
               <Server className="w-6 h-6 text-cogintech-blue" />
             </div>
-            <h3 className="text-xl font-bold mb-4 text-center text-foreground">Планируется Дальше (Дорожная Карта)</h3>
+            <h3 className="text-xl font-bold mb-4 text-center text-foreground">Планируется дальше (дорожная карта)</h3>
             <ul className="space-y-3 text-foreground/70">
               <li className="flex items-start gap-2">
                 <div className="w-2 h-2 bg-cogintech-blue rounded-full mt-2"></div>
@@ -101,7 +101,7 @@ const SecurityAndIntegration = () => {
 
         {/* Security Standards - Updated */}
         <div className="bg-gray-50 rounded-2xl p-8 mb-12">
-          <h3 className="text-xl font-bold mb-6 text-center text-foreground">Подход к Каркасу Безопасности</h3>
+          <h3 className="text-xl font-bold mb-6 text-center text-foreground">Подход к каркасу безопасности</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <ul className="space-y-3 text-foreground/70">
               <li className="flex items-start gap-2">
@@ -129,7 +129,7 @@ const SecurityAndIntegration = () => {
 
         {/* Mini-FAQ */}
         <div className="bg-white rounded-2xl p-8 mb-12 shadow-sm border border-gray-200">
-          <h3 className="text-xl font-bold mb-6 text-center text-foreground">Краткие Вопросы о Безопасности и IT</h3>
+          <h3 className="text-xl font-bold mb-6 text-center text-foreground">Краткие вопросы о безопасности и IT</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-4">
               <div>
@@ -167,7 +167,7 @@ const SecurityAndIntegration = () => {
               className="border-cogintech-blue text-cogintech-blue hover:bg-cogintech-blue/5 font-medium px-8 py-6"
               onClick={() => window.open('/security-note', '_blank')}
             >
-Прочитать 1-страничную Заметку о Безопасности
+Прочитать 1-страничную заметку о безопасности
             </Button>
             <Button 
               variant="outline"
@@ -175,7 +175,7 @@ const SecurityAndIntegration = () => {
               className="border-cogintech-teal text-cogintech-teal hover:bg-cogintech-teal/5 font-medium px-8 py-6"
               onClick={() => document.getElementById('ask-question')?.scrollIntoView({ behavior: 'smooth' })}
             >
-Задать Вопрос о Безопасности
+Задать вопрос о безопасности
             </Button>
           </div>
         </div>

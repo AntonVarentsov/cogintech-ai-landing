@@ -14,7 +14,7 @@ const EarlyAdopters = () => {
             
             {/* Main Heading */}
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-Присоединяйтесь к Ранним Пользователям
+Присоединяйтесь к ранним пользователям
             </h2>
             
             {/* Subtitle */}
