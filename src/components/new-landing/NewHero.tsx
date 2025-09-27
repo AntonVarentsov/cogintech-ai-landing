@@ -18,10 +18,10 @@ const NewHero = () => {
                 </div>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold leading-tight lg:text-5xl text-cogintech-blue">
-Удвойте Продуктивность Вашей Инженерной Команды
+Удвойте продуктивность инженерной команды с помощью ИИ
               </h1>
               <h2 className="text-4xl md:text-5xl font-semibold leading-tight lg:text-5xl text-cogintech-teal">
-Пусть Ваши Инженеры Создают, а Не Ищут
+Пусть инженеры занимаются делом, а не поиском
               </h2>
             </div>
             
@@ -51,7 +51,7 @@ const NewHero = () => {
               }} />
             </div>
             <p className="hidden lg:block text-lg text-foreground/80 text-center">
-              <span className="font-semibold">Превратите разрозненные технические документы в знания мгновенного доступа и разверните ИИ-ассистентов для автоматизации рутинных задач</span>
+              <span className="font-semibold">Превращаем разрозненные файлы (PDF, чертежи, Excel) в структурированную базу и даём ИИ-инструменты для поиска, анализа и выпусков клиентских отчётов.</span>
             </p>
           </div>
         </div>
@@ -66,7 +66,7 @@ const NewHero = () => {
           </div>
           <div className="px-4 sm:px-6 mt-4">
             <p className="text-lg text-foreground/80 text-center">
-              <span className="font-semibold">Превратите разрозненные технические документы в знания мгновенного доступа и разверните ИИ-ассистентов для автоматизации рутинных задач</span>
+              <span className="font-semibold">Превращаем разрозненные файлы (PDF, чертежи, Excel) в структурированную базу и даём ИИ-инструменты для поиска, анализа и выпусков клиентских отчётов.</span>
             </p>
           </div>
         </div>
