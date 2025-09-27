@@ -65,9 +65,9 @@ const HowItWorks = () => {
               <div className="absolute -top-4 -left-4 w-8 h-8 bg-cogintech-teal rounded-full flex items-center justify-center text-white font-bold text-sm">
                 3
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-foreground">Вопросы и отчёты</h3>
+              <h3 className="text-2xl font-bold mb-4 text-foreground">Поиск, вопросы и отчёты</h3>
               <p className="text-foreground/70 text-lg leading-relaxed">
-                Получайте ответы на понятном языке, генерируйте отчёты одним кликом. От вопроса до готового для клиента документа за минуты.
+                Быстрый поиск документов. Ответы на понятном языке. Отчёты одним кликом.
               </p>
             </div>
           </div>
@@ -78,7 +78,7 @@ const HowItWorks = () => {
           <div className="text-center mb-8">
             <h3 className="text-3xl font-bold mb-4 text-foreground">Посмотрите в действии</h3>
             <p className="text-lg text-foreground/70">
-              Посмотрите, как ваша команда может превращать сложные файлы в готовые отчёты для клиентов
+              Посмотрите, как ваша команда может превращать сложные файлы в готовые отчёты
             </p>
           </div>
           
