@@ -20,7 +20,7 @@ const AutomationTasks = () => {
     },
     {
       id: 2,
-      title: "Анализ и интерпретация отчётов о контроле",
+      title: "Анализ отчётов по контролю состояния оборудования",
       icon: FileText,
       timeSavings: "60-70%",
       whatWeAutomate: [
@@ -33,7 +33,7 @@ const AutomationTasks = () => {
     },
     {
       id: 3,
-      title: "Подготовка данных для риск-ориентированного контроля",
+      title: "Сбор и подготовка данных для риск-ориентированных проверок",
       icon: Shield,
       timeSavings: "50-60%",
       whatWeAutomate: [
@@ -46,7 +46,7 @@ const AutomationTasks = () => {
     },
     {
       id: 4,
-      title: "Подготовка и планирование контрольных пакетов",
+      title: "Подготовка контрольных заданий для инспекции",
       icon: Calendar,
       timeSavings: "50-60%",
       whatWeAutomate: [
