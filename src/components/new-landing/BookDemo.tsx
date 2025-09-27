@@ -93,7 +93,7 @@ const BookDemo = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4 text-white">
-Забронировать 15-Минутное Демо
+Забронировать 15-минутное демо
             </h2>
             <p className="text-xl text-white/70 max-w-2xl mx-auto">
 Посмотрите, как Cogintech может трансформировать ваш процесс инспекции всего за 15 минут
@@ -102,7 +102,7 @@ const BookDemo = () => {
           
           <Card className="bg-white/5 border-white/10">
             <CardHeader>
-              <CardTitle className="text-xl text-white">Запланируйте Ваше Демо</CardTitle>
+              <CardTitle className="text-xl text-white">Запланируйте ваше демо</CardTitle>
               <CardDescription className="text-white/70">
                 Получите персонализированную демонстрацию нашей ИИ-платформы анализа
               </CardDescription>
@@ -126,7 +126,7 @@ const BookDemo = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="demo-name" className="text-white">
-Полное Имя <span className="text-red-400">*</span>
+Полное имя <span className="text-red-400">*</span>
                     </Label>
                     <Input 
                       id="demo-name" 
@@ -142,7 +142,7 @@ const BookDemo = () => {
                   
                   <div className="space-y-2">
                     <Label htmlFor="demo-email" className="text-white">
-Рабочий Email <span className="text-red-400">*</span>
+Рабочий email <span className="text-red-400">*</span>
                     </Label>
                     <Input 
                       id="demo-email" 
@@ -164,12 +164,12 @@ const BookDemo = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="demo-company" className="text-white">Название Компании</Label>
+                    <Label htmlFor="demo-company" className="text-white">Название компании</Label>
                     <Input 
                       id="demo-company" 
                       name="company"
                       type="text" 
-                      placeholder="Ваша Компания"
+                      placeholder="Ваша компания"
                       value={formData.company}
                       onChange={handleChange}
                       className="bg-white/10 border-white/20 text-white placeholder:text-white/50 focus-visible:ring-cogintech-teal"
@@ -177,12 +177,12 @@ const BookDemo = () => {
                   </div>
                   
                   <div className="space-y-2">
-                    <Label htmlFor="demo-role" className="text-white">Ваша Должность</Label>
+                    <Label htmlFor="demo-role" className="text-white">Ваша должность</Label>
                     <Input 
                       id="demo-role" 
                       name="role"
                       type="text" 
-                      placeholder="напр., Инженер по Целостности"
+                      placeholder="напр., Инженер по целостности"
                       value={formData.role}
                       onChange={handleChange}
                       className="bg-white/10 border-white/20 text-white placeholder:text-white/50 focus-visible:ring-cogintech-teal"

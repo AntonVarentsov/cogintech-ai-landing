@@ -25,7 +25,7 @@ const HowItWorks = () => {
               <div className="absolute -top-4 -left-4 w-8 h-8 bg-cogintech-teal rounded-full flex items-center justify-center text-white font-bold text-sm">
                 1
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-foreground">Загрузка и Подключение</h3>
+              <h3 className="text-2xl font-bold mb-4 text-foreground">Загрузка и подключение</h3>
               <p className="text-foreground/70 text-lg leading-relaxed">
                 Разместите все файлы проекта (PDF, Excel, чертежи) в одном безопасном месте. Легко подключайтесь к существующим системам.
               </p>
@@ -45,7 +45,7 @@ const HowItWorks = () => {
               <div className="absolute -top-4 -left-4 w-8 h-8 bg-cogintech-teal rounded-full flex items-center justify-center text-white font-bold text-sm">
                 2
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-foreground">ИИ Организует и Анализирует</h3>
+              <h3 className="text-2xl font-bold mb-4 text-foreground">ИИ организует и анализирует</h3>
               <p className="text-foreground/70 text-lg leading-relaxed">
                 Наш ИИ автоматически классифицирует и подготавливает ваши данные для мгновенного использования. Ручная сортировка не требуется.
               </p>
@@ -65,7 +65,7 @@ const HowItWorks = () => {
               <div className="absolute -top-4 -left-4 w-8 h-8 bg-cogintech-teal rounded-full flex items-center justify-center text-white font-bold text-sm">
                 3
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-foreground">Задавайте Вопросы и Получайте Отчёты</h3>
+              <h3 className="text-2xl font-bold mb-4 text-foreground">Задавайте вопросы и получайте отчёты</h3>
               <p className="text-foreground/70 text-lg leading-relaxed">
                 Получайте ответы на понятном языке, генерируйте отчёты одним кликом. От вопроса до готового для клиента документа за минуты.
               </p>
@@ -76,7 +76,7 @@ const HowItWorks = () => {
         {/* Video Demo Section */}
         <div className="bg-gradient-to-br from-cogintech-blue/10 to-cogintech-teal/10 rounded-2xl p-8 mb-12">
           <div className="text-center mb-8">
-            <h3 className="text-3xl font-bold mb-4 text-foreground">Посмотрите в Действии</h3>
+            <h3 className="text-3xl font-bold mb-4 text-foreground">Посмотрите в действии</h3>
             <p className="text-lg text-foreground/70">
               Посмотрите, как ваша команда может превращать сложные файлы в готовые отчёты для клиентов
             </p>

@@ -7,7 +7,7 @@ const AutomationTasks = () => {
   const tasks = [
     {
       id: 1,
-      title: "Создание и Управление Коррозионными Контурами",
+      title: "Создание и управление коррозионными контурами",
       icon: Cog,
       timeSavings: "75-85%",
       whatWeAutomate: [
@@ -20,7 +20,7 @@ const AutomationTasks = () => {
     },
     {
       id: 2,
-      title: "Анализ и Интерпретация Отчётов о Контроле",
+      title: "Анализ и интерпретация отчётов о контроле",
       icon: FileText,
       timeSavings: "60-70%",
       whatWeAutomate: [
@@ -33,7 +33,7 @@ const AutomationTasks = () => {
     },
     {
       id: 3,
-      title: "Подготовка Данных для Риск-Ориентированного Контроля",
+      title: "Подготовка данных для риск-ориентированного контроля",
       icon: Shield,
       timeSavings: "50-60%",
       whatWeAutomate: [
@@ -46,7 +46,7 @@ const AutomationTasks = () => {
     },
     {
       id: 4,
-      title: "Подготовка и Планирование Контрольных Пакетов",
+      title: "Подготовка и планирование контрольных пакетов",
       icon: Calendar,
       timeSavings: "50-60%",
       whatWeAutomate: [
@@ -64,7 +64,7 @@ const AutomationTasks = () => {
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-cogintech-blue to-cogintech-orange bg-clip-text text-transparent">
-Типичные Инженерные Задачи, Которые Вы Можете Автоматизировать
+Типичные инженерные задачи, которые вы можете автоматизировать
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
 Посмотрите, как CogInTech Integrity AI превращает трудоёмкую ручную обработку данных в автоматизированные рабочие процессы
@@ -90,7 +90,7 @@ const AutomationTasks = () => {
 
                 <div className="space-y-4">
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Что Мы Автоматизируем:</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Что мы автоматизируем:</h4>
                     <ul className="space-y-1 text-sm text-muted-foreground">
                       {task.whatWeAutomate.map((item, index) => (
                         <li key={index} className="flex items-start gap-2">
@@ -102,7 +102,7 @@ const AutomationTasks = () => {
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Что Делают Инженеры:</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Что делают инженеры:</h4>
                     <p className="text-sm text-muted-foreground italic">{task.whatEngineersNo}</p>
                   </div>
                 </div>

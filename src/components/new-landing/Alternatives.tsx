@@ -50,7 +50,7 @@ const Alternatives = () => {
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
-Как Мы Сравниваемся
+Как мы сравниваемся
           </h2>
           <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
 Посмотрите разницу между традиционным управлением файлами и ИИ-интеллектом для инженерных решений.
