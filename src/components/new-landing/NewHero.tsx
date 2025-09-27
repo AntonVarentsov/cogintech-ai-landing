@@ -21,7 +21,7 @@ const NewHero = () => {
 Удвойте продуктивность инженерной команды с помощью ИИ
               </h1>
               <h2 className="text-4xl md:text-5xl font-semibold leading-tight lg:text-5xl text-cogintech-teal">
-Пусть инженеры занимаются делом, а не поиском
+Пусть инженеры занимаются делом, /Br а не поиском
               </h2>
             </div>
             
