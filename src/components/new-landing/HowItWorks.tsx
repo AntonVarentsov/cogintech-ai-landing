@@ -27,7 +27,7 @@ const HowItWorks = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4 text-foreground">Загрузка и подключение</h3>
               <p className="text-foreground/70 text-lg leading-relaxed">
-                Разместите все файлы проекта (PDF, Excel, чертежи) в одном безопасном месте. Легко подключайтесь к существующим системам.
+                Разместите все файлы проекта (PDF, Excel, чертежи) в одном безопасном месте. Без перестройки ИТ-ландшафта.
               </p>
             </div>
             {/* Arrow for desktop */}
@@ -45,9 +45,9 @@ const HowItWorks = () => {
               <div className="absolute -top-4 -left-4 w-8 h-8 bg-cogintech-teal rounded-full flex items-center justify-center text-white font-bold text-sm">
                 2
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-foreground">ИИ организует и анализирует</h3>
+              <h3 className="text-2xl font-bold mb-4 text-foreground">ИИ упорядочивает и анализирует</h3>
               <p className="text-foreground/70 text-lg leading-relaxed">
-                Наш ИИ автоматически классифицирует и подготавливает ваши данные для мгновенного использования. Ручная сортировка не требуется.
+                Автоклассификация, извлечение сущностей, связывание и подготовка к использованию.
               </p>
             </div>
             {/* Arrow for desktop */}
@@ -65,7 +65,7 @@ const HowItWorks = () => {
               <div className="absolute -top-4 -left-4 w-8 h-8 bg-cogintech-teal rounded-full flex items-center justify-center text-white font-bold text-sm">
                 3
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-foreground">Задавайте вопросы и получайте отчёты</h3>
+              <h3 className="text-2xl font-bold mb-4 text-foreground">Вопросы и отчёты</h3>
               <p className="text-foreground/70 text-lg leading-relaxed">
                 Получайте ответы на понятном языке, генерируйте отчёты одним кликом. От вопроса до готового для клиента документа за минуты.
               </p>
