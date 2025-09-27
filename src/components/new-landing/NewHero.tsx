@@ -88,16 +88,6 @@ const NewHero = () => {
               <div className="text-xs sm:text-sm font-medium text-foreground/70">единообразные отчёты</div>
             </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4 -mx-1 sm:mx-0">
-            <div className="bg-white/60 backdrop-blur-sm border border-gray-200/50 rounded-xl p-3 sm:p-4 text-center hover:shadow-lg transition-all duration-300">
-              <div className="text-xl sm:text-2xl font-bold text-cogintech-orange mb-1">без изменений</div>
-              <div className="text-xs sm:text-sm font-medium text-foreground/70">в существующей инфраструктуре</div>
-            </div>
-            <div className="bg-white/60 backdrop-blur-sm border border-gray-200/50 rounded-xl p-3 sm:p-4 text-center hover:shadow-lg transition-all duration-300">
-              <div className="text-xl sm:text-2xl font-bold text-cogintech-blue mb-1">обучение</div>
-              <div className="text-xs sm:text-sm font-medium text-foreground/70">не требуется</div>
-            </div>
-          </div>
         </div>
       </div>
 
